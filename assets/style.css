@@ -270,16 +270,13 @@ aside h1{
 }
 .sessao-projetos{
     background-image: linear-gradient(225deg, #37253bcc 0%, #8E2DE2 100%);
-    padding-bottom: 100px;
-    max-width: 120rem;
-    min-width: 30rem;
+    padding-bottom: 70px;
     width: 100%;
 }
 .card-info{
     width: 350px;
     height: 380px;
     background: linear-gradient(270deg, #37253bcc 0%, #8E2DE2 100%); 
-    margin: 0 auto;
     border: 1px solid #8E2DE2 ;
     border-radius: 5px;
     cursor: pointer;
@@ -375,7 +372,7 @@ aside h1{
         width: 100%;
     }
     .imagen-luan{
-        max-width: 300px;
+        max-width: 500px;
     }
 }
 
@@ -392,28 +389,24 @@ aside h1{
 }
 .sessao-myself{
     background-image: linear-gradient(#37253bcc, #8E2DE2);
-    height:600px ;
-    margin: 0 auto;
-    padding-left:150px;
+    height:700px ;
+    text-align: center;
 }
 .sessao-myself h1{
-    padding-top: 50px;
-    padding-left: 150px;
+   padding-bottom: 60px;
 }
 .sobre-foto{
     font-family: var(--font-primary);
     font-size: 20px;
     color: #000;
-    width: 100%;
-    max-width: 400px;
-    max-height: 450px;
-    margin: auto;
-    margin-top: -350px;
-    padding-left: 160px;;
+    max-width: 500px;
+    max-height: 500px;
 }
 .imagen-luan{
     border-radius: 10px;
     border:solid  0.2px #fff;
+    height: 350px;
+    width: 350px;
 }
 #foto-luan{
     margin-top: -150px;
