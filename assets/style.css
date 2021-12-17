@@ -17,7 +17,9 @@
     --color-terciary:#21203886;
     scroll-behavior: smooth;
 }
-
+.container{
+    background-image: linear-gradient(225deg, #212038 , #1f2f62d0);
+}
 .hamburguer{
     /*background-color: red;*/
     width: 3rem;
@@ -218,7 +220,6 @@ header{
 }
 
 .sessao-conhecimento{
-    background-image: linear-gradient(#1f2f62d0, #212038 );
     width: 100%;
     height: 100vh;
 }
@@ -238,7 +239,6 @@ header{
 .conhecimentos{ 
     display: grid;
     margin: 0 auto;
-    padding: 5px;
     padding-top: 70px;
 }
 .conhecimentos:nth-child(1) {
@@ -265,7 +265,6 @@ header{
     color:white;
 }
 .conhecimento-text{
-   padding:2px;
     text-align: center;
     font-family: var(--font-primary);
     font-size: 16px;
@@ -281,7 +280,6 @@ header{
     flex-flow: wrap;
 }
 .sessao-projetos{
-    background-image: linear-gradient(225deg, #212038 , #1f2f62d0);
     padding-bottom: 70px;
     width: 100%;
 }
@@ -404,7 +402,6 @@ header{
     border:solid  0.2px #fff;
 }
 .sessao-myself{
-    background-image: linear-gradient(#1f2f62d0, #212038);
     height:700px ;
     text-align: center;
 }
