@@ -278,12 +278,16 @@ header{
     flex-flow: wrap;
 }
 .card-info{
-    max-width: 350px;
+    max-width: 480px;
     max-height: 380px;
     background: linear-gradient(270deg, #1f2f62d0, #212038); 
     border: 1px solid #1f2f62d0;
     border-radius: 5px;
     cursor: pointer;
+}
+.card-info img{
+    max-width: 100%;
+    max-height: 100%;
 }
 .card-info h2{
     text-align: center;
