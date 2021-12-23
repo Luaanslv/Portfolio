@@ -237,8 +237,8 @@ header{
 .conhecimentos{ 
     display: grid;
     padding:30px;
-    min-width: 60px;
-    min-height: 50px;
+    min-width: 70%;
+    min-height: 50%;
 }
 .conhecimentos:nth-child(1) {
     grid-column: -3 / -2;
@@ -268,8 +268,8 @@ header{
     font-family: var(--font-primary);
     background-color: rgba(255, 255, 255, 0.911);
     border-radius: 10px;
-    max-width: 400px;
-    max-height: 300px;
+    max-width: 100%;
+    max-height: 100%;
 }
 .row{
     display: flex;
@@ -277,6 +277,7 @@ header{
     justify-content: space-around;
     flex-flow: wrap;
 }
+
 .card-info{
     max-width: 480px;
     max-height: 380px;
@@ -296,7 +297,7 @@ header{
 .card-info p{
     text-align: center;
     font-size: 20px;
-    padding-top: 80px;
+    padding-top: 10px;
 }
 
 #emoji{
