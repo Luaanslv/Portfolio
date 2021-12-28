@@ -6,33 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio|Luan Silva</title>
     <link rel="stylesheet" href="assets/style.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/assets/site.webmanifest">
 </head>
 <body>
-    
-        <!--botao do menu-->
-    <section class="container">
-        
-        <div class="hamburguer">
-            <div class="line" id="line"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
-            <span>Fechar</span>
-        </div>
+    <header>
             <!--home-->
-        <header>
             <div class="img-wrapper">
                 <img src="assets/imagens/bg.jpg" alt="bg" >
             </div>
             <div class="banner">
-                <h1>Front-end develope</h1>
+                <h1>Front-end Developer</h1>
                 <h2> Oie, me chamo Luan Silva.</h2>
                 <button><a href="https://www.linkedin.com/in/luan-da-silva-7b08aa216/"  target="_blank" style="color: white;">Linkedin</a></button>
             </div>
-        </header>
+    
             <!--menu-->
         <aside class="sidebar">
             <nav >
@@ -49,95 +41,92 @@
                 <a href="https://api.whatsapp.com/send?phone=5511997318719&text=Ola%20estou interessado no seu trabalho" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
             </div>
         </aside>
-            <!--Conhecimento-->
-        <section class="sessao-conhecimento">
-            <div class="sessao-header">
-                <h1 id="conhecimentos">Conhecimentos</h1>
-            </div>
-            <div class="conhecimentos">
-                <div class="conhecimentos">
-                    <div class="conhecimento-header">
-                        <h2>Html</h2>
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>HTML é uma liguagem de marcação. Utilizamos para marcar elementos para definir as informações que a página vai exibir.</p>
-                    </div>
-                </div>
-                <div class="conhecimentos">
-                    <div class="conhecimento-header">
-                        <h2>CSS</h2>
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>CSS ou Cascading Style Sheet é responsavel pela estrutura estética. Foi criado para ser o estilo do HTML. </p>
-                    </div>
-                </div>
-                <div class="conhecimentos">
-                    <div class="conhecimento-header">
-                        <h2>Javascript</h2>
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Javascript também conhecido por js, é uma linguagem de programação interpretada estruturada com tipagem dinâmica.
-                            É ele que torna a aplicação interativa. </p>
+    </header>
+            <main>
+                <!--Conhecimento-->
+                <div class="conhecimentos-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="main-title">Conhecimentos</h3>
+                            </div>
+                            <div class="col-md-4 conhecimentos-box">
+                                <i class="fab fa-html5"></i>
+                                <h4>Html5</h4>
+                                <p>HTML é uma liguagem de marcação. Utilizamos para marcar elementos para definir as informações que a página vai exibir.</p>
+                            </div>
+                            <div class="col-md-4 conhecimentos-box">
+                                <i class="fab fa-css3-alt"></i>
+                                <h4>Css</h4>
+                                <p>CSS ou Cascading Style Sheet é responsavel pela estrutura estética. Foi criado para ser o estilo do HTML.  </p>
+                            </div>
+                            <div class="col-md-4 conhecimentos-box">
+                                <i class="fab fa-js-square"></i>
+                                <h4>Javascript</h4>
+                                <p>Javascript também conhecido por js, é uma linguagem de programação interpretada estruturada com tipagem dinâmica.É ele que torna a aplicação interativa.</p>
+                            </div>
+                            <div class="col-md-4 conhecimentos-box">
+                                <i class="fab fa-bootstrap"></i>
+                                <h4>Bootstrap</h4>
+                                <p>HTML é uma liguagem de marcação. Utilizamos para marcar elementos para definir as informações que a página vai exibir.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                        </section>
+                <!--Projetos-->
+                        <section class="sessao-projetos">
+                <div class="sessao-header">
+                    <h1 id="projetos">Projetos</h1>
                 </div>
-            </div>
-        </section>
-            <!--Projetos-->
-        <section class="sessao-projetos">
-            <div class="sessao-header">
-                <h1 id="projetos">Projetos</h1>
-            </div>
-            <div class="projetos">
-                    <div class="row">
-                        <div class="card-info">
-                                <article>
-                                   <nav>
-                                    <a href="https://luaanslv.github.io/Projetogrecia/" target="_blank"><img src="assets/imagens/Projetogrecia.png" alt="projetogrecia"></a>
-                                   </nav>
-                                   <h2>Projeto Grecia</h2>
-                                   <p>Esse projeto foi utilizados as seguintes skils: html,css,javscript</p>
-                                </article>
-                         </div>
-                         <div class="card-info2">
+                <div class="projetos">
+                        <div class="row">
+                            <div class="card-info">
+                                    <article>
+                                       <nav>
+                                        <a href="https://luaanslv.github.io/Projetogrecia/" target="_blank"><img src="assets/imagens/Projetogrecia.png" alt="projetogrecia"></a>
+                                       </nav>
+                                       <h2>Projeto Grecia</h2>
+                                       <p>Esse projeto foi utilizados as seguintes skils: html,css,javscript</p>
+                                    </article>
+                             </div>
+                             <div class="card-info2">
+                                    <article>
+                                        <h2>Em desenvolvimento</h2>
+                                        <P>Espere um pouco, estou desenvolvendo algo!</P>
+                                        <p id="emoji">👨‍💻 </p>
+                                    </article>
+                             </div>
+                             <div class="card-info3">
                                 <article>
                                     <h2>Em desenvolvimento</h2>
                                     <P>Espere um pouco, estou desenvolvendo algo!</P>
                                     <p id="emoji">👨‍💻 </p>
                                 </article>
-                         </div>
-                         <div class="card-info3">
-                            <article>
-                                <h2>Em desenvolvimento</h2>
-                                <P>Espere um pouco, estou desenvolvendo algo!</P>
-                                <p id="emoji">👨‍💻 </p>
-                            </article>          
-                                         </div>
-                    </div>
-                    <nav id="link">
-                         <a href="https://github.com/Luaanslv" target="_blank">Repositórios do Github</a>
-                    </nav>             
-            </div>
-        </section>
-        <!--Sobre eu-->
-        <section class="sessao-myself">
-            <div class="sessao-header">
-                <h1 id="sobre">Luan</h1>
-            </div>
-            <div id="foto-luan">
-                    <img src="assets/imagens/Luan-removebg-preview.png" alt="Foto do Luan" class="imagen-luan">
-            </div>
-            <div class="sobre-foto">
-                <p>Ola, como podem ver no titulo eu me chamo Luan, sou Front-end developer. Desenvolvo interfaces rapidas, responsivo com animação e foco na qualidade.</p>
-            </div>
-        </section>
+                                             </div>
+                        </div>
+                        <nav id="link">
+                             <a href="https://github.com/Luaanslv" target="_blank">Repositórios do Github</a>
+                        </nav>
+                </div>
+                        </section>
+                        <!--Sobre eu-->
+                        <section class="sessao-myself">
+                <div class="sessao-header">
+                    <h1 id="sobre">Luan</h1>
+                </div>
+                <div id="foto-luan">
+                        <img src="assets/imagens/Luan-removebg-preview.png" alt="Foto do Luan" class="imagen-luan">
+                </div>
+                <div class="sobre-foto">
+                    <p>Ola, como podem ver no titulo eu me chamo Luan, sou Front-end developer. Desenvolvo interfaces rapidas, responsivo com animação e foco na qualidade.</p>
+                </div>
+                        </section>
+            </main>
         <footer>
             <p>Feito por Luan silva</p>
         </footer>
-    </section>
+   
     <script src="assets/script.js"></script>
 </body>
 
