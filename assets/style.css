@@ -19,6 +19,8 @@
 }
 main,footer{
     background-image: linear-gradient(225deg, #212038 , #1f2f62d0);
+    width: 100%;
+    height: 100%;
 }
 .row{
     margin: 0;
@@ -38,7 +40,14 @@ header{
     font-size: 40px;
     text-align: center;
 }
-
+/*header*/
+.navbar-nav{
+    margin-left: 120vh;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    transition: all .5s;
+}
 .img-wrapper{
     width: 100%;
     height: 100%;
@@ -101,6 +110,7 @@ header{
     font-family: var(--font-action);
     letter-spacing: .1rem;
     text-transform: uppercase;
+    color: #fff;
     background: #1f2f62; 
     background: -webkit-linear-gradient(to right, #212038, #1f2f62);  
     background: linear-gradient(to right, #212038, #1f2f62); 
@@ -121,7 +131,7 @@ header{
     color: #fff;
 
 }
-.conhecimentos-box i, h4{
+.conhecimentos-box i, h3{
     transition: .5s;
 
 }
@@ -130,13 +140,38 @@ header{
     margin-bottom: 20px;
     color: #000;
 }
-.conhecimentos-box h4{
+.conhecimentos-box h3{
     font-size: 24px;
     margin-bottom: 15px;
+    color: black;
 }
-
+/* sobre eu */
+.main-title::after{
+    content: "";
+    border-top: 2px solid #fff;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+.sobre-title{
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    margin-top: 20%;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.img-fluid{
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    align-items: center;
+}
+/* rodapé */
 
 footer{
     text-align: center;
     color: #fff;
+    padding: 0;
 }
