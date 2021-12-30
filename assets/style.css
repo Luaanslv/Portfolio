@@ -7,6 +7,7 @@
     padding: 0px;
     list-style: none;
     text-decoration: none;  
+    scroll-behavior: smooth;
 }
 :root{
     --font-primary:"Baloo Da 2",serif;
