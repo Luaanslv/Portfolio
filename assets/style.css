@@ -170,6 +170,11 @@ header{
     margin: auto;
     align-items: center;
 }
+/* projetos */
+.card{
+    text-align: center;
+    margin-bottom: 10px;
+}
 /* rodapé */
 
 footer{
