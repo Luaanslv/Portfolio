@@ -121,6 +121,7 @@ header{
     cursor: pointer;
     animation: movebanner 1s 0.9s forwards;
     opacity: 0;
+    margin-bottom: 20px;
 }
 .banner button:hover{
     opacity: 1;
