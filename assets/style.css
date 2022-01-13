@@ -196,7 +196,18 @@ header{
 .card-footer{
     color: #fff;
 }
-
+.text-area{
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    height: 40%;
+    width: 30%;
+}
+.text-area p {
+    color: #fff;
+}
 /*Contato*/
 .contato-box{
     text-align: center;
@@ -220,4 +231,60 @@ footer p{
     color: #fff;
     padding: 0;
     margin: 0;
+}
+
+/*resposividade*/
+@media(max-width:360px){
+    /*Home*/
+    .banner h1{
+        font-size: 30px;
+    }
+    .banner h2{
+        font-size: 20px;
+    }
+    .banner button{
+        width: 50%;
+    }
+    .banner button p{
+        text-align: center;
+    }
+    /*Conhecimentos*/
+    .conhecimentos-box{
+        margin-bottom: 5px;
+        margin: auto;
+    }
+    .conhecimentos-box i {
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    
+    /*Sobre*/
+    .img-fluid{
+        width: 100%;
+    }
+    .sobre-title{
+        border: 0;
+        font-size: 10px;
+    }
+
+    /*Projetos*/
+    .card{
+        width: 100%;
+        height: auto;
+        margin-top:10%;
+    }
+    .card-footer{
+        width: 100%;
+    }
+    .text-area{
+        border: 0;
+        font-size: 10px;
+    }
+    /*Contato*/
+    .contato-box h3{
+        text-align: center;
+        margin-top: 10px;
+    }
+
 }
