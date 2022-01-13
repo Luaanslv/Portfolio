@@ -121,34 +121,33 @@ header{
     cursor: pointer;
     animation: movebanner 1s 0.9s forwards;
     opacity: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .banner button:hover{
     opacity: 1;
 }
 /*Conhecimentos*/
 .conhecimentos-box{
-    text-align: center;
     margin-bottom: 50px;
-    margin-top: 30px;
-    color: #fff;
-
+    margin-top: 40px;
 }
-.conhecimentos-box i, h3{
-    transition: .5s;
 
-}
 .conhecimentos-box i{
-    font-size: 36px;
-    margin-bottom: 20px;
+    vertical-align: middle;
+    margin: auto;
+    font-size: 50px;
+    margin-bottom: 10px;
     color: #000;
 }
 .conhecimentos-box h3{
-    font-size: 24px;
-    margin-bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
     color: black;
 }
+
 /* sobre eu */
+
 .main-title::after{
     content: "";
     border-top: 2px solid #fff;
@@ -160,21 +159,42 @@ header{
 .sobre-title{
     color: #fff;
     text-align: center;
+    font-size: 16px;
     margin: auto;
-    margin-top: 20%;
+    padding: 30px;
+    width: 100%;
+    margin-top: 8%;
     border: 1px solid #000;
-    border-radius: 10px;
+    border-radius: 50px; 
 }
 .img-fluid{
     max-width: 100%;
-    max-height: 100%;
+    width: 80%;
     margin: auto;
     align-items: center;
+}
+.comentario{
+    text-align: start;
+    color:blue;
+}
+.comentario2{
+    text-align: end;
+    color: blue;
 }
 /* projetos */
 .card{
     text-align: center;
-    margin-bottom: 25px;
+}
+
+.card p {
+    text-align: center;
+    padding: 10px;
+}
+.card-body{
+    background-color:#fff;
+}
+.card-footer{
+    color: #fff;
 }
 
 /*Contato*/
@@ -193,11 +213,11 @@ header{
     font-size: 20px;
 }
 
-
 /* rodapé */
 
-footer{
+footer p{
     text-align: center;
     color: #fff;
     padding: 0;
+    margin: 0;
 }
