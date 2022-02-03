@@ -12,11 +12,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/assets/site.webmanifest">
+    <!--script-->
+    <script src="assets/script.js" defer></script>
 </head>
 <body>
     <header>
             <!--home-->
-             <div class="img-wrapper" id="home">
+            <div class="img-wrapper" id="home">
                 <img src="assets/imagens/bg.jpg" alt="bg" >
             </div>
             <div class="banner">
@@ -25,13 +27,12 @@
                 <a href="https://www.linkedin.com/in/luan-da-silva-7b08aa216/" target="_blank"><button >Linkedin</button></a>
                 <a href="https://github.com/Luaanslv" target="_blank"><button >Github</button></a>
             </div>
-            <!--menu-->
-            <nav class="navbar navbar-expand-lg fixed-top">
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                    <div class="navbar-nav ">
-                        <ul class="navbar navbar-default navbar-fixed-top">
-                            <li><a href="#home" class="nav-item nav-link" id="home-menu">Home</a></li>
-                            <li><a href="#conhecimentos" class="nav-item nav-link" id="about-menu ">Conhecimentos</a></li>
+            <!--menu--> 
+            <nav class="navbar navbar expand-lg fixed-top">
+                <div class="collapse navbar-collapse">
+                    <div class="navbar-nav onTop" id="menu">
+                        <ul class="nav navbar navbar-default navbar-fixed-top">
+                            <li><a href="#conhecimentos" class="nav-item nav-link" id="about-menu ">Tecnologias</a></li>
                             <li><a href="#sobre" class="nav-item nav-link" id="dev-menu"> Sobre o Dev</a></li>
                             <li><a href="#projetos-area" class="nav-item nav-link" id="portfolio-menu">Projetos</a></li>
                             <li><a href="#contato-area" class="nav-item nav-link" id="contact-menu">Contato</a></li>
@@ -39,15 +40,72 @@
                     </div>
                 </div>
             </nav>
-
     </header>
             <main>
-                <!--Conhecimento-->
+                   <!--Projetos-->
+                   <div id="projetos-area">
+                            
+                    <div class="row">
+                        <div class="container-fluid d-flex flex-wrap">
+                            <div class="col-12 " style="max-width: 100%;">
+                                <h3 class="titulo">Projetos</h3>
+                            </div>
+                            <div class="col-4 col-sm-2 ">
+                                <div class="card">
+                                    <a href="https://luaanslv.github.io/projetod10/" target="_blank"><img src="assets/imagens/Projetocursoemvideo.png" alt="Projetocursoemvideo" class="card-img-top"></a>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Projeto Androide</h5>
+                                    <p class="card-text">Projeto feito para estudos com ajuda do curso em video.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <p>Skills: Html e Css.</p>
+                                </div>
+                            </div>
+                            <!--Card2-->
+                            <div class="col-4 col-sm-2 " style="max-width: 100%;">
+                                <div class="card ">
+                                    <a href="https://luaanslv.github.io/company/" target="_blank"><img src="assets/imagens/projetohoradecoda.png" alt="ProjetoHoradecoda" class="card-img-top"></a>
+                                </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Projeto Company</h5>
+                                        <p class="card-text">Desenvolvi com a ajuda do canal Hora de coda.</p>
+                                    </div>
+                                        <div class="card-footer">
+                                            <p>githu</p>
+                                        </div>
+                            </div>
+                            <!--Card 3-->
+                            <div class="col-4 col-sm-2 " style="max-width: 100%;">
+                                <div class="card ">
+                                    <a href="https://luaanslv.github.io/company/" target="_blank"><img src="assets/imagens/projetohoradecoda.png" alt="ProjetoHoradecoda" class="card-img-top"></a>
+                                </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Projeto Company</h5>
+                                        <p class="card-text">Desenvolvi com a ajuda do canal Hora de coda.</p>
+                                    </div>
+                                        <div class="card-footer">
+                                            <p>githu</p>
+                                        </div>
+                            </div>
+                            <!--card4-->
+                            <div class="col-4 col-sm-2 " style="max-width: 100%;">
+                                <div class="card ">
+                                    <a href="https://luaanslv.github.io/company/" target="_blank"><img src="assets/imagens/projetohoradecoda.png" alt="ProjetoHoradecoda" class="card-img-top"></a>
+                                </div>
+                                        <div class="card-footer">
+                                            <button>Codigo Fonte</button>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                        <!--Conhecimento-->
                 <div class="conhecimentos-area" id="conhecimentos" >
                     <div class="container">
                         <div class="row">
                             <div class="col-10">
-                                <h3 class="main-title">Conhecimentos</h3>
+                                <h3 class="titulo">Tecnologias</h3>
                             </div>
                             <div class="col-md-3 conhecimentos-box text-center">
                                 <i class="fab fa-html5"></i>
@@ -66,16 +124,24 @@
                                 <i class="fab fa-bootstrap"></i>
                                 <h3>Bootstrap</h3>
                             </div>
+                            <div class="col-md-3 conhecimentos-box text-center">
+                                <i class="fab fa-sass"></i>
+                                <h3>Sass</h3>
+                            </div>
+                            <div class="col-md-3 conhecimentos-box text-center">
+                                <i class="fab fa-react"></i>
+                                <h3>React.js</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-                       
+
                         <!--Sobre eu-->
                         <div class="sobre-area" id="sobre">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12">
-                                        <h3 class="main-title">Luan da Silva</h3>
+                                        <h3 class="titulo">Luan da Silva</h3>
                                     </div>
                                     <div class="col-md-5">
                                         <img src="assets/imagens/Luan-removebg-preview.png" alt="Luan" class="img-fluid">
@@ -88,72 +154,22 @@
                                 </div>
                             </div>
                         </div>
-                          <!--Projetos-->
-                        <div id="projetos-area">
-                            
-                            <div class="row">
-                                <div class="container-fluid d-flex flex-wrap">
-                                    <div class="col-12 " style="max-width: 100%;">
-                                        <h3 class="main-title">Projetos</h3>
-                                        <div class="text-area">
-                                            <h4>Atenção</h4>
-                                            <p>Caso queira ver algum projeto é só clicar no projeto!</p>
-                                        </div>
-                                    </div>
-                                        
-                                    <div class="col-5 col-sm-3 ">
-                                        <div class="card">
-                                            <a href="https://luaanslv.github.io/projetod10/" target="_blank"><img src="assets/imagens/Projetocursoemvideo.png" alt="Projetocursoemvideo" class="card-img-top"></a>
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Projeto Androide</h5>
-                                            <p class="card-text">Projeto feito para estudos com ajuda do curso em video.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <p>Skills: Html e Css.</p>
-                                        </div>
-                                    </div>
-                                    <!--Card2-->
-                                    <div class="col-5 col-sm-3 " style="max-width: 100%;">
-                                        <div class="card ">
-                                            <a href="https://luaanslv.github.io/company/" target="_blank"><img src="assets/imagens/projetohoradecoda.png" alt="ProjetoHoradecoda" class="card-img-top"></a>
-                                        </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Projeto Company</h5>
-                                                <p class="card-text">Desenvolvi esse projeto com a ajuda do canal Hora de coda.</p>
-                                            </div>
-                                                <div class="card-footer">
-                                                    <p>Skills: Html,Css,Javascript e Bootstrap.</p>
-                                                </div>
-                                        
-                                    </div>
-                                    <!--Card 3-->
-                                    <div class="col-5 col-sm-3 " style="max-width: 100%;">
-                                        <div class="card">
-                                            <a href="https://luaanslv.github.io/Projetogrecia/" target="_blank"><img src="assets/imagens/Projetogrecia.png" alt="Projetogrecia" class="card-img-top"></a>
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Projeto Grecia</h5>
-                                            <p class="card-text ">Esse projeto foi feito para aplicar meus conhecimentos.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <p>Skills: Html,Css,Javascript.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                           <!--Contato-->
                           <div id="contato-area">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-10">
-                                        <h3 class="main-title">Fale comigo</h3>
+                                        <h3 class="titulo">Fale comigo</h3>
                                     </div>
                                     <div class="col-md-4 contato-box">
                                         <i class="fab fa-whatsapp"></i>
                                         <h4>Whatsapp</h4>
                                         <p>+55 (11)997318719</p>
+                                    </div>
+                                    <div class="col-md-4 contato-box">
+                                        <i class="fab fa-instagram"></i>
+                                        <h4>Instagram</h4>
+                                        <p>dev.luu</p>
                                     </div>
                                     <div class="col-md-4 contato-box">
                                         <i class="fas fa-at"></i>
@@ -170,8 +186,6 @@
         <footer>
             <p>Feito por Luan silva</p>
         </footer>
-   
-    <script src="assets/script.js"></script>
 </body>
 
 </html>
