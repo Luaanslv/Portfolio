@@ -43,22 +43,41 @@ header{
     margin: 5% 0 90px 0;
     font-size: 40px;
     text-align: center;
+    text-decoration: underline 3px blue;
 }
 /*header*/
 .navbar{
     top: 0;
-    transition: background-color .4s ease-in-out;
     background-color: #001868;
     height: 6%;
     font-size: 20px;
     color: #000;
-    text-align: end;
 }
-.onTop{
-    background-color: transparent;
+
+.nav-item{
+    color: #fff;
+    font-size: 20px;
+}
+.nav-item:hover{
+    color: rgba(255, 255, 255, 0.678);
+    cursor: pointer;
 }
 .navbar-brand{
     font-family: 'Michroma', sans-serif;
+    color: #fff;
+}
+.navbar-brand:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.navbar-icon a > i{
+    color: #fff;
+    padding: 3px;
+    font-size: 30px;
+}
+.navbar-icon a > i:hover{
+    color: rgba(255, 255, 255, 0.678);
+    cursor: pointer;
 }
 
 .img-wrapper{
@@ -71,13 +90,12 @@ header{
     height: 100%;
     object-fit: cover;
     opacity: 0.5;
-    animation: zoom 25s ;
-    animation-iteration-count: infinite;
     
 }
+
 .banner{
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 15%;
 }
 @keyframes movebanner{
@@ -131,6 +149,37 @@ header{
     opacity: 1;
     border: 1px solid #fff;
 }
+/* projetos */
+.container-fluid {
+    padding: 0;
+    margin: 0%;
+}
+.card{
+    text-align: center;
+    width: 100%;
+    margin:auto;
+}
+ 
+.card p {
+    text-align: center;
+}
+.card-body{
+    background-color:#fff;
+    border: 1px solid black;
+}
+.card-footer{
+    color: #fff;
+}
+.text-area{
+    text-align: center;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 40%;
+    width: 30%;
+}
+.text-area p {
+    color: #000;
+}
 /*Conhecimentos*/
 
 .conhecimentos-box{
@@ -172,12 +221,12 @@ header{
     margin: auto;
     padding: 30px;
     width: 100%;
-    margin-top: 8%;
+    margin-top: 1%;
 }
 .img-fluid{
     max-width: 100%;
     width: 80%;
-    margin: auto;
+    margin: -110px auto;
     align-items: center;
 }
 .comentario{
@@ -188,39 +237,12 @@ header{
     text-align: end;
     color: blue;
 }
-/* projetos */
-.container-fluid {
-    padding: 0;
-    margin: 0%;
-}
-.card{
-    text-align: center;
-    width: 100%;
-    margin:auto;
-}
- 
-.card p {
-    text-align: center;
-}
-.card-body{
-    background-color:#fff;
-}
-.card-footer{
-    color: #fff;
-}
-.text-area{
-    text-align: center;
-    font-size: 14px;
-    border-radius: 10px;
-    height: 40%;
-    width: 30%;
-}
-.text-area p {
-    color: #000;
-}
+
 /*Contato*/
 .contato-box{
     text-align: center;
+    margin: 10px ;
+    padding: 0%;
 }
 .contato-box i{
     font-size: 40px;
@@ -239,6 +261,7 @@ header{
 footer p{
     text-align: center;
     color: #fff;
+    background-color: #001868;
     padding: 0;
     margin: 0;
 }
