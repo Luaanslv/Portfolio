@@ -19,14 +19,10 @@
     <header>
           <!--menu--> 
             <nav class="navbar navbar-expand-lg " >
-                <a class="navbar-brand" href="/"><p>Luan Silva</p></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
                 <div>
                   <ul class="navbar-nav">
                     <li><a class="nav-item nav-link" href="#projetos-area">Projetos</a></li>
-                    <li><a class="nav-item nav-link" href="#sobre">Sobre o Dev</a></li>
+                    <li><a class="nav-item nav-link" href="#sobre">Sobre</a></li>
                     <li><a class="nav-item nav-link" href="#contato-area">Contato</a></li>
                   </ul>
                   
@@ -40,11 +36,14 @@
             </nav>
             <!--home-->
             <div class="img-wrapper" id="home">
-                <img src="assets/imagens/bg.jpg" alt="bg" >
+                <img src="assets/imagens/LS.png" alt="logo" >
             </div>
             <div class="banner">
-                <h1>Front-end Developer</h1>
-                <h2> Oie, me chamo Luan da Silva.</h2>
+                <h1>Luan da Silva</h1>
+                <h2> Desenvolvedor Front-end</h2>
+            </div>
+            <div class="plus">
+                <a href="#projetos-area"><i class="fas fa-chevron-down"></i></a>
             </div>
           
     </header>
@@ -53,46 +52,54 @@
                 <div id="projetos-area">       
                     <div class="row">
                         <div class="container-fluid d-flex flex-wrap">
-                            <div class="col-12 " style="max-width: 100%;">
+                            <div class="col-12 " style="max-width: 100%;" data-anime="right">
                                 <h3 class="titulo">Projetos</h3>
                             </div>
                             <div class="col-4 col-sm-3 " data-anime="left">
                                 <div class="card" >
-                                    <a href="https://luaanslv.github.io/projetod10/" target="_blank"><img src="assets/imagens/Projetocursoemvideo.png" alt="Projetocursoemvideo" class="card-img-top" loading="lazy"></a>
+                                    <img src="assets/imagens/Projetocursoemvideo.png" alt="Projetocursoemvideo" class="card-img-top" loading="lazy">
                                 </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Projeto Androide</h5>
-                                    <p class="card-text">Tecnologias utilizadas: Html e css.</p>
-                                </div>
+                                 <div class="overlay">
+                                        <div class="content">
+                                            <h5 class="name">Projeto Androide</h5>
+                                            <p class="desc">Tecnologias utilizadas: Html e css.</p>
+                                        </div>
+                                    </div>
                             </div>
                             <!--Card2-->
                             <div class="col-4 col-sm-3 " style="max-width: 100%;" data-anime="left">
                                 <div class="card">
-                                    <a href="https://luaanslv.github.io/company/" target="_blank"><img src="assets/imagens/projetohoradecoda.png" alt="ProjetoHoradecoda" class="card-img-top" loading="lazy"></a>
+                                    <img src="assets/imagens/projetohoradecoda.png" alt="ProjetoHoradecoda" class="card-img-top" loading="lazy">
                                 </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Projeto Company</h5>
-                                        <p class="card-text">Tecnologias utilizadas: Html,Css,Javascript e Bootstrap.</p>
+                                    <div class="overlay">
+                                        <div class="content">
+                                            <h5 class="name">Projeto Company</h5>
+                                            <p class="desc">Tecnologias utilizadas: Html,Css,Javascript e Bootstrap.</p>
+                                        </div>
                                     </div>
                             </div>
                             <!--Card 3-->
                             <div class="col-4 col-sm-3 " style="max-width: 100%;" data-anime="left">
                                 <div class="card " >
-                                    <a href="https://github.com/Luaanslv/clonenetflix" target="_blank"><img src="assets/imagens/clone.png" alt="clonenetflix" class="card-img-top" loading="lazy"></a>
+                                    <img src="assets/imagens/clone.png" alt="clonenetflix" class="card-img-top" loading="lazy">
                                 </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Clone Netflix</h5>
-                                    <p class="card-text">Tecnologias utilizadas: Html,css,javascript e react. </p>
+                                <div class="overlay">
+                                    <div class="content">
+                                        <h5 class="name">Clone Netflix</h5>
+                                        <p class="desc">Tecnologias utilizadas: Html,css,javascript e react. </p>
+                                    </div>
                                 </div>
                             </div>
                             <!--card4-->
                             <div class="col-5 col-sm-3 " style="max-width: 100%;" data-anime="left">
                                 <div class="card " >
-                                    <a href="https://github.com/Luaanslv/css-sass" target="_blank"><img src="assets/imagens/galleria.png" alt="ProjetoGalleria" class="card-img-top" loading="lazy"></a>
+                                    <img src="assets/imagens/galleria.png" alt="ProjetoGalleria" class="card-img-top" loading="lazy">
                                 </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Projeto Galleria</h5>
-                                    <p class="card-text">Tecnologias utilizadas:Html,css,sass,javascript.</p>
+                                <div class="overlay">
+                                    <div class="content">
+                                        <h5 class="name">Projeto Galleria</h5>
+                                        <p class="desc">Tecnologias utilizadas:Html,css,sass,javascript.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -102,16 +109,13 @@
                     <div class="sobre-area" id="sobre">
                         <div class="container">
                             <div class="row">
-                                <div class="col-12">
-                                    <h3 class="titulo">Sobre</h3>
+                                <div class="col-12" data-anime="right">
+                                    <h3 class="titulo">Sobre o Dev</h3>
                                 </div>
-                                <div class="col-md-5">
-                                    <img src="assets/imagens/Luan-removebg-preview.png" alt="Luan" class="img-fluid" loading="lazy">
-                                </div>
-                                <div class="sobre-title col-md-6">
-                                    <h3 class="comentario" data-anime="left">/*</h3>
+                                <div class="sobre-title col-md-6" data-anime="left">
+                                    <h3 class="comentario" >/*</h3>
                                     <p class="text-justify"> Olá, Eu me chamo Luan. Sou Desenvolvedor Front-end. Estudo por conta própria com documentações,cursos... Tenho como objetivo me tornar Fullstack. Estou em busca do meu primeiro emprego caso tiver interesse, <a href="https://www.linkedin.com/in/luan-da-silva-7b08aa216/">Me manda uma mensagem!</a></p>
-                                    <h3 class="comentario2" data-anime="right">*/</h3>
+                                    <h3 class="comentario2">*/</h3>
                                 </div>
                             </div>
                         </div>
@@ -120,7 +124,7 @@
                 <div class="conhecimentos-area" id="conhecimentos" >
                     <div class="container">
                         <div class="row">
-                            <div class="col-10">
+                            <div class="col-10" data-anime="right">
                                 <h3 class="titulo">Skills</h3>
                             </div>
                             <div class="col-md-3 conhecimentos-box text-center" data-anime="left">
@@ -154,14 +158,14 @@
                           <div id="contato-area">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-10">
+                                    <div class="col-10" data-anime="right">
                                         <h3 class="titulo">Fale comigo</h3>
                                     </div>
-                                    <div class="col-7 contato-box">
+                                    <div class="col-7 contato-box" data-anime="left">
                                         <i class="fab fa-whatsapp"></i>
                                         <h4>+55 (11)997318719</h4>
                                     </div>
-                                    <div class="col-3 contato-box">
+                                    <div class="col-3 contato-box" data-anime="left">
                                         <i class="fas fa-at"></i>
                                         <h4>luaan.silva117@gmail.com</h4>
                                     </div>

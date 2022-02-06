@@ -36,12 +36,11 @@ main,footer{
 header{
     width: 100%;
     height: 90vh;
-    margin-bottom: 70px;
     display: flex;
 }
 .titulo{
     color: #000;
-    margin: 5% 0 90px 0;
+    margin: 5% 0 10px ;
     font-size: 40px;
     text-align: center;
     text-decoration: underline 3px blue;
@@ -49,7 +48,7 @@ header{
 /*header*/
 .navbar{
     top: 0;
-    background-color: #001868;
+    background-color: #001868cc;
     height: 100%;
     width: 100%;
     max-height: 6%;
@@ -92,22 +91,31 @@ header{
     cursor: pointer;
 }
 
-.img-wrapper{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.733);
-}
-.img-wrapper img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.5;
-}
 
 .banner{
     position: absolute;
     top: 35%;
     left: 15%;
+}
+.img-wrapper{
+    text-align: center;
+    margin-top: 6%;
+    margin-left: 30%;
+    animation: flip 1s 0.5s forwards;
+    opacity: 0;
+}
+.img-wrapper img{
+    width: 100%;
+    max-width: 600px;
+}
+@keyframes flip {
+   0%{
+       transform:  rotateX(150deg);
+   }
+   100%{
+       transform: rotateX(0deg);
+       opacity: 1;
+   }
 }
 @keyframes movebanner{
     0%{
@@ -118,12 +126,23 @@ header{
         opacity: 1;
     }
 }
+@keyframes pisca{
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
 .banner h1{
-    color: white;
-    font-size: 3.5rem;
+    color: #000;
+    font-size: 4rem;
     font-family:var(--font-primary);
     font-weight: 300;
-    line-height: 3.5rem;
+    line-height: 4.5rem;
     text-shadow: .2rem .3rem 2px rgba(0, 0, 0, 0.363);
     margin-bottom: 2rem;
     opacity: 0;
@@ -132,17 +151,31 @@ header{
 }
 .banner h2 {
     font-family: var(--font-secundary);
-    color: white;
-    font-size: 2rem;
+    color: #000;
+    font-size: 3rem;
     text-shadow: .2rem .2rem 2px rgba(0, 0, 0,.4 );
     margin-bottom: 2rem;
     opacity: 0;
     animation: movebanner 1s 0.7s forwards;
 }
-
-
+.plus{
+    text-align: center;
+    margin-top: 6%;
+    font-size: 40px;
+    color: #000;
+}
+.plus i{
+    cursor: pointer;
+    animation: pisca 1s infinite ease;
+}
+.plus i:hover{
+    animation: none;
+}
 
 /* projetos */
+#projetos-area{
+    margin-top: 5%;
+}
 .container-fluid {
     padding: 0;
     margin: 0%;
@@ -153,7 +186,39 @@ header{
 .card{
     text-align: center;
     width: 100%;
-    margin:auto;
+}
+.card img{
+    display: block;
+    position: absolute;
+    height: auto;
+}
+.content{
+    position: absolute;
+    margin-top: 10%;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+   
+    width: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    transition: .5s ease;
+     background-color: #001868;
+    width: 80%;
+    opacity: 0;
+    
+}
+
+.overlay:hover
+{
+    opacity: 1;
+    
 }
 
 .card p {
@@ -176,6 +241,7 @@ header{
 .text-area p {
     color: #000;
 }
+
 /*Conhecimentos*/
 
 .conhecimentos-box{
@@ -200,6 +266,7 @@ header{
 /* sobre eu */
 .sobre-area{
     background-color: rgba(248, 248, 248, 0.986);
+    margin-top: 15%;
 }
 .main-title::after{
     content: "";
@@ -211,19 +278,13 @@ header{
 }
 .sobre-title{
     color: #000;
-    text-align: center;
-    font-size: 16px;
-    margin: auto;
-    padding: 30px;
+    text-align: justify;
+    font-size: 20px;
+    max-width: 800px;
     width: 100%;
     margin-top: 1%;
 }
-.img-fluid{
-    max-width: 100%;
-    width: 80%;
-    margin: -110px auto;
-    align-items: center;
-}
+
 .comentario{
     text-align: start;
     color:blue;
