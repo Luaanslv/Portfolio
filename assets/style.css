@@ -185,6 +185,7 @@ header{
 .card{
     align-items: center;
     width: 100%; 
+    max-width: 100%;
     height: auto;
     border: 1px solid #000;
 }
@@ -192,6 +193,7 @@ header{
     display: block;
     position: relative;
     width: 100%;
+    max-width: 700px;
     height: auto;
 }
 .content{
@@ -238,7 +240,20 @@ header{
 .text-area p {
     color: #000;
 }
-
+.btn-projeto{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1%;
+}
+.btn-projeto a{
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+}
+.btn-projeto a:hover{
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.664);
+}
 /*Conhecimentos*/
 
 .conhecimentos-box{
@@ -302,13 +317,10 @@ header{
     font-size: 40px;
     margin-bottom: 10px;
 }
-.contato-box h3{
+.contato-box h4{
     font-size: 30px;
 }
-.contato-box p{
-    color: #fff;
-    font-size: 20px;
-}
+
 
 /* rodapé */
 
@@ -336,7 +348,8 @@ footer p{
 }
 /*resposividade*/
 @media screen and (max-width:768px){
-    body{
+    html,body{
+        max-width: 100%;
         overflow-x: hidden;
     }
     .navbar-brand{
@@ -384,14 +397,15 @@ footer p{
     #nav.active{
         display: flex;
         margin: auto;
+        transition: .2s ease;
     }
     button.icone:focus{
         outline: none;
     }
     /*banner*/
     .img-wrapper img{
-        max-width: 500px;
-        margin-left: 20%;
+        max-width: 400px;
+        margin-left: 10%;
     }
     .banner h1{
         margin-top: 10%;
@@ -400,6 +414,43 @@ footer p{
     }
     .banner h2{
         font-size: 1.3rem;
+    }
+    /*sobre*/
+    .sobre-title{
+        font-size: 16px;
+        text-align: justify;
+        width: 100%;
+        max-width: 500px;
+    }
+    /*conhecimentos*/
+    .conhecimentos-box i {
+        font-size: 50px;
+    }
+    .titulo{
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    /*projetos*/
+    .card{
+        max-width:100%;
+        width: 450px;
+        max-height: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .card img{
+        max-width: 100%;
+    }
+    /*contato*/
+    .contato-box{
+        margin: auto 10px;
+    }
+    .contato-box i{
+        margin: auto;
+    }
+    .contato-box h4{
+        font-size: 16px;
+        text-align: center;
     }
 }
 @media screen and (max-width:360px){
