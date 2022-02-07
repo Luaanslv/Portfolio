@@ -19,20 +19,19 @@
     <header>
           <!--menu--> 
             <nav class="navbar navbar-expand-lg " >
-                <div>
-                  <ul class="navbar-nav">
-                    <li><a class="nav-item nav-link" href="#projetos-area">Projetos</a></li>
-                    <li><a class="nav-item nav-link" href="#sobre">Sobre</a></li>
-                    <li><a class="nav-item nav-link" href="#contato-area">Contato</a></li>
-                  </ul>
-                  
-                </div>
                 <div class="navbar-icon">
                     <a href="https://www.instagram.com/luu.dev/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/luan-da-silva-7b08aa216/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/Luaanslv" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
-                <a href="javascript:void(0);" class="icon" onclick="acao()"><i class="fa fa-bars"></i></a>
+                <div id="nav">
+                  <ul class="navbar-nav" >
+                    <li><a class="nav-item nav-link" href="#projetos-area">Projetos</a></li>
+                    <li><a class="nav-item nav-link" href="#sobre">Sobre</a></li>
+                    <li><a class="nav-item nav-link" href="#contato-area">Contato</a></li>
+                  </ul>
+                </div>
+                <button id="btn-Mobile" class="icone"><i class="fa fa-bars"></i></button>
             </nav>
             <!--home-->
             <div class="img-wrapper" id="home">
@@ -43,68 +42,12 @@
                 <h2> Desenvolvedor Front-end</h2>
             </div>
             <div class="plus">
-                <a href="#projetos-area"><i class="fas fa-chevron-down"></i></a>
+                <a href="#sobre"><i class="fas fa-chevron-down"></i></a>
             </div>
           
     </header>
             <main>
-                   <!--Projetos-->
-                <div id="projetos-area">       
-                    <div class="row">
-                        <div class="container-fluid d-flex flex-wrap">
-                            <div class="col-12 " style="max-width: 100%;" data-anime="right">
-                                <h3 class="titulo">Projetos</h3>
-                            </div>
-                            <div class="col-4 col-sm-3 " data-anime="left">
-                                <div class="card" >
-                                    <img src="assets/imagens/Projetocursoemvideo.png" alt="Projetocursoemvideo" class="card-img-top" loading="lazy">
-                                </div>
-                                 <div class="overlay">
-                                        <div class="content">
-                                            <h5 class="name">Projeto Androide</h5>
-                                            <p class="desc">Tecnologias utilizadas: Html e css.</p>
-                                        </div>
-                                    </div>
-                            </div>
-                            <!--Card2-->
-                            <div class="col-4 col-sm-3 " style="max-width: 100%;" data-anime="left">
-                                <div class="card">
-                                    <img src="assets/imagens/projetohoradecoda.png" alt="ProjetoHoradecoda" class="card-img-top" loading="lazy">
-                                </div>
-                                    <div class="overlay">
-                                        <div class="content">
-                                            <h5 class="name">Projeto Company</h5>
-                                            <p class="desc">Tecnologias utilizadas: Html,Css,Javascript e Bootstrap.</p>
-                                        </div>
-                                    </div>
-                            </div>
-                            <!--Card 3-->
-                            <div class="col-4 col-sm-3 " style="max-width: 100%;" data-anime="left">
-                                <div class="card " >
-                                    <img src="assets/imagens/clone.png" alt="clonenetflix" class="card-img-top" loading="lazy">
-                                </div>
-                                <div class="overlay">
-                                    <div class="content">
-                                        <h5 class="name">Clone Netflix</h5>
-                                        <p class="desc">Tecnologias utilizadas: Html,css,javascript e react. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--card4-->
-                            <div class="col-5 col-sm-3 " style="max-width: 100%;" data-anime="left">
-                                <div class="card " >
-                                    <img src="assets/imagens/galleria.png" alt="ProjetoGalleria" class="card-img-top" loading="lazy">
-                                </div>
-                                <div class="overlay">
-                                    <div class="content">
-                                        <h5 class="name">Projeto Galleria</h5>
-                                        <p class="desc">Tecnologias utilizadas:Html,css,sass,javascript.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>  
+               
                         <!--Sobre eu-->
                     <div class="sobre-area" id="sobre">
                         <div class="container">
@@ -114,7 +57,7 @@
                                 </div>
                                 <div class="sobre-title col-md-6" data-anime="left">
                                     <h3 class="comentario" >/*</h3>
-                                    <p class="text-justify"> Olá, Eu me chamo Luan. Sou Desenvolvedor Front-end. Estudo por conta própria com documentações,cursos... Tenho como objetivo me tornar Fullstack. Estou em busca do meu primeiro emprego caso tiver interesse, <a href="https://www.linkedin.com/in/luan-da-silva-7b08aa216/">Me manda uma mensagem!</a></p>
+                                    <p class="text-justify"> Olá, Eu me chamo Luan. Sou Desenvolvedor Front-end. Estudo por conta própria com documentações,cursos... Tenho como objetivo me tornar Fullstack mas por enquanto estou me especializando no front-end. Eu chamei sua atenção ? <a href="https://www.linkedin.com/in/luan-da-silva-7b08aa216/">Me manda uma mensagem!</a></p>
                                     <h3 class="comentario2">*/</h3>
                                 </div>
                             </div>
@@ -154,6 +97,61 @@
                         </div>
                     </div>
                 </div>
+                    <!--Projetos-->
+                <div id="projetos-area">       
+                    <div class="row">
+                        <div class="container-fluid d-flex flex-wrap">
+                            <div class="col-12 " style="max-width: 100%;" data-anime="right">
+                                <h3 class="titulo">Projetos</h3>
+                            </div>
+                            <div class="col-4 col-sm-3 " data-anime="left">
+                                    <img src="assets/imagens/Projetocursoemvideo.png" alt="Projetocursoemvideo" class="card-img-top" loading="lazy">
+                                    <div class="overlay">
+                                        <div class="content">
+                                            <h5 class="name">Projeto Androide</h5>
+                                            <p class="desc">Tecnologias utilizadas: Html e css.</p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <!--Card2-->
+                            <div class="col-4 col-sm-3 " style="max-width: 100%;" data-anime="left">
+                                <div class="card">
+                                    <img src="assets/imagens/projetohoradecoda.png" alt="ProjetoHoradecoda" class="card-img-top" loading="lazy">
+                                </div>
+                                    <div class="overlay">
+                                        <div class="content">
+                                            <h5 class="name">Projeto Company</h5>
+                                            <p class="desc">Tecnologias utilizadas: Html,Css,Javascript e Bootstrap.</p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <!--Card 3-->
+                            <div class="col-4 col-sm-3 " style="max-width: 100%;" data-anime="left">
+                                <div class="card " >
+                                    <img src="assets/imagens/clone.png" alt="clonenetflix" class="card-img-top" loading="lazy">
+                                </div>
+                                <div class="overlay">
+                                    <div class="content">
+                                        <h5 class="name">Clone Netflix</h5>
+                                        <p class="desc">Tecnologias utilizadas: Html,css,javascript e react. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--card4-->
+                            <div class="col-5 col-sm-3" style="max-width: 100%;" data-anime="left">
+                                <div class="card " >
+                                    <img src="assets/imagens/galleria.png" alt="ProjetoGalleria" class="card-img-top" loading="lazy">
+                                </div>
+                                <div class="overlay">
+                                    <div class="content">
+                                        <h5 class="name">Projeto Galleria</h5>
+                                        <p class="desc">Tecnologias utilizadas:Html,css,sass,javascript.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
                           <!--Contato-->
                           <div id="contato-area">
                             <div class="container">

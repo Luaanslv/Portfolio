@@ -58,7 +58,7 @@ header{
     margin: auto;
     align-items: center;
 }
-.icon{
+.icone{
     display:none;
 }
 .nav-item{
@@ -90,7 +90,6 @@ header{
     color: rgba(255, 255, 255, 0.678);
     cursor: pointer;
 }
-
 
 .banner{
     position: absolute;
@@ -184,43 +183,41 @@ header{
     margin-top: -5px;
 }
 .card{
-    text-align: center;
-    width: 100%;
+    align-items: center;
+    width: 100%; 
+    height: auto;
+    border: 1px solid #000;
 }
 .card img{
     display: block;
-    position: absolute;
+    position: relative;
+    width: 100%;
     height: auto;
 }
 .content{
-    position: absolute;
-    margin-top: 10%;
-    color: #fff;
-    text-transform: uppercase;
     text-align: center;
-   
-    width: 100%;
+    color: #fff;
 }
-.overlay {
+.name{
+    margin-top: 30px;
+    font-size: 30px;
+}
+.desc{
+    font-size: 17px;
+}
+.overlay{
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
     right: 0;
+    bottom: 0;
+    width: 94%;
     height: 100%;
-    transition: .5s ease;
-     background-color: #001868;
-    width: 80%;
+    background:#001868da ;
     opacity: 0;
-    
+    transition: ease .5s;
 }
-
-.overlay:hover
-{
-    opacity: 1;
-    
-}
-
+.overlay:hover{opacity: 1;}
 .card p {
     text-align: center;
 }
@@ -266,7 +263,7 @@ header{
 /* sobre eu */
 .sobre-area{
     background-color: rgba(248, 248, 248, 0.986);
-    margin-top: 15%;
+    margin-top: 10%;
 }
 .main-title::after{
     content: "";
@@ -295,6 +292,7 @@ header{
 }
 
 /*Contato*/
+
 .contato-box{
     text-align: center;
     margin: 10px ;
@@ -347,12 +345,17 @@ footer p{
         margin: 0;
         top: 50%;
     }
-    .icon{
+    button.icone{
         display: block;
         color: #fff;
+        font-size: 30px;
+        border: 0 transparent;
+        background-color: transparent;
+        cursor: pointer;
     }
-    .icon:hover{
-        color: rgba(255, 255, 255, 0.678);
+    button.icone:hover{
+        color: rgba(255, 255, 255, 0.685);
+        border: 0 transparent;
     }
     .navbar{
         max-height: 20%;
@@ -362,15 +365,30 @@ footer p{
         position: relative;
         align-items: center;
     }
-    .navbar-nav{
-        background-color: #111;
+    #nav{
+        display: none; 
+    }
+    a.nav-item.nav-link{
+        padding: 5px;
+        text-align:right;
+        margin-left: 390px;
     }
     .nav-item{
         z-index: 999;
         font-size: 16px;
-        padding: 10px;
+        align-items: center;
     }
-    
+    div.navbar-icon{
+        margin: 0;
+    }
+    #nav.active{
+        display: flex;
+        margin: auto;
+    }
+    button.icone:focus{
+        outline: none;
+    }
+    /*banner*/
 }
 @media screen and (max-width:360px){
     /*Home*/
