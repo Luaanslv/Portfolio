@@ -315,6 +315,7 @@ header{
 .contato-box i{
     font-size: 40px;
     margin-bottom: 10px;
+    text-align: center;
 }
 .contato-box h4{
     font-size: 30px;
