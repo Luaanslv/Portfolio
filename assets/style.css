@@ -319,8 +319,6 @@ header{
 .contato-box h4{
     font-size: 30px;
 }
-
-
 /* rodapé */
 
 footer p{
@@ -390,9 +388,6 @@ footer p{
         font-size: 16px;
         align-items: center;
     }
-    div.navbar-icon{
-        margin: 0;
-    }
     #nav.active{
         display: flex;
         margin: auto;
@@ -452,7 +447,7 @@ footer p{
         text-align: center;
     }
 }
-@media (max-width:677px){
+@media screen and (max-width:677px){
     div.conhecimentos-box{
         width: 150px;
         height: auto;
@@ -469,55 +464,79 @@ footer p{
     }
 }
 @media screen and (max-width:360px){
-    /*Home*/
-    .banner h1{
-        font-size: 30px;
-        margin: 10px auto;
-    }
-    .banner h2{
-        font-size: 20px;
-    }
-    .navbar-brand{
-        margin: auto;
-        font-size: 20px;
-    }
-    /*Conhecimentos*/
-    .conhecimentos-box{
-        margin-bottom: 5px;
-        margin: auto;
-    }
-    .conhecimentos-box i {
-        font-size: 50px;
-        margin-top: 20px;
-        margin-bottom: 5px;
-    }
-    
-    /*Sobre*/
-    .img-fluid{
-        width: 100%;
-    }
-    .sobre-title{
-        border: 0;
-        font-size: 10px;
-    }
-
-    /*Projetos*/
-    .card{
-        width: 100%;
-        height: auto;
-        margin-top:10%;
-    }
-    .card-footer{
-        width: 100%;
-    }
-    .text-area{
-        border: 0;
-        font-size: 10px;
-    }
-    /*Contato*/
-    .contato-box h3{
-        text-align: center;
-        margin-top: 10px;
-    }
-
+    /*nav*/
+   .navbar{
+       height: 30%;
+   }
+   a.nav-item.nav-link{
+       padding: 0;
+       margin: 0 auto;
+       font-size: 16px;
+   }
+   div.navbar-icon{
+       margin: 0;
+   }
+   li{
+       width: 50px;
+   }
+    /*logo*/
+   .img-wrapper img{
+       max-width: 300px;
+   }
+   .banner{
+       top: 25%;
+       left: 5%;
+   }
+   .banner h1{
+       font-size: 25px;
+       margin-bottom: 5px;
+   }
+   .banner h2{
+       font-size: 16px;
+   }
+   .plus{
+       margin-top: 25%;
+   }
+   .sobre-area{
+       margin-top: 0;
+   }
+   /*overlay*/
+   .name{
+       font-size: 20px;
+   }
+   .desc{
+       font-size: 14px;
+   }
+   .btn-projeto{
+       margin-top: 5%;
+   }
+   .card{
+       margin-top: 1%;
+   }
+   /*contato*/
+   .contato-box{
+       text-align: center;
+       margin: 0 auto;
+       padding: 0;
+       align-items: center;
+       
+   }
+   .contato-box i{
+       font-size: 30px;
+   }
+   .email i{
+       text-align: center;
+       margin: 0%;
+   }
+   .contato-box h4{
+       font-size: 20px;
+       margin: 0 ;
+       margin-bottom: 10%;
+       padding: 0;
+   }
+   div.contato-box{
+       padding: 0px;
+       max-width:500px ;
+   }
+   
 }
