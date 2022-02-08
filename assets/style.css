@@ -201,11 +201,12 @@ header{
     color: #fff;
 }
 .name{
-    margin-top: 30px;
+    margin-top: 40px;
     font-size: 30px;
 }
 .desc{
     font-size: 17px;
+    margin-top: 10px;
 }
 .overlay{
     position: absolute;
@@ -223,13 +224,6 @@ header{
 .card p {
     text-align: center;
 }
-.card-body{
-    background-color:#fff;
-    border: 1px solid black;
-}
-.card-footer{
-    color: #fff;
-}
 .text-area{
     text-align: center;
     font-size: 14px;
@@ -242,8 +236,10 @@ header{
 }
 .btn-projeto{
     background-color: #fff;
-    border-radius: 10px;
-    padding: 1%;
+    border-radius: 5px;
+    padding: 2%;
+    margin-top: 9%;
+    width: 98%;
 }
 .btn-projeto a{
     color: #000;
@@ -252,7 +248,10 @@ header{
 }
 .btn-projeto a:hover{
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.664);
+    color: #000;
+}
+.btn-projeto:hover{
+    background-color: rgba(255, 255, 255, 0.795);
 }
 /*Conhecimentos*/
 
@@ -451,6 +450,22 @@ footer p{
     .contato-box h4{
         font-size: 16px;
         text-align: center;
+    }
+}
+@media (max-width:677px){
+    div.conhecimentos-box{
+        width: 150px;
+        height: auto;
+        margin: 10px;
+    }
+    .plus{
+        margin-top: 11% ;
+    }
+    .contato-box i{
+        text-align: center;
+    }
+    .email i{
+        margin-left: 50%;
     }
 }
 @media screen and (max-width:360px){
