@@ -495,6 +495,18 @@ footer p{
     }
     
 }
+@media screen and (max-width:500px){
+    a.nav-item.nav-link{
+        margin: 0;
+        margin-left: 170px;
+    }
+    .banner h2{
+        font-size: 20px;
+    }
+    div.conhecimentos-box{
+        width: 130px;
+    }
+}
 @media screen and (max-width:470px){
     .navbar{
         height: 20%;
