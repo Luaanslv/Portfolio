@@ -348,6 +348,200 @@ footer p{
     transform: translate3d(0px, 0px, 0px);
 }
 /*resposividade*/
+@media screen and (max-width:860px){
+    html,body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+   
+    .navbar{
+        max-height: 10%;
+        z-index: 999;
+        overflow: hidden;
+        margin: auto;
+        position: relative;
+        align-items: center;
+    }
+    ul.navbar-nav{
+        flex-direction: row;
+    }
+    
+    ul.navbar-nav{
+        width: 300px;
+    }
+    .nav-item{
+        z-index: 999;
+        font-size: 20px;
+    }
+    #nav.active{
+        display: flex;
+        margin: auto;
+        transition: .2s ease;
+    }
+    /*banner*/
+    .img-wrapper img{
+        max-width: 500px;
+        margin-left: 20%;
+    }
+    .banner h1{
+        margin-top: 10%;
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+    .banner h2{
+        font-size: 2rem;
+    }
+    /*sobre*/
+    .sobre-title{
+        font-size: 16px;
+        text-align: justify;
+        width: 100%;
+        max-width: 500px;
+    }
+    /*conhecimentos*/
+    .conhecimentos-box i {
+        font-size: 50px;
+    }
+    .titulo{
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    /*projetos*/
+    .card{
+        max-width:100%;
+        width: 300px;
+        max-height: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .card img{
+        max-width: 100%;
+    }
+    .name{
+        font-size: 20px;
+        margin-top:4% ;
+    }
+    .desc{
+        font-size: 14px;
+    }
+    .btn-projeto{
+        margin-top: 7%;
+    }
+    .card{
+        margin-top: 1%;
+    }
+    /*contato*/
+    .contato-box{
+        margin: auto 10px;
+    }
+    .contato-box i{
+        margin: auto;
+    }
+    .contato-box h4{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:790px){
+    html,body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .navbar-brand{
+        text-align: center;
+        font-size: 25px;
+        margin: 0;
+        top: 50%;
+    }
+    .navbar{
+        max-height: 10%;
+        z-index: 999;
+        overflow: hidden;
+        margin: auto;
+        position: relative;
+        align-items: center;
+    }
+    
+    a.nav-item.nav-link{
+        padding: 5px;
+        text-align:right;
+    }
+    .nav-item{
+        z-index: 999;
+        font-size: 20px;
+        align-items: center;
+    }
+    #nav.active{
+        display: flex;
+        margin: auto;
+        transition: .2s ease;
+    }
+    button.icone:focus{
+        outline: none;
+    }
+    /*banner*/
+    .img-wrapper img{
+        max-width: 400px;
+        margin-left: 10%;
+    }
+    .banner{
+        top: 25%;
+    }
+    .banner h1{
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .banner h2{
+        font-size: 1.3rem;
+    }
+    /*sobre*/
+    .sobre-title{
+        font-size: 16px;
+        text-align: justify;
+        width: 100%;
+        max-width: 500px;
+    }
+    /*conhecimentos*/
+    .conhecimentos-box i {
+        font-size: 50px;
+    }
+    .titulo{
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    /*projetos*/
+    .card{
+        max-width:100%;
+        width: 450px;
+        max-height: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .card img{
+        max-width: 100%;
+    }
+    .name{
+        font-size: 25px;
+        margin-top: 10%;
+    }
+    .desc{
+        font-size: 20px;
+    }
+    .btn-projeto{
+        margin-top: 10%;
+    }
+    /*contato*/
+    .contato-box{
+        margin: auto 10px;
+    }
+    .contato-box i{
+        margin: auto;
+    }
+    .contato-box h4{
+        font-size: 16px;
+        text-align: center;
+    }
+}
 @media screen and (max-width:768px){
     html,body{
         max-width: 100%;
@@ -372,24 +566,24 @@ footer p{
         border: 0 transparent;
     }
     .navbar{
-        max-height: 20%;
+        max-height: 10%;
         z-index: 999;
         overflow: hidden;
         margin: auto;
         position: relative;
         align-items: center;
     }
+   
     #nav{
         display: none; 
     }
     a.nav-item.nav-link{
         padding: 5px;
-        text-align:right;
-        margin-left: 390px;
+        margin-left: 50px;
     }
     .nav-item{
         z-index: 999;
-        font-size: 16px;
+        font-size: 20px;
         align-items: center;
     }
     #nav.active{
@@ -402,16 +596,19 @@ footer p{
     }
     /*banner*/
     .img-wrapper img{
-        max-width: 400px;
-        margin-left: 10%;
+        max-width: 500px;
+        margin-left: 20%;
     }
     .banner h1{
         margin-top: 10%;
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         margin-bottom: 10px;
     }
     .banner h2{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+    }
+    .banner{
+        top: 25%;
     }
     /*sobre*/
     .sobre-title{
@@ -467,6 +664,18 @@ footer p{
         margin-left: 50%;
     }
 }
+@media screen and (max-width:614px){
+    a.nav-item.nav-link{
+        padding: 5px;
+        margin-left: 8%;
+    }
+}
+@media screen and (max-width:600px){
+    a.nav-item.nav-link{
+        padding: 5px;
+        margin-left: 8%;
+    }
+}
 @media screen and (max-width:560px){
     div.navbar-icon{
         padding: 0;
@@ -475,8 +684,11 @@ footer p{
     a.nav-item.nav-link{
         padding: 0;
         margin: 0 auto;
-        margin-left: 300px;
-        font-size: 16px;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    li{
+        width: 200px;
     }
     .banner{
         left: 5%;
@@ -490,15 +702,18 @@ footer p{
     a.nav-item.nav-link{
         padding: 0;
         margin: 0 auto;
-        margin-left: 300px;
+        margin-left: 30px;
         font-size: 16px;
+    }
+    li{
+        width: 60px;
     }
     /*banner*/
     .img-wrapper img{
         max-width: 500px;
     }
     .banner{
-        top: 30%;
+        top: 20%;
         left: 5%;
     }
     .banner h1{
@@ -513,7 +728,7 @@ footer p{
 @media screen and (max-width:500px){
     a.nav-item.nav-link{
         margin: 0;
-        margin-left: 170px;
+        margin-left: 20px;
     }
     .banner h2{
         font-size: 20px;
@@ -526,25 +741,26 @@ footer p{
     .navbar{
         height: 20%;
     }
+    ul.navbar-nav{
+        width: 220px;
+    }
     a.nav-item.nav-link{
         padding: 0;
-        margin: 0 auto;
-        margin-left: 100px;
+        margin: 0;
+        margin-left: 10px;
         font-size: 16px;
     }
     
     div.navbar-icon{
         margin: 0;
     }
-    li{
-        width: 50px;
-    }
+    
     /*banner*/
     .img-wrapper img{
         max-width: 500px;
     }
     .banner{
-        top: 30%;
+        top: 20%;
         left: 5%;
     }
     .banner h1{
@@ -561,29 +777,88 @@ footer p{
         margin-top: 10px;
     }
 }
-@media screen and (max-width:360px){
+@media screen and (max-width:390px){
+    div.navbar-icon{
+        padding: 0;
+        margin: 0 ;
+    }
+    .navbar-icon{
+        font-size: 16px;
+    }
+    a.nav-item.nav-link{
+        padding: 0;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    .banner{
+        top: 15%;
+    }
+    .btn-projeto{
+        margin-top: 8%;
+    }
+    .name{
+        font-size: 20px;
+    }
+    .desc{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:386px){
+    div.navbar-icon{
+        padding: 0;
+        margin: 0 ;
+    }
+    .navbar-icon{
+        font-size: 16px;
+    }
+    a.nav-item.nav-link{
+        font-size: 14px;
+        margin: 5px;
+    }
+    ul.navbar-nav{
+        width: 100px;
+        align-items: center;
+        margin-right: 30px;
+    }
+    .banner{
+        top: 15%;
+    }
+    .btn-projeto{
+        margin-top: 8%;
+    }
+    .name{
+        font-size: 20px;
+    }
+    .desc{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:365px){
     /*nav*/
-   .navbar{
-       height: 30%;
-   }
-   a.nav-item.nav-link{
-       padding: 0;
-       margin: 0 auto;
-       margin-left: 50px;
-       font-size: 16px;
-   }
-   div.navbar-icon{
-       margin: 0;
-   }
-   li{
-       width: 50px;
-   }
+    .navbar{
+        height: 20%;
+    }
+    ul.navbar-nav{
+        width: 100px;
+        margin-right: 54px;
+    }
+    a.nav-item.nav-link{
+        padding: 3px;
+        margin: 0;
+        font-size: 15px;
+    }
+    
+    div.navbar-icon{
+        margin: 0;
+    }
+    
+   
     /*logo*/
    .img-wrapper img{
        max-width: 300px;
    }
    .banner{
-       top: 25%;
+       top: 15%;
        left: 5%;
    }
    .banner h1{
@@ -594,7 +869,7 @@ footer p{
        font-size: 16px;
    }
    .plus{
-       margin-top: 25%;
+       margin-top: 30%;
    }
    .sobre-area{
        margin-top: 0;
