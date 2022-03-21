@@ -7,6 +7,6 @@
 - :bug: bugs 
 - 🚩 nova funcionabilidade 
 
-###Tecnologias
+### Tecnologias
 - html e css
 - javascript
