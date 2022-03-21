@@ -6,3 +6,7 @@
  - :dragon: atualizações
 - :bug: bugs 
 - 🚩 nova funcionabilidade 
+
+###Tecnologias
+- html e css
+- javascript
