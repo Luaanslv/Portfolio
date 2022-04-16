@@ -1,11 +1,8 @@
 # Portfolio
  https://luaanslv.github.io/Portfolio/
  
- ## Symbols
- 
- - :dragon: atualizações
-- :bug: bugs 
-- 🚩 nova funcionabilidade 
+ ## Obetivo
+Mostrar minhas habilidades e projetos tudo em uma landing page.
 
 ### Tecnologias
 - html e css
