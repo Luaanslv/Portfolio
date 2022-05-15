@@ -1,41 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Permanent+Marker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Permanent+Marker&display=swap");
 
-*{
+$duration-banner: 5;
+$delay:0.5;
+$duration-nav:7;
+$delay-apre:2.5;
+
+
+* {
     margin: 0%;
     padding: 0%;
 }
 
-header{
-    background-image: linear-gradient(90deg,#fff 50%, #180387 1%);
-    height: 90vh;
-    .menu-nav{
+body {
+    overflow: visible;
+
+    header {
+        background-image: url('imagens/banner-fundo.webp');
+        width: 100%;
+        height: 100vh;
+        padding: 1%;
+        max-height: 100%;
+    }
+
+    .menu-nav {
         display: flex;
         list-style: none;
         float: right;
-        margin: 30px 20px 0px 0px;
-        .itens{
-            flex-direction: row;
-            color: rgb(255, 255, 255);
+        font-weight: bold;
+        margin-top: 12px;
+        margin-right: 20px;
+        align-items: center;
+        opacity: 0;
+        animation: show-nav $duration-nav + s linear $delay + s forwards;
+        .itens {
+            color: #fff;
             outline: none;
             text-decoration: none;
-             margin-right: 30px;
-             font-size: 25px;
-             font-family: 'Cormorant Garamond', serif;
+            margin: 0px 20px 0px 0px;
+            font-size: 20px;
+            font-family: 'Cormorant Garamond 600', serif;
+            transition: ease;
         }
-     }
-     .banner{
-         text-align: center;
-         font-size: 25px;
-         margin-top: 200px;
-         font-family: 'Permanent Marker', cursive;
-        .white{
+    }
+
+    .menu-icons {
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        padding: 10px;
+        margin-left: 20px;
+        margin-top: 10px;
+        align-items: center;
+        opacity: 0;
+        animation: show-nav $duration-nav + s linear $delay + s forwards;
+        .nav-icons {
+            font-size: 25px;
+            align-items: center;
+            margin: 0px 20px 0px 0px;
+            transition: ease;
+            cursor: pointer;
             color: #fff;
         }
-        .left{
-            margin-right: 80px;
-        } 
-         .right{
-             margin-left: 510px;
-         }
-     }
+    }
+
+    .icone-bars {
+        display: none;
+    }
+
+    .nav-icons:hover {
+        color: rgb(70, 68, 68);
+    }
+
+    .itens:hover,
+    .icone-bars:hover {
+        color: rgb(179, 175, 175);
+    }
+
+    .banner {
+        max-width: 90%;
+        margin: auto;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 200px;
+        font-family: 'Permanent Marker', cursive;
+        color: #fff;
+        .banner-img{
+            width: 100%;
+            animation: banner-zoom $duration-banner + s ease-in-out $delay + s forwards;
+            $delay:$duration-banner + $delay;
+            transform: scale(3.5);
+        }
+        .img-apresenta{
+        width:550px;
+        position: relative;
+        top: -180px;
+        animation: show-nav $duration-nav + s linear $delay-apre + s forwards;
+        opacity: 0;
+    }
+    }
+    
+}
+
+@keyframes banner-zoom {
+    0% {
+        transform: scale(3.5);
+    }
+
+    100% {
+        transform: scale(1);
+        width: 100%;
+    }
+}
+
+@keyframes show-nav{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
