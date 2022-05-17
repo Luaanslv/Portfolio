@@ -2,18 +2,14 @@
 * {
   margin: 0%;
   padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
 }
 
 body {
-  overflow: visible;
-}
-
-body header {
   background-image: url("imagens/banner-fundo.webp");
-  width: 100%;
-  height: 100vh;
-  padding: 1%;
-  max-height: 100%;
+  background-position: center;
 }
 
 body .menu-nav {
@@ -111,6 +107,82 @@ body .banner .img-apresenta {
   -webkit-animation: show-nav 7s linear 2.5s forwards;
           animation: show-nav 7s linear 2.5s forwards;
   opacity: 0;
+}
+
+body .nave-asteroids {
+  -webkit-animation: show-nav 7s linear 2.5s forwards;
+          animation: show-nav 7s linear 2.5s forwards;
+  opacity: 0;
+  text-align: center;
+}
+
+body .nave-asteroids img {
+  margin-top: 100px;
+}
+
+body .imgNetuno {
+  margin-top: 28%;
+}
+
+body .imgNetuno :hover {
+  cursor: pointer;
+}
+
+body .sobre-area .sobre-dev {
+  -webkit-transition: max-height 1s;
+  transition: max-height 1s;
+  position: relative;
+}
+
+body .sobre-area .sobre-text {
+  display: none;
+  background-color: rgba(197, 191, 191, 0.856);
+  border-radius: 10px;
+  padding: 10px;
+  height: 90vh;
+  margin: auto;
+  position: relative;
+  margin-top: -600px;
+  width: 50%;
+}
+
+body .sobre-area .sobre-text h3 {
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 100px;
+  margin-top: 60px;
+}
+
+body .sobre-area .sobre-text p {
+  color: #000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+}
+
+body .sobre-area .sobre-text .exit {
+  color: rgba(0, 0, 0, 0.521);
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  float: right;
+  padding: 10px;
+}
+
+body .imgUrano {
+  float: right;
+}
+
+body .conhecimentos-area {
+  margin-top: 400px;
+}
+
+body .conhecimentos-area .skills {
+  display: none;
 }
 
 @-webkit-keyframes banner-zoom {

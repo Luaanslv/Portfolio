@@ -1,38 +1,23 @@
-const debounce = function (func, wait, immediate) {
-    let timeout;
-    return function (...args) {
-        const context = this;
-        const later = function () {
-            timeout = null;
-        }
-    }
-}
+var btnDiv = document.querySelector('#show');
+var div = document.querySelector('#descricao');
+var container = document.querySelector('.container')
+var btnExit = document.querySelector('#exit');
 
-const target = document.querySelectorAll('[data-anime]');
-const animationClass = 'animate';
 
-function animeScroll() {
-    const windowTop = window.pageYOffset + ((window.innerHeight * 3) /3.4);
-    target.forEach(function (element) {
-        if ((windowTop) > element.offsetTop) {
-            element.classList.add(animationClass);
-        } else {
-        element.classList.remove(animationClass);
+btnDiv.addEventListener('click', function () {
+    
+    container.style.backgroundColor = 'rgba(0, 0, 0, 0.658)';
+    
+    if (div.style.display === "block") {
+        div.style.display = "none";
+    } else {
+        div.style.display = "block";
     }
-    }) 
-}
-animeScroll();
-if (target.length) {
-    window.addEventListener('scroll', function () {
-    animeScroll();
+    
 })
-}
-// script menu
-const btnMobile = document.querySelector('#btn-Mobile');
 
-function toggleMenu() {
-    const nav = document.querySelector('#nav');
-    nav.classList.toggle('active');
-}
-
-btnMobile.addEventListener('click', toggleMenu);
+btnExit.addEventListener('click', function () {
+    if (div.style.display === "block") {
+        div.style.display = "none"
+    }
+})

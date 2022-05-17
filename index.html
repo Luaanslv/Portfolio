@@ -11,67 +11,78 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/assets/site.webmanifest">
-    <!--Font-awesome-->
-    <script src="https://kit.fontawesome.com/5d7b6d51a9.js" crossorigin="anonymous"></script>
-    <!--script-->
-    <script src="assets/script.js"></script>
+
 </head>
 
 <body>
     <header>
         <!--menu-->
         <nav>
-                <div class="nav">
-                    <ul class="menu-nav">
-                        <li><a class="itens" href="/">Home</a></li>
-                        <li><a class="itens" href="#sobre">Sobre</a></li>
-                        <li><a class="itens" href="#contato-area">Contato</a></li>
-                        <li><a class="itens" href="#projetos-area">Projetos</a></li>
-                    </ul>
-                    <ul class="menu-icons">
-                        <li class="nav-icons"><i class="fa fa-github-alt"></i></li>
-                        <li class="nav-icons"><i class="fab fa-discord"></i></li>
-                        <li class="nav-icons"><i class="fa fa-linkedin"></i></li>
-                    </ul>
-                </div>
+            <div class="nav">
+                <ul class="menu-nav">
+                    <li><a class="itens" href="/">Home</a></li>
+                    <li><a class="itens" href="#sobre">Sobre</a></li>
+                    <li><a class="itens" href="#contato-area">Contato</a></li>
+                    <li><a class="itens" href="#projetos-area">Projetos</a></li>
+                </ul>
+                <ul class="menu-icons">
+                    <li class="nav-icons"><i class="fa fa-github-alt"></i></li>
+                    <li class="nav-icons"><i class="fab fa-discord"></i></li>
+                    <li class="nav-icons"><i class="fa fa-linkedin"></i></li>
+                </ul>
+            </div>
             <button id="btn-Mobile" class="icone-bars"><i class="fa fa-bars"></i></button>
         </nav>
         <!--home-->
         <div class="banner">
-            <img src="assets/imagens/banner.png" alt="banner" class="banner-img"> 
+            <img src="assets/imagens/banner.png" alt="banner" class="banner-img">
             <img src="assets/imagens/Apresentação.png" alt="apresentação" class="img-apresenta">
+        </div>
+        <div class="nave-asteroids">
+            <img src="assets/imagens/nave.png" alt="nave espacial">
         </div>
 
     </header>
     <main>
-
         <!--Sobre eu-->
+        <div class="imgNetuno">
+            <img src="assets/imagens/netuno.png" alt="planeta netuno" id="show">
+        </div>
         <div class="sobre-area" id="sobre">
             <div class="container">
-                <div class="row">
-                    <div class="col-12" data-anime="right">
-                        <h3 class="titulo">Sobre o Dev</h3>
-                    </div>
-                    <div class="sobre-title col-md-6" data-anime="left">
-                        <h3 class="comentario">/*</h3>
-                        <p> Olá, Eu me chamo Luan. Sou Desenvolvedor Front-end. Estudo por conta própria com
-                            documentações,cursos... Tenho como objetivo me tornar Fullstack mas por enquanto estou me
-                            especializando na area front-end. Eu chamei sua atenção? <a
-                                href="https://www.linkedin.com/in/luan-da-silva-7b08aa216/">Me manda uma mensagem.</a>
+                <div class="sobre-dev">
+                    <div class="sobre-text" id="descricao">
+                        <button class="exit" id="exit">X</button>
+                        <h3>Sobre o Dev</h3>
+                        <p>Olá visitante!<br>
+                            <br>
+                            <br> Meu nome é Luan da Silva, sou Desenvolvedor Front-end e tenho como objetivo me
+                            especializar na área.
+                            Meu mestre de ensino é o Google, com ele estou expandindo meus conhecimentos e conhecendo
+                            tecnologias novas. Programar para a web é bem divertido, por isso decidi focar no front-end
+                            para um dia chegar ao nivel FullStack. Criei esse Portfolio inspirado em Star Wars e no jogo Asteroids. As
+                            tecnologias que eu utilizei para fazer são: HTML, CSS, Javascript e SASS.
+                            <br>Espero que você goste!
+                            <br>
+                            <br>
+                            <br>” Que a força esteja com você ”
+
                         </p>
-                        <h3 class="comentario2">*/</h3>
                     </div>
                 </div>
             </div>
         </div>
         <!--Conhecimento-->
+        <div class="imgUrano">
+            <img src="assets/imagens/urano.png" alt="planeta urano" clas>
+        </div>
         <div class="conhecimentos-area" id="conhecimentos">
             <div class="container">
-                <div class="row">
-                    <div class="col-10" data-anime="right">
-                        <h3 class="titulo">Skills</h3>
+                <div class="skills" class="descricao">
+                    <div class="titulo">
+                        <h3>Skills</h3>
                     </div>
-                    <div class="col-md-3 conhecimentos-box text-center" data-anime="left">
+                    <div class="conhecimentos-box">
                         <i class="fab fa-html5"></i>
                         <h3>Html</h3>
                     </div>
@@ -167,7 +178,7 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
     </main>
     <footer>
         <div id="contato-area">
@@ -177,6 +188,11 @@
             </div>
         </div>
     </footer>
+
+    <!--Font-awesome-->
+    <script src="https://kit.fontawesome.com/5d7b6d51a9.js" crossorigin="anonymous"></script>
+    <!--script-->
+    <script src="assets/script.js"></script>
 </body>
 
 </html>
