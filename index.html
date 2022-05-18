@@ -35,6 +35,7 @@
         </nav>
         <!--home-->
         <div class="banner">
+            
             <img src="assets/imagens/banner.png" alt="banner" class="banner-img">
             <img src="assets/imagens/Apresentação.png" alt="apresentação" class="img-apresenta">
         </div>
@@ -52,7 +53,7 @@
             <div class="container">
                 <div class="sobre-dev">
                     <div class="sobre-text" id="descricao">
-                        <button class="exit" id="exit">X</button>
+                        <button class="exit" id="exit-sobre">X</button>
                         <h3>Sobre o Dev</h3>
                         <p>Olá visitante!<br>
                             <br>
@@ -60,7 +61,8 @@
                             especializar na área.
                             Meu mestre de ensino é o Google, com ele estou expandindo meus conhecimentos e conhecendo
                             tecnologias novas. Programar para a web é bem divertido, por isso decidi focar no front-end
-                            para um dia chegar ao nivel FullStack. Criei esse Portfolio inspirado em Star Wars e no jogo Asteroids. As
+                            para um dia chegar ao nivel FullStack. Criei esse Portfolio inspirado em Star Wars e no jogo
+                            Asteroids. As
                             tecnologias que eu utilizei para fazer são: HTML, CSS, Javascript e SASS.
                             <br>Espero que você goste!
                             <br>
@@ -74,119 +76,51 @@
         </div>
         <!--Conhecimento-->
         <div class="imgUrano">
-            <img src="assets/imagens/urano.png" alt="planeta urano" clas>
+            <img src="assets/imagens/urano.png" alt="planeta urano" id="urano">
         </div>
-        <div class="conhecimentos-area" id="conhecimentos">
+        <div class="conhecimentos-area" id="skills">
+            <div class="titulo-skills">
+                <button class="exit-skills" id="exitSkills">X</button>
+                <h3>Skills</h3>
+            </div>
             <div class="container">
-                <div class="skills" class="descricao">
-                    <div class="titulo">
-                        <h3>Skills</h3>
-                    </div>
+                <div class="skills">
                     <div class="conhecimentos-box">
                         <i class="fab fa-html5"></i>
-                        <h3>Html</h3>
+                        <p>Html</p>
                     </div>
-                    <div class="col-md-3 conhecimentos-box text-center" data-anime="left">
+                    <div class="conhecimentos-box">
                         <i class="fab fa-css3-alt"></i>
-                        <h3 class>Css</h3>
+                        <p class>Css</p>
                     </div>
-                    <div class="col-md-3 conhecimentos-box text-center" data-anime="left">
+                    <div class="conhecimentos-box">
                         <i class="fab fa-js-square "></i>
-                        <h3>Javascript</h3>
+                        <p>Javascript</p>
                     </div>
-                    <div class="col-md-3 conhecimentos-box text-center" data-anime="left">
-                        <i class="fab fa-bootstrap"></i>
-                        <h3>Bootstrap</h3>
-                    </div>
-                    <div class="col-md-3 conhecimentos-box text-center" data-anime="left">
+                    <div class="conhecimentos-box">
                         <i class="fab fa-sass"></i>
-                        <h3>Sass</h3>
+                        <p>Sass</p>
                     </div>
-                    <div class="col-md-3 conhecimentos-box text-center" data-anime="left">
+                    <div class="conhecimentos-box">
                         <i class="fab fa-react"></i>
-                        <h3>React.js</h3>
+                        <p>React.js</p>
+                    </div>
+                    <div class="conhecimentos-box">
+                        <i class="fab fa-figma"></i>
+                        <p>Figma</p>
                     </div>
                 </div>
             </div>
         </div>
         <!--Projetos-->
-        <div id="projetos-area">
-            <div class="row">
-                <div class="container-fluid d-flex flex-wrap">
-                    <div class="col-12 " style="max-width: 100%;" data-anime="right">
-                        <h3 class="titulo">Projetos</h3>
-                    </div>
-                    <div class="col-4 col-sm-3 " style="max-width: 100%;" data-anime="left">
-                        <div class="card">
-                            <img src="assets/imagens/Projetocursoemvideo.png" alt="Projetocursoemvideo"
-                                class="card-img-top" loading="lazy">
-                        </div>
-                        <div class="overlay">
-                            <div class="content">
-                                <h5 class="name">Projeto Androide</h5>
-                                <p class="desc"><strong>Tecnologias:</strong> Html e Css.</p>
-                                <a href="https://luaanslv.github.io/projetod10/" target="_blank"><button
-                                        class="btn-projeto">Conferir Projeto</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Card2-->
-                    <div class="col-4 col-sm-3 " style="max-width: 100%;" data-anime="left">
-                        <div class="card ">
-                            <img src="assets/imagens/projetohoradecoda.png" alt="clonenetflix" class="card-img-top"
-                                loading="lazy">
-                        </div>
-                        <div class="overlay">
-                            <div class="content">
-                                <h5 class="name">Projeto company</h5>
-                                <p class="desc"><strong>Tecnologias:</strong> Html,css,javascript e Bootstrap. </p>
-                                <a href="https://luaanslv.github.io/company/" target="_blank"><button
-                                        class="btn-projeto">Conferir Projeto</button></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Card 3-->
-                    <div class="col-4 col-sm-3 " style="max-width: 100%;" data-anime="left">
-                        <div class="card ">
-                            <img src="assets/imagens/clone.png" alt="clonenetflix" class="card-img-top" loading="lazy">
-                        </div>
-                        <div class="overlay">
-                            <div class="content">
-                                <h5 class="name">Clone Netflix</h5>
-                                <p class="desc"><strong>Tecnologias:</strong> Html,css,javascript e react. </p>
-                                <a href="https://github.com/Luaanslv/clonenetflix" target="_blank"><button
-                                        class="btn-projeto">Conferir Projeto</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--card4-->
-                    <div class="col-4 col-sm-3" style="max-width: 100%;" data-anime="left">
-                        <div class="card ">
-                            <img src="assets/imagens/galleria.png" alt="ProjetoGalleria" class="card-img-top"
-                                loading="lazy">
-                        </div>
-                        <div class="overlay">
-                            <div class="content">
-                                <h5 class="name">Projeto Galleria</h5>
-                                <p class="desc"><strong>Tecnologias:</strong> Html,css,sass e javascript.</p>
-                                <a href="https://github.com/Luaanslv/css-sass" target="_blank"><button
-                                        class="btn-projeto">Conferir Projeto</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="projeto-area">
+            <div class="container">
+                <h3>Projetos</h3>
             </div>
-        </div>
         </div>
     </main>
     <footer>
-        <div id="contato-area">
-            <div class="container">
-                <h6>fale comigo:</h6>
 
-            </div>
-        </div>
     </footer>
 
     <!--Font-awesome-->

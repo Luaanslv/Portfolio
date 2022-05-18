@@ -7,6 +7,11 @@
   color: #fff;
 }
 
+* h3 {
+  text-align: center;
+  font-size: 50px;
+}
+
 body {
   background-image: url("imagens/banner-fundo.webp");
   background-position: center;
@@ -121,7 +126,7 @@ body .nave-asteroids img {
 }
 
 body .imgNetuno {
-  margin-top: 28%;
+  margin-top: 20%;
 }
 
 body .imgNetuno :hover {
@@ -139,10 +144,10 @@ body .sobre-area .sobre-text {
   background-color: rgba(197, 191, 191, 0.856);
   border-radius: 10px;
   padding: 10px;
-  height: 90vh;
+  height: 70vh;
   margin: auto;
   position: relative;
-  margin-top: -600px;
+  margin-top: -400px;
   width: 50%;
 }
 
@@ -175,14 +180,65 @@ body .sobre-area .sobre-text .exit {
 
 body .imgUrano {
   float: right;
+  cursor: pointer;
 }
 
 body .conhecimentos-area {
-  margin-top: 400px;
+  background-color: rgba(197, 191, 191, 0.856);
+  width: 65%;
+  height: 30vh;
+  position: relative;
+  left: 100px;
+  margin-top: 100px;
+  display: none;
+  bottom: 50px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+body .conhecimentos-area .titulo-skills {
+  text-align: center;
+  margin: auto 200px;
+}
+
+body .conhecimentos-area .titulo-skills h3 {
+  color: #000;
+}
+
+body .conhecimentos-area .titulo-skills .exit-skills {
+  color: rgba(0, 0, 0, 0.521);
+  border: none;
+  background: none;
+  font-size: 20px;
+  float: right;
+  left: 190px;
+  margin-top: 10px;
+  position: relative;
+  cursor: pointer;
 }
 
 body .conhecimentos-area .skills {
-  display: none;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -200px;
+}
+
+body .conhecimentos-area .skills .conhecimentos-box {
+  margin: 20px 30px 50px 0px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+body .conhecimentos-area .skills .conhecimentos-box p, body .conhecimentos-area .skills .conhecimentos-box i {
+  color: #000;
+}
+
+body .projeto-area h3 {
+  margin-top: 500px;
+  text-align: center;
 }
 
 @-webkit-keyframes banner-zoom {
