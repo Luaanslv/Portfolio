@@ -1,0 +1,55 @@
+.imgUrano {
+    float: right;
+    cursor: pointer;
+}
+
+.conhecimentos-area {
+    background-color: rgba(197, 191, 191, 0.856);
+    width: 65%;
+    height: 30vh;
+    position: relative;
+    left: 100px;
+    margin-top: 100px;
+    display: none;
+    bottom: 50px;
+    padding: 10px;
+    border-radius: 10px;
+
+    .titulo-skills {
+        text-align: center;
+        margin: auto 200px;
+
+        h3 {
+            color: #000;
+        }
+        .exit-skills {
+            color: rgba(0, 0, 0, 0.521);
+            border: none;
+            background: none;
+            font-size: 20px;
+            float: right;
+            left: 190px;
+            margin-top: 10px;
+            position: relative;
+            cursor: pointer;
+        }
+    }
+
+    .skills {
+        float: right;
+        display: flex;
+        margin-top: -200px;
+
+        .conhecimentos-box {
+            margin: 20px 30px 50px 0px;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+
+            p,
+            i {
+                color: #000;
+            }
+        }
+    }
+}

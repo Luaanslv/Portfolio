@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Permanent+Marker&display=swap");
+.menu-nav {
+  display: flex;
+  list-style: none;
+  float: right;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-right: 20px;
+  align-items: center;
+  opacity: 0;
+  -webkit-animation: show-nav 7s linear 0.5s forwards;
+          animation: show-nav 7s linear 0.5s forwards;
+}
+.menu-nav .itens {
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+  margin: 0px 20px 0px 0px;
+  font-size: 20px;
+  font-family: "Cormorant Garamond 600", serif;
+  transition: ease;
+}
+
+.menu-icons {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  align-items: center;
+  opacity: 0;
+  -webkit-animation: show-nav 7s linear 0.5s forwards;
+          animation: show-nav 7s linear 0.5s forwards;
+}
+.menu-icons .nav-icons {
+  font-size: 25px;
+  align-items: center;
+  margin: 0px 20px 0px 0px;
+  transition: ease;
+  cursor: pointer;
+  color: #fff;
+}
+
+.icone-bars {
+  display: none;
+}
+
+.nav-icons:hover {
+  color: rgb(70, 68, 68);
+}
+
+.itens:hover,
+.icone-bars:hover {
+  color: rgb(179, 175, 175);
+}
+
+.imgUrano {
+  float: right;
+  cursor: pointer;
+}
+
+.conhecimentos-area {
+  background-color: rgba(197, 191, 191, 0.856);
+  width: 65%;
+  height: 30vh;
+  position: relative;
+  left: 100px;
+  margin-top: 100px;
+  display: none;
+  bottom: 50px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.conhecimentos-area .titulo-skills {
+  text-align: center;
+  margin: auto 200px;
+}
+.conhecimentos-area .titulo-skills h3 {
+  color: #000;
+}
+.conhecimentos-area .titulo-skills .exit-skills {
+  color: rgba(0, 0, 0, 0.521);
+  border: none;
+  background: none;
+  font-size: 20px;
+  float: right;
+  left: 190px;
+  margin-top: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.conhecimentos-area .skills {
+  float: right;
+  display: flex;
+  margin-top: -200px;
+}
+.conhecimentos-area .skills .conhecimentos-box {
+  margin: 20px 30px 50px 0px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.conhecimentos-area .skills .conhecimentos-box p,
+.conhecimentos-area .skills .conhecimentos-box i {
+  color: #000;
+}
+
+.imgNetuno {
+  margin-top: 20%;
+}
+.imgNetuno :hover {
+  cursor: pointer;
+}
+
+.sobre-area .sobre-dev {
+  transition: max-height 1s;
+  position: relative;
+}
+.sobre-area .sobre-text {
+  display: none;
+  background-color: rgba(197, 191, 191, 0.856);
+  border-radius: 10px;
+  padding: 10px;
+  height: 70vh;
+  margin: auto;
+  position: relative;
+  margin-top: -400px;
+  width: 50%;
+}
+.sobre-area .sobre-text h3 {
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 100px;
+  margin-top: 60px;
+}
+.sobre-area .sobre-text p {
+  color: #000;
+  justify-content: center;
+  font-size: 20px;
+}
+.sobre-area .sobre-text .exit {
+  color: rgba(0, 0, 0, 0.521);
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  float: right;
+  padding: 10px;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  color: #fff;
+}
+* h3 {
+  text-align: center;
+  font-size: 50px;
+}
+
+body {
+  background-image: url("../imagens/banner-fundo.webp");
+  background-position: center;
+}
+body .banner {
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 200px;
+  font-family: "Permanent Marker", cursive;
+  color: #fff;
+}
+body .banner .banner-img {
+  width: 100%;
+  -webkit-animation: banner-zoom 5s ease-in-out 0.5s forwards;
+          animation: banner-zoom 5s ease-in-out 0.5s forwards;
+  transform: scale(3.5);
+}
+@-webkit-keyframes banner-zoom {
+  0% {
+    transform: scale(3.5);
+  }
+  100% {
+    transform: scale(1);
+    width: 100%;
+  }
+}
+@keyframes banner-zoom {
+  0% {
+    transform: scale(3.5);
+  }
+  100% {
+    transform: scale(1);
+    width: 100%;
+  }
+}
+body .banner .img-apresenta {
+  width: 550px;
+  position: relative;
+  top: -180px;
+  -webkit-animation: show-nav 7s linear 2.5s forwards;
+          animation: show-nav 7s linear 2.5s forwards;
+  opacity: 0;
+}
+body .nave-asteroids {
+  -webkit-animation: show-nav 7s linear 2.5s forwards;
+          animation: show-nav 7s linear 2.5s forwards;
+  opacity: 0;
+  text-align: center;
+}
+body .nave-asteroids img {
+  margin-top: 100px;
+}
+@-webkit-keyframes show-nav {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes show-nav {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body .projeto-area h3 {
+  margin-top: 500px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
