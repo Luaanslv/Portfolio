@@ -56,9 +56,11 @@
 }
 
 .imgUrano {
-  cursor: pointer;
   text-align: center;
   margin-left: 800px;
+}
+.imgUrano :hover {
+  cursor: pointer;
 }
 
 .conhecimentos-area {
@@ -156,6 +158,9 @@
 
 .imgPlanet {
   margin-left: 1%;
+}
+.imgPlanet :hover {
+  cursor: pointer;
 }
 
 .projeto-area {
