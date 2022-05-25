@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Permanent+Marker&display=swap");
 @import "./scss/navbar";
 @import "./scss/sobre";
+@import "./scss/_projects";
 
 $duration-banner: 5;
 $delay: 0.5;
@@ -20,7 +21,11 @@ $delay-apre: 2.5;
 }
 
 body {
+    header{
+        overflow: hidden;
+    }
     background-image: url("../imagens/banner-fundo.webp");
+    background-attachment: fixed;
     background-position: center;
 
     .banner {
@@ -76,13 +81,6 @@ body {
             100% {
                 opacity: 1;
             }
-        }
-    }
-
-    .projeto-area {
-        h3 {
-            margin-top: 500px;
-            text-align: center;
         }
     }
 }
