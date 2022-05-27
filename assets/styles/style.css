@@ -15,10 +15,10 @@
   color: #fff;
   outline: none;
   text-decoration: none;
-  margin: 0px 20px 0px 0px;
+  margin: 0px 50px 0px 0px;
   font-size: 20px;
   font-family: "Cormorant Garamond 600", serif;
-  transition: ease;
+  transition: ease 0.5s;
 }
 
 .menu-icons {
@@ -40,6 +40,7 @@
   transition: ease;
   cursor: pointer;
   color: #fff;
+  transition: ease 0.3s;
 }
 
 .icone-bars {
@@ -48,11 +49,16 @@
 
 .nav-icons:hover {
   color: rgb(70, 68, 68);
+  transform: scale(1.2);
 }
 
 .itens:hover,
 .icone-bars:hover {
   color: rgb(179, 175, 175);
+  transition: ease 0.3s;
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .imgUrano {
@@ -71,6 +77,7 @@
   position: relative;
   left: 100px;
   margin-top: -300px;
+  margin-bottom: 150px;
   display: none;
   bottom: 50px;
   padding: 10px;
@@ -167,6 +174,8 @@
   display: none;
   margin: -550px auto;
   width: 80%;
+  background-color: hsla(0deg, 0%, 0%, 0.5);
+  margin-bottom: 100px;
   padding-top: 10px;
   border: #fff solid 1px;
   text-align: center;
@@ -217,6 +226,159 @@
 .projeto-area .build img {
   width: 50px;
   margin: 30px;
+}
+
+.imgContact {
+  text-align: right;
+  margin-right: 60px;
+}
+.imgContact :hover {
+  cursor: pointer;
+}
+
+.tituloContact h3 {
+  color: #fff500;
+  margin-top: 20px;
+}
+.tituloContact .exit-contact {
+  float: right;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px 20px 20px 0;
+  font-weight: bolder;
+}
+
+.contact-area {
+  display: none;
+  position: relative;
+  margin: -400px auto;
+  background-color: hsla(0deg, 0%, 0%, 0.5);
+  border: solid 1px #fff;
+  border-radius: 10px;
+  width: 80%;
+}
+.contact-area .contactBox {
+  align-items: center;
+  margin: auto 0 30px;
+}
+.contact-area .contactBox .text {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-weight: bolder;
+}
+.contact-area .contactBox form {
+  width: 100%;
+  display: flex;
+}
+.contact-area .contactBox form ::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.788);
+}
+.contact-area .contactBox form :-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.788);
+}
+.contact-area .contactBox form ::placeholder {
+  color: rgba(0, 0, 0, 0.788);
+}
+.contact-area .contactBox form .inputs {
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 200px;
+}
+.contact-area .contactBox form .inputs .inputName,
+.contact-area .contactBox form .inputs .inputTel,
+.contact-area .contactBox form .inputs .inputEmail,
+.contact-area .contactBox form .inputs .inputAssunto {
+  margin-top: 10px;
+}
+.contact-area .contactBox form .inputs .inputName input,
+.contact-area .contactBox form .inputs .inputTel input,
+.contact-area .contactBox form .inputs .inputEmail input,
+.contact-area .contactBox form .inputs .inputAssunto input {
+  background-color: rgba(255, 255, 255, 0.664);
+  border-radius: 10px;
+  width: 400px;
+  padding: 10px;
+  color: #000;
+}
+.contact-area .contactBox form textarea {
+  background-color: rgba(255, 255, 255, 0.664);
+  border-radius: 10px;
+  width: 40%;
+  height: 185px;
+  margin-left: 10px;
+  margin-top: 35px;
+  color: #000;
+  padding: 10px;
+}
+.contact-area .btnForm {
+  margin: auto;
+  max-width: 700px;
+}
+.contact-area .btnForm button {
+  background-color: #000;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 100px;
+  padding: 15px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+.imgGame {
+  text-align: center;
+  margin: 600px 0 100px 0;
+}
+.imgGame img {
+  width: 250px;
+}
+
+.footer-info {
+  background-color: #000;
+  text-align: center;
+  align-items: center;
+}
+.footer-info nav {
+  display: flex;
+}
+.footer-info .menuFooter {
+  display: flex;
+  list-style: none;
+  margin: 30px 0 0 300px;
+}
+.footer-info .menuFooter .itensFooter {
+  outline: none;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 30px;
+  color: rgb(136, 135, 135);
+  transition: ease 0.3s;
+}
+.footer-info .menuFooter .itensFooter:hover {
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.footer-info .contacts {
+  margin: 25px 0 30px 200px;
+}
+.footer-info .contacts img {
+  width: 30px;
+  margin-left: 30px;
+  transition: ease 0.3s;
+}
+.footer-info .contacts img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.footer-info p {
+  color: rgb(136, 135, 135);
+  padding-bottom: 3 0px;
 }
 
 * {

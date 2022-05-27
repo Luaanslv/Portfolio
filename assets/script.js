@@ -7,6 +7,9 @@ var btnExitSkills = document.querySelector('#exitSkills');
 var btnProjects = document.querySelector('#btnPlanet');
 var btnExitProjects = document.querySelector('#exitProjects');
 var divProjects = document.querySelector('#divProjects');
+var divContact = document.querySelector('#divContact');
+var btnContact = document.querySelector('#showContact');
+var btnExitContact = document.querySelector('#exitContact');
 
 showAbout();
 exitAbout();
@@ -14,15 +17,16 @@ showSkills();
 exitSKills();
 showProjects();
 exitProjects();
+showContact();
+exitContact();
 
 
 function showAbout() {
     btnAbout.addEventListener('click', function () {
         if (divAbout.style.display === "none") {
             divAbout.style.display = "block";
-        } else {
-            divAbout.style.display = "block";
         }
+           divAbout.style.display = "block";
     });
 }
 
@@ -38,9 +42,8 @@ function showSkills() {
 
         if (divSKills.style.display === "none") {
             divSKills.style.display = "block";
-        } else {
-            divSKills.style.display = "block";
         }
+            divSKills.style.display = "block";
     })
 }
 
@@ -56,15 +59,30 @@ function showProjects() {
 
         if (divProjects.style.display === "none") {
             divProjects.style.display = "block";
-        } else {
-            divProjects.style.display = "block";
         }
+            divProjects.style.display = "block";
 
     })
 }
 
 function exitProjects() {
     btnExitProjects.addEventListener('click', function () {
-        if (divProjects.style.display === "block") divProjects.style.display = "none";
+        if (divProjects.style.display === 'block') divProjects.style.display = 'none';
+    })
+}
+
+function showContact() {
+    btnContact.addEventListener('click', function () {
+        if (divContact.style.display === 'none') {
+            divContact.style.display = 'block';
+        }
+        else {
+            divContact.style.display = 'block';
+        }
+    })
+}
+function exitContact(){
+    btnExitContact.addEventListener('click', function () {
+        if (divContact.style.display === 'block') divContact.style.display = 'none';
     })
 }

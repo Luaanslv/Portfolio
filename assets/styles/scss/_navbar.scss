@@ -13,14 +13,14 @@ $delay: 0.5;
     opacity: 0;
     animation: show-nav ($duration-nav + s) linear ($delay + s) forwards;
 
-    .itens {
+    .itens{
         color: #fff;
         outline: none;
         text-decoration: none;
-        margin: 0px 20px 0px 0px;
+        margin: 0px 50px 0px 0px;
         font-size: 20px;
         font-family: "Cormorant Garamond 600", serif;
-        transition: ease;
+        transition: ease 0.5s;
     }
 }
 
@@ -42,6 +42,7 @@ $delay: 0.5;
         transition: ease;
         cursor: pointer;
         color: #fff;
+        transition: ease 0.3s;
     }
 }
 
@@ -51,9 +52,14 @@ $delay: 0.5;
 
 .nav-icons:hover {
     color: rgb(70, 68, 68);
+    transform: scale(1.2);
 }
 
 .itens:hover,
 .icone-bars:hover {
     color: rgb(179, 175, 175);
+    transition: ease 0.3s;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 5px;
 }

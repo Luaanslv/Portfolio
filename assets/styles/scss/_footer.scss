@@ -1,0 +1,51 @@
+.imgGame{
+    text-align: center;
+    margin: 600px 0 100px 0;
+    img{
+        width: 250px;
+    }
+}
+.footer-info{
+    background-color: #000;
+    text-align: center;
+    align-items: center;
+    nav{
+        display: flex;
+    }
+   .menuFooter{
+       display: flex;
+       list-style: none;
+       margin: 30px 0 0 300px;
+       .itensFooter{
+           outline: none;
+           text-decoration: none;
+           font-size: 18px;
+           margin-right: 30px;
+           color: rgb(136, 135, 135);
+           transition: ease 0.3s;
+       }
+       .itensFooter:hover{
+           cursor: pointer;
+           color: #fff;
+           border: 1px solid #fff;
+           padding: 5px;
+           border-radius: 5px;
+       }
+   }
+   .contacts{
+       margin: 25px 0 30px 200px;
+      img{
+          width:30px;
+          margin-left: 30px;
+          transition: ease 0.3s;
+      }
+      img:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+   }
+   p{
+    color: rgb(136, 135, 135); 
+    padding-bottom: 3  0px;
+   }
+}
