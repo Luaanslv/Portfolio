@@ -10,7 +10,6 @@ var divProjects = document.querySelector('#divProjects');
 var divContact = document.querySelector('#divContact');
 var btnContact = document.querySelector('#showContact');
 var btnExitContact = document.querySelector('#exitContact');
-var background = document.querySelector('#background')
 
 showAbout();
 backgroundAbout();
