@@ -1,3 +1,5 @@
+@import '../mixins/exit';
+
 .imgContact {
     text-align: right;
     margin-right: 60px;
@@ -6,35 +8,37 @@
     }
 }
 
+
 .tituloContact {
     h3 {
         color: #fff500;
         margin-top: 20px;
     }
-    .exit-contact{
-        float: right;
-        color: #fff;
-        font-size: 20px;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-        padding: 10px 20px 20px 0;
-        font-weight: bolder;
+    .exit-contact {
+        @include exitStyles();
     }
 }
 
 .contact-area {
+    position: fixed;
+    width: 100%;
+    height: 110vh;
+    padding: 110px;
+    margin-top: -185%;
     display: none;
-    position: relative;
-    margin: -400px auto;
-    background-color: hsla(0, 0%, 0%, 50%);
-    border: solid 1px #fff;
-    border-radius: 10px;
-    width: 80%;
+    
+
+    .divContact{
+        border: #FFF 1px solid;
+        width: 90%;
+        margin: 50px auto;
+        border-radius: 10px;
+    }
+
     .contactBox {
         align-items: center;
         margin: auto 0 30px;
-        .text{
+        .text {
             text-align: center;
             margin: 30px 0 20px 0;
             font-weight: bolder;
@@ -43,13 +47,12 @@
             ::placeholder {
                 color: rgba(0, 0, 0, 0.788);
             }
-
             width: 100%;
             display: flex;
+            justify-content: center;
             .inputs {
                 align-items: center;
                 margin-top: 25px;
-                margin-left: 200px;
 
                 .inputName,
                 .inputTel,
@@ -79,21 +82,19 @@
         }
     }
 
-    .btnForm{
+    .btnForm {
         margin: auto;
         max-width: 700px;
-        
-        button {
-        background-color: #000;
-        text-align: center;
-        width: 100%;
-        margin-bottom: 100px;
-        padding: 15px;
-        border: 2px solid #fff;
-        border-radius: 10px;
-        font-size: 25px;
-    }
-    }
 
-    
+        button {
+            background-color: #000;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 100px;
+            padding: 15px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            font-size: 25px;
+        }
+    }
 }

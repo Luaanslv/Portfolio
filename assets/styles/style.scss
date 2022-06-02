@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Permanent+Marker&display=swap");
 @import "./scss/navbar";
 @import "./scss/sobre";
+@import './scss/skills';
 @import "./scss/_projects";
 @import "./scss/_contact";
 @import "./scss/footer";
+
+
 
 $duration-banner: 5;
 $delay: 0.5;
@@ -14,7 +17,6 @@ $delay-apre: 2.5;
     padding: 0%;
     box-sizing: border-box;
     color: #fff;
-
     h3 {
         text-align: center;
         font-size: 50px;
@@ -29,7 +31,6 @@ body {
     background-image: url("../imagens/banner-fundo.webp");
     background-attachment: fixed;
     background-position: center;
-
     .banner {
         max-width: 90%;
         margin: auto;
@@ -85,4 +86,5 @@ body {
             }
         }
     }
+   
 }

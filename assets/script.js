@@ -10,14 +10,19 @@ var divProjects = document.querySelector('#divProjects');
 var divContact = document.querySelector('#divContact');
 var btnContact = document.querySelector('#showContact');
 var btnExitContact = document.querySelector('#exitContact');
+var background = document.querySelector('#background')
 
 showAbout();
+backgroundAbout();
 exitAbout();
 showSkills();
+backgroundSkills();
 exitSKills();
 showProjects();
+backgroundProjects();
 exitProjects();
 showContact();
+backgroundContact();
 exitContact();
 
 
@@ -29,6 +34,14 @@ function showAbout() {
            divAbout.style.display = "block";
     });
 }
+
+function backgroundAbout() {
+    btnAbout.addEventListener('click', function () {
+    divAbout.style.backgroundColor = 'rgba(0, 0, 0, 0.800)'
+    
+})
+}
+
 
 
 function exitAbout() {
@@ -46,6 +59,13 @@ function showSkills() {
             divSKills.style.display = "block";
     })
 }
+
+function backgroundSkills(){
+    btnSkills.addEventListener('click', function () {
+        divSKills.style.backgroundColor = 'rgba(0, 0, 0, 0.800)';
+    })
+}
+
 
 function exitSKills() {
     btnExitSkills.addEventListener('click', function () {
@@ -65,6 +85,12 @@ function showProjects() {
     })
 }
 
+function backgroundProjects(){
+    btnProjects.addEventListener('click', function () {
+        divProjects.style.backgroundColor = 'rgba(0, 0, 0, 0.800)';
+    })
+}
+
 function exitProjects() {
     btnExitProjects.addEventListener('click', function () {
         if (divProjects.style.display === 'block') divProjects.style.display = 'none';
@@ -81,6 +107,13 @@ function showContact() {
         }
     })
 }
+
+function backgroundContact() {
+    btnContact.addEventListener('click', function () {
+        divContact.style.backgroundColor = 'rgba(0, 0, 0, 0.800)';
+    })
+}
+
 function exitContact(){
     btnExitContact.addEventListener('click', function () {
         if (divContact.style.display === 'block') divContact.style.display = 'none';

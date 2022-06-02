@@ -1,0 +1,10 @@
+@mixin exitStyles {
+    font-weight: bolder;
+    float: right;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    padding: 10px 20px 20px 0;
+    cursor: pointer;
+}
