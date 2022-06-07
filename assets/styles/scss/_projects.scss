@@ -1,8 +1,19 @@
 @import '../mixins/exit';
+$delay: 0.5;
+$delay-apre: 0.2;
+$durationInfo: 0.5;
 
-.imgPlanet {
-    margin-left: 1%;
-   :hover{
+
+
+.imgProject {
+   .tituloProject{
+       margin: 10px 9%;
+   } 
+
+  .planProject{
+      margin-left: 6%;
+  }
+  .planProject:hover{
     cursor: pointer;
    }
 }
@@ -13,21 +24,23 @@
     padding: 100px;
     height: 120vh;
     position: fixed;
-    margin-top: -160%;
+    margin-top: -165%;
+    animation: show ($durationInfo + s) linear ($delay-apre + s) forwards;
+    opacity: 0;
 
     .divProjetos{  
         width: 100%;
         padding: 10px;
-        border: #fff solid 1px;
-        margin: 50px auto;
+        margin: 100px auto;
         text-align: center;
         border-radius: 10px;
 
     }
     .tituloProjects {
-        margin-bottom: 50px;
+        margin-bottom: 10%;
         h3 {
             color: #fff500;
+            font-family: 'Audiowide', sans-serif;
         }
         .exitProjects {
             @include exitStyles();
@@ -48,7 +61,7 @@
         max-width: 300px;
     }
     .build {
-        margin: 50px auto;
+        margin: 100px auto;
         background-color: #000;
         width: 300px;
         border: #fff solid 2px;
@@ -57,10 +70,20 @@
         h4 {
             color: #fff500;
             font-size: 30px;
+            font-family: 'Audiowide', sans-serif;
         }
         img {
             width: 50px;
             margin: 30px;
+        }
+    }
+    @keyframes show {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
         }
     }
 }

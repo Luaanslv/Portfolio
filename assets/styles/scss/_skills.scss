@@ -1,10 +1,17 @@
 @import '../mixins/exit';
+$delay: 0.5;
+$delay-apre: 0.2;
+$durationInfo: 0.5;
 
-.imgUrano {
-    margin-right: 60px;
+
+.imgSkills {
+    margin: 10% 9% 0 0;
     text-align: right;
     
-    :hover{
+    .tituloSkills{
+      margin: 10px 10%; 
+    }
+    .planSkills:hover{
         cursor: pointer;
     }
 }
@@ -12,21 +19,21 @@
 .conhecimentos-area {
     .skillsDev{
         position: fixed;
-        margin-top: -129%;
-        padding: 110px;
+        margin-top: -125%;
+        animation: show ($durationInfo + s) linear ($delay-apre + s) forwards;
+        opacity: 0;
         width: 100%;
-        height: 105vh;
+        height: 130vh;
         display: none;
 
     }
 
     .divSkills{
-        border: #FFF 1px solid;
         text-align: center;
+        width: 70%;
         padding: 10px;
-        width: 60%;
         height: 420px;
-        margin: 5px auto;
+        margin: 50px auto;
         border-radius: 10px;
     }
 
@@ -36,6 +43,9 @@
 
         h3 {
             color: #FFF500;
+            margin-top: 10%;
+            margin-bottom: 20%;
+            font-family: 'Audiowide', sans-serif;
         }
         .exit-skills {
             @include exitStyles();
@@ -53,10 +63,20 @@
         grid-template-columns: 1fr 1fr 1fr;
 
         .conhecimentos-box {
-            margin: 20px 50px 50px 0px;
-            padding: 20px;
+            margin: 20px 10px 50px 0px;
+            padding:10px;
             font-size: 30px;
+            font-weight: bolder;
             text-align: center;
+        }
+    }
+    @keyframes show {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
         }
     }
 }

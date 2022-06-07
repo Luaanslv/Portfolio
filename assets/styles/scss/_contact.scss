@@ -1,8 +1,19 @@
 @import '../mixins/exit';
+$delay: 0.5;
+$delay-apre: 0.2;
+$durationInfo: 0.5;
+
+
 
 .imgContact {
     text-align: right;
     margin-right: 60px;
+    .tituloContact{
+        margin: 10px 9%;
+    }
+    .planContact{
+        margin-right: 6%;
+    }
     :hover {
         cursor: pointer;
     }
@@ -12,7 +23,7 @@
 .tituloContact {
     h3 {
         color: #fff500;
-        margin-top: 20px;
+        margin: 20px 0 50px 0;
     }
     .exit-contact {
         @include exitStyles();
@@ -22,25 +33,26 @@
 .contact-area {
     position: fixed;
     width: 100%;
-    height: 110vh;
+    height: 120vh;
     padding: 110px;
-    margin-top: -185%;
+    margin-top: -195%;
     display: none;
+    animation: show ($durationInfo + s) linear ($delay-apre + s) forwards;
+    opacity: 0;
     
 
     .divContact{
-        border: #FFF 1px solid;
         width: 90%;
-        margin: 50px auto;
+        margin: 10% auto;
         border-radius: 10px;
     }
 
     .contactBox {
         align-items: center;
-        margin: auto 0 30px;
+        margin: auto 0 50px;
         .text {
             text-align: center;
-            margin: 30px 0 20px 0;
+            margin: 50px 0 5px 0;
             font-weight: bolder;
         }
         form {
@@ -87,7 +99,8 @@
         max-width: 700px;
 
         button {
-            background-color: #000;
+            background-color: transparent;
+            font-family: 'Audiowide', sans-serif;
             text-align: center;
             width: 100%;
             margin-bottom: 100px;
@@ -95,6 +108,16 @@
             border: 2px solid #fff;
             border-radius: 10px;
             font-size: 25px;
+        }
+    }
+
+    @keyframes show {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
         }
     }
 }

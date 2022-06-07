@@ -1,8 +1,12 @@
-.imgGame{
-    text-align: center;
-    margin: 600px 0 100px 0;
-    img{
-        width: 250px;
+.gameArea{
+    .imgGame{
+        text-align: center;
+        
+        margin: 100px 0 100px 0;
+        img{
+            width: 250px;
+            position: relative;
+        }
     }
 }
 .footer-info{
@@ -27,9 +31,6 @@
        .itensFooter:hover{
            cursor: pointer;
            color: #fff;
-           border: 1px solid #fff;
-           padding: 5px;
-           border-radius: 5px;
        }
    }
    .contacts{

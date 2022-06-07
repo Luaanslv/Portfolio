@@ -39,7 +39,6 @@ $delay: 0.5;
         font-size: 25px;
         align-items: center;
         margin: 0px 20px 0px 0px;
-        transition: ease;
         cursor: pointer;
         color: #fff;
         transition: ease 0.3s;
@@ -55,10 +54,8 @@ $delay: 0.5;
     transform: scale(1.2);
 }
 
-.itens:hover,
-.icone-bars:hover {
-    transition: ease 0.3s;
-    border-bottom: 2px solid #fff;
-    padding: 5px;
+.itens:hover{
+    
+    color: rgba(255, 255, 255, 0.63);
     border-radius: 5px;
 }
