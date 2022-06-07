@@ -39,14 +39,16 @@
             <img src="assets/imagens/banner.png" alt="banner" class="banner-img">
             <img src="assets/imagens/Apresentação.png" alt="apresentação" class="img-apresenta">
         </div>
-        <div class="nave-asteroids">
-            <img src="assets/imagens/nave.png" alt="nave espacial">
-        </div>
     </header>
     <main>
         <!--Sobre eu-->
-        <div class="imgNetuno">
-            <img src="assets/imagens/scarif 1.png" alt="planeta scarif" id="show">
+        <div class="imgSobre">
+            <div class="tituloSobre">
+                <img src="assets/imagens/SOBRE.png" alt="Titulo, Sobre o dev">
+            </div>
+            <div class="planSobre">
+                <img src="assets/imagens/scarif 1.png" alt="planeta scarif" id="show">
+            </div>
         </div>
         <div class="sobre-area" id="sobre">
             <div class="container">
@@ -71,7 +73,10 @@
                                 <br>Espero que você goste!
                                 <br>
                                 <br>
-                                <br>” Que a força esteja com você ”
+                                <div class="btnCv">
+                                    <a href="https://drive.google.com/uc?export=download&id=1hTBg8X3qqMgYeO0TJhGNRt1nGUnbYdbI" download="Curriculo"><button> Download CV</button></a>
+                                </div>
+                                <h4>” Que a força esteja com você ! ”</h4>
                             </p>
                         </div>
                     </div>
@@ -79,8 +84,13 @@
             </div>
         </div>
         <!--Conhecimento-->
-        <div class="imgUrano">
-            <img src="assets/imagens/genosia 1.png" alt="planeta genosia" id="urano">
+        <div class="imgSkills">
+            <div class="tituloSkills">
+                <img src="assets/imagens/SKILLS.png" alt="titulo das Habilidades">
+            </div>
+            <div class="planSkills">
+                <img src="assets/imagens/genosia 1.png" alt="planeta genosia" id="urano">
+            </div>
         </div>
         <div class="conhecimentos-area">
             <div class="container">
@@ -88,7 +98,7 @@
                     <div class="divSkills">
                         <div class="titulo-skills">
                             <button class="exit-skills" id="exitSkills">X</button>
-                            <h3>Habilidades</h3>
+                            <h3>Minhas Habilidades</h3>
                         </div>
                         <div class="skills">
                             <div class="conhecimentos-box">
@@ -121,8 +131,13 @@
             </div>
         </div>
         <!--Projetos-->
-        <div class="imgPlanet">
-            <img src="assets/imagens/planetGreen.png" alt="planeta projetos" id="btnPlanet">
+        <div class="imgProject">
+            <div class="tituloProject">
+                <img src="assets/imagens/PORTFÓLIO.png" alt="titulo projeto">
+            </div>
+            <div class="planProject">
+                <img src="assets/imagens/planetGreen.png" alt="planeta projetos" id="btnPlanet">
+            </div>
         </div>
 
         <div class="projeto-area" id="divProjects">
@@ -162,7 +177,12 @@
             </div>
         </div>
         <div class="imgContact">
-            <img src="assets/imagens/bespin 1.png" alt="planeta bespin" id="showContact">
+            <div class="tituloContact">
+                <img src="assets/imagens/CONTATO.png" alt="titulo do contatos">
+            </div>
+            <div class="planContact">
+                <img src="assets/imagens/bespin 1.png" alt="planeta bespin" id="showContact">
+            </div>
         </div>
         <div class="contact-area" id="divContact">
             <div class="container">
@@ -200,9 +220,19 @@
         </div>
     </main>
     <footer>
-        <div class="imgGame">
-            <img src="assets/imagens/estrela 1.png" alt="estrela da morte">
+        <div class="gameArea">
+            <div class="container">
+                <div class="nave-asteroids">
+                    <canvas id="canvas" width="2000" height="1000">
+                        <h1>Caro usuario o seu Browser não suporta o canvas.</h1>
+                    </canvas>
+                    <div class="imgGame">
+                        <img src="assets/imagens/estrela 1.png" alt="estrela da morte">
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="footer-info">
             <div class="container">
                 <nav>
@@ -230,7 +260,10 @@
     <!--Font-awesome-->
     <script src="https://kit.fontawesome.com/5d7b6d51a9.js" crossorigin="anonymous"></script>
     <!--script-->
-    <script src="assets/script.js"></script>
+    <script src="assets/scripts/script.js"></script>
+    <!--Script da nave-->
+    <script src="assets/scripts/nave.js"></script>
+    <script src="assets/scripts/sprite.js"></script>
 </body>
 
 </html>
