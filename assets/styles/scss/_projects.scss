@@ -47,18 +47,66 @@ $durationInfo: 0.5;
         }
     }
   
-
-    .projects-box {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .projects {
-        border: #fff solid 2px;
-        width: 305px;
+        .c-carousel__slides{
+            display: flex;
+        }
+    .projects {  
+        display: flex;
         margin: auto;
+        width: 900px;
+
+        img{
+           border: #fff solid 2px;
+           width: 900px;
+        }
+        
+
     }
+    .infoProject{
+        position: relative;
+        display: none;
+        .imgNetflix{
+            position: relative; 
+        }
+        .cloneNetflix{
+            border: none;
+            background: rgba(0, 0, 0, 0.658);
+            width: 100%;
+            position: relative;
+            margin-right:900px;
+            
+            transition: ease 0.3s;
+            font-family: 'Cormorant Garamond', sans-serif;
+            
+            h4{
+                font-size: 25px;
+                margin:-10px 0 10px;
+            }
+            p{
+                font-size: 18px;
+                font-weight: bolder;
+            }
+
+           } 
+           .cloneNetflix:hover{
+                opacity: 1;
+                cursor: pointer;
+            }
+            
+            
+        }
+        .saibaMais{
+                width: 140vh;
+                
+                margin: -200px auto;
+                border: 1px solid #fff;
+                background-color: #000;
+                position: absolute;
+                padding: 100px;
+            }
+
     img {
-        max-width: 300px;
+        width: 800px;
     }
     .build {
         margin: 100px auto;
@@ -75,6 +123,7 @@ $durationInfo: 0.5;
         img {
             width: 50px;
             margin: 30px;
+            border: none;
         }
     }
     @keyframes show {

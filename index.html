@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio|Luan Silva</title>
+     <!-- Style -->
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/assets/site.webmanifest">
-
 </head>
 
 <body>
@@ -74,7 +74,8 @@
                                 <br>
                                 <br>
                                 <div class="btnCv">
-                                    <a href="https://drive.google.com/uc?export=download&id=1hTBg8X3qqMgYeO0TJhGNRt1nGUnbYdbI" download="Curriculo"><button> Download CV</button></a>
+                                    <a href="https://drive.google.com/uc?export=download&id=1hTBg8X3qqMgYeO0TJhGNRt1nGUnbYdbI"
+                                        download="Curriculo"><button> Download CV</button></a>
                                 </div>
                                 <h4>” Que a força esteja com você ! ”</h4>
                             </p>
@@ -147,32 +148,60 @@
                         <button class="exitProjects" id="exitProjects">X</button>
                         <h3>Projetos</h3>
                     </div>
-                    <div class="projects-box">
-                        <div class="projects">
-                            <img src="assets/imagens/clone.png" alt="Clone da Netflix">
+                    <div class="c-carousel c-carousel--simple">
+                        <div class="c-carousel__slides js-carousel--simple">
+                            <div class="projects  c-carousel__slide">
+                                <img src="assets/imagens/clone.png" alt="Clone da Netflix" class="imgNetflix">
+                                <div class="infoProject">
+                                    <button class="cloneNetflix" id="btnNetflix">
+                                        <h4>Clone Netflix</h4>
+                                        <p>Clique para saber mais !</p>
+                                    </button>
+                                    <div class="saibaMais" id="InfoProjectNetflix">
+                                        <p>aaaaaaaaaaaaaa</p>
+                                        <p>aaaaaaaaaaaaa</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects c-carousel__slide">
+                                <img src="assets/imagens/galleria.png" alt="site galeria de imagens">
+                                <div class="infoProject">
+                                    <button class="cloneNetflix">
+                                        <h4>Galleria</h4>
+                                        <p>Clique para saber mais !</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="projects c-carousel__slide">
+                                <img src="assets/imagens/projetohoradecoda.png" alt="site e-commerce" >
+                                <div class="infoProject">
+                                    <button class="cloneNetflix" id="btnNetflix">
+                                        <h4>Site E-commerce</h4>
+                                        <p>Clique para saber mais !</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="projects build c-carousel__slide">
+                                <h4>Em construção</h4>
+                                <img src="assets/imagens/Loader.png" alt="iconer loader">
+                                <i class="fab fa-loader"></i>
+                            </div>
+                            <div class="projects build c-carousel__slide">
+                                <h4>Em construção</h4>
+                                <img src="assets/imagens/Loader.png" alt="iconer loader">
+                                <i class="fab fa-loader"></i>
+                            </div>
+                            <div class="projects build c-carousel__slide">
+                                <h4>Em construção</h4>
+                                <img src="assets/imagens/Loader.png" alt="iconer loader">
+                                <i class="fab fa-loader"></i>
+                            </div>
                         </div>
-                        <div class="projects">
-                            <img src="assets/imagens/galleria.png" alt="site galeria de imagens">
-                        </div>
-                        <div class="projects">
-                            <img src="assets/imagens/projetohoradecoda.png" alt="site e-commerce">
-                        </div>
-                        <div class="projects build">
-                            <h4>Em construção</h4>
-                            <img src="assets/imagens/Loader.png" alt="iconer loader">
-                            <i class="fab fa-loader"></i>
-                        </div>
-                        <div class="projects build">
-                            <h4>Em construção</h4>
-                            <img src="assets/imagens/Loader.png" alt="iconer loader">
-                            <i class="fab fa-loader"></i>
-                        </div>
-                        <div class="projects build">
-                            <h4>Em construção</h4>
-                            <img src="assets/imagens/Loader.png" alt="iconer loader">
-                            <i class="fab fa-loader"></i>
-                        </div>
+                        <button class="js-carousel--simple-prev">«</button>
+                        <button class="js-carousel--simple-next">»</button>
+                        <div class="js-carousel--simple-dots"></div>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -256,12 +285,11 @@
         </div>
 
     </footer>
-
     <!--Font-awesome-->
     <script src="https://kit.fontawesome.com/5d7b6d51a9.js" crossorigin="anonymous"></script>
-    <!--script-->
+    <!--script principal-->
     <script src="assets/scripts/script.js"></script>
-    <!--Script da nave-->
+    <!--Scripts da nave-->
     <script src="assets/scripts/nave.js"></script>
     <script src="assets/scripts/sprite.js"></script>
 </body>

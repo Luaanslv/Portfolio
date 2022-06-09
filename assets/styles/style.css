@@ -88,6 +88,7 @@
   height: 80vh;
   margin: 10% auto;
   font-family: "Cormorant Garamond", sans-serif;
+  font-weight: bolder;
   justify-content: center;
   font-size: 20px;
 }
@@ -160,7 +161,8 @@
 .imgSkills .tituloSkills {
   margin: 10px 10%;
 }
-.imgSkills .planSkills:hover {
+
+.imgSkills:hover {
   cursor: pointer;
 }
 
@@ -273,17 +275,56 @@
   padding: 10px 20px 20px 0;
   cursor: pointer;
 }
-.projeto-area .projects-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.projeto-area .c-carousel__slides {
+  display: flex;
 }
 .projeto-area .projects {
-  border: #fff solid 2px;
-  width: 305px;
+  display: flex;
   margin: auto;
+  width: 900px;
+}
+.projeto-area .projects img {
+  border: #fff solid 2px;
+  width: 900px;
+}
+.projeto-area .infoProject {
+  position: relative;
+  display: none;
+}
+.projeto-area .infoProject .imgNetflix {
+  position: relative;
+}
+.projeto-area .infoProject .cloneNetflix {
+  border: none;
+  background: rgba(0, 0, 0, 0.658);
+  width: 100%;
+  position: relative;
+  margin-right: 900px;
+  transition: ease 0.3s;
+  font-family: "Cormorant Garamond", sans-serif;
+}
+.projeto-area .infoProject .cloneNetflix h4 {
+  font-size: 25px;
+  margin: -10px 0 10px;
+}
+.projeto-area .infoProject .cloneNetflix p {
+  font-size: 18px;
+  font-weight: bolder;
+}
+.projeto-area .infoProject .cloneNetflix:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.projeto-area .saibaMais {
+  width: 140vh;
+  margin: -200px auto;
+  border: 1px solid #fff;
+  background-color: #000;
+  position: absolute;
+  padding: 100px;
 }
 .projeto-area img {
-  max-width: 300px;
+  width: 800px;
 }
 .projeto-area .build {
   margin: 100px auto;
@@ -300,6 +341,7 @@
 .projeto-area .build img {
   width: 50px;
   margin: 30px;
+  border: none;
 }
 @keyframes show {
   0% {
@@ -495,14 +537,11 @@
 }
 
 body {
+  overflow-x: hidden;
   background-image: url("../imagens/banner-fundo.webp");
   background-attachment: fixed;
-  height: 100%;
   background-position: center;
   position: absolute;
-}
-body header {
-  overflow: hidden;
 }
 body .banner {
   max-width: 90%;
@@ -521,6 +560,7 @@ body .banner .banner-img {
   -webkit-animation: banner-zoom 5s ease-in-out 0.5s forwards;
           animation: banner-zoom 5s ease-in-out 0.5s forwards;
   transform: scale(3.5);
+  overflow-x: hidden;
 }
 @-webkit-keyframes banner-zoom {
   0% {
@@ -548,30 +588,11 @@ body .banner .img-apresenta {
           animation: show-nav 7s linear 2.5s forwards;
   opacity: 0;
 }
-body .nave-asteroids {
-  text-align: center;
-}
-body .nave-asteroids #canvas {
+body #canvas {
   display: block;
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-}
-@-webkit-keyframes show-nav {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes show-nav {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }/*# sourceMappingURL=style.css.map */
