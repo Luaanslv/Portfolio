@@ -8,10 +8,11 @@ var btnProjects = document.querySelector('#btnPlanet');
 var btnExitProjects = document.querySelector('#exitProjects');
 var divProjects = document.querySelector('#divProjects');
 var divInfoProject = document.querySelector('#infoProjetctNetflix');
-var btnProjectNetflix = document.querySelector('#btnNetflix');
+// var btnProjectNetflix = document.querySelector('#btnNetflix');
 var divContact = document.querySelector('#divContact');
 var btnContact = document.querySelector('#showContact');
 var btnExitContact = document.querySelector('#exitContact');
+
 
 
 
@@ -90,7 +91,7 @@ function showProjects() {
 
 function backgroundProjects(){
     btnProjects.addEventListener('click', function () {
-        divProjects.style.backgroundColor = 'rgba(0, 0, 0, 0.800)';
+        divProjects.style.background = 'rgba(0, 0, 0, 0.800)';
     })
 }
 
@@ -136,15 +137,4 @@ function exitContact(){
     })
 }
 
-// carousel
-var $simpleCarousel = document.querySelector('.js-carousel--simple');
-new Glider($simpleCarousel, {
-  slidesToShow: 2,
-  slidesToScroll: 2,
-  draggable: true,
-  dots: ".js-carousel--simple-dots",
-  arrows: {
-    prev: ".js-carousel--simple-prev",
-    next: ".js-carousel--simple-next",
-  },
-});
+

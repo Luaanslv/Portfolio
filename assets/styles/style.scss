@@ -1,19 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import "./scss/navbar";
 @import "./scss/sobre";
-@import './scss/skills';
+@import "./scss/skills";
 @import "./scss/_projects";
 @import "./scss/_contact";
 @import "./scss/footer";
-
-
 
 $duration-banner: 5;
 $delay: 0.5;
 $delay-apre: 2.5;
 
 * {
-    margin: 0%;
+    margin: auto;
     padding: 0%;
     box-sizing: border-box;
     color: #fff;
@@ -21,7 +19,6 @@ $delay-apre: 2.5;
         text-align: center;
         font-size: 50px;
     }
-    
 }
 
 body {
@@ -29,24 +26,31 @@ body {
     background-image: url("../imagens/banner-fundo.webp");
     background-attachment: fixed;
     background-position: center;
-    position: absolute;
+    position: relative;
+    header{
+        padding: 30px;
+    }
     .banner {
-        max-width: 90%;
         width: 100%;
         height: 100%;
-        padding: 10px;
         margin: auto;
         text-align: center;
         font-size: 25px;
         margin-top: 200px;
         font-family: "Permanent Marker", cursive;
         color: #fff;
+        overflow: hidden;
         .banner-img {
             width: 100%;
-            animation: banner-zoom ($duration-banner + s) ease-in-out ($delay + s) forwards;
-            $delay: $duration-banner + $delay;
-            transform: scale(3.5);
-            overflow-x: hidden;
+            position: absolute;
+            margin: auto;
+
+            img {
+                animation: banner-zoom ($duration-banner + s) ease-in-out ($delay + s) forwards;
+                $delay: $duration-banner + $delay;
+                transform: scale(3.5);
+            }
+
             @keyframes banner-zoom {
                 0% {
                     transform: scale(3.5);
@@ -59,22 +63,27 @@ body {
             }
         }
 
-        .img-apresenta {
-            width: 550px;
+        .imgApresenta {
+            margin: auto;
+            height: 200px;
             position: relative;
-            top: -180px;
-            animation: show-nav ($duration-nav + s) linear ($delay-apre + s) forwards;
-            opacity: 0;
+            top: 110px;
+            
+
+            img {
+                width: 550px;
+                animation: show ($duration-nav + s) linear ($delay-apre + s) forwards;
+                opacity: 0;
+            }
         }
     }
-  
-        #canvas{
-            display: block;
-            position: relative;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-   
+
+    #canvas {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }

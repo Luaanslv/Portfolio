@@ -1,129 +1,63 @@
-@import '../mixins/exit';
+@import "../mixins/exit";
 $delay: 0.5;
 $delay-apre: 0.2;
 $durationInfo: 0.5;
 
-
-
 .imgProject {
-   .tituloProject{
-       margin: 10px 9%;
-   } 
+    .tituloProject {
+        margin: 10px 9%;
+    }
 
-  .planProject{
-      margin-left: 6%;
-  }
-  .planProject:hover{
-    cursor: pointer;
-   }
+    .planProject {
+        margin-left: 6%;
+    }
+    .planProject:hover {
+        cursor: pointer;
+    }
 }
 
-.projeto-area {
+.projeto-container {
     display: none;
     width: 100%;
-    padding: 100px;
-    height: 120vh;
+    height: 135vh;
     position: fixed;
-    margin-top: -165%;
-    animation: show ($durationInfo + s) linear ($delay-apre + s) forwards;
-    opacity: 0;
-
-    .divProjetos{  
-        width: 100%;
-        padding: 10px;
-        margin: 100px auto;
-        text-align: center;
-        border-radius: 10px;
-
-    }
+    margin-top: -160%;
+    overflow-y: scroll;
+    scrollbar-width: thin;
     .tituloProjects {
         margin-bottom: 10%;
         h3 {
             color: #fff500;
-            font-family: 'Audiowide', sans-serif;
+            font-family: "Audiowide", sans-serif;
         }
         .exitProjects {
             @include exitStyles();
+            margin-top: 1%;
         }
     }
-  
-        .c-carousel__slides{
-            display: flex;
-        }
-    .projects {  
-        display: flex;
-        margin: auto;
-        width: 900px;
+    
 
-        img{
-           border: #fff solid 2px;
-           width: 900px;
-        }
-        
-
-    }
-    .infoProject{
-        position: relative;
-        display: none;
-        .imgNetflix{
-            position: relative; 
-        }
-        .cloneNetflix{
-            border: none;
-            background: rgba(0, 0, 0, 0.658);
-            width: 100%;
-            position: relative;
-            margin-right:900px;
-            
-            transition: ease 0.3s;
-            font-family: 'Cormorant Garamond', sans-serif;
-            
-            h4{
-                font-size: 25px;
-                margin:-10px 0 10px;
-            }
-            p{
-                font-size: 18px;
-                font-weight: bolder;
-            }
-
-           } 
-           .cloneNetflix:hover{
-                opacity: 1;
-                cursor: pointer;
-            }
-            
-            
-        }
-        .saibaMais{
-                width: 140vh;
-                
-                margin: -200px auto;
-                border: 1px solid #fff;
-                background-color: #000;
-                position: absolute;
-                padding: 100px;
-            }
-
-    img {
-        width: 800px;
-    }
-    .build {
-        margin: 100px auto;
-        background-color: #000;
-        width: 300px;
-        border: #fff solid 2px;
+    .divProjetos {
+        animation: show ($durationInfo + s) linear ($delay-apre + s) forwards;
+        opacity: 0;
         padding: 10px;
-
-        h4 {
-            color: #fff500;
-            font-size: 30px;
-            font-family: 'Audiowide', sans-serif;
-        }
-        img {
-            width: 50px;
-            margin: 30px;
-            border: none;
+        margin: 260px auto;
+        width: 70%;
+        
+        .projetos-area {
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5em; 
+                .projects {
+                    margin: 1.5em;
+                    display: flex;
+                    img{
+                        width: 500px;
+                        border: solid 2px #fff;
+                    }
+                }
         }
     }
     @keyframes show {

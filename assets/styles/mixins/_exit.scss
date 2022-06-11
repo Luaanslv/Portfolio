@@ -2,9 +2,14 @@
     font-weight: bolder;
     float: right;
     color: #fff;
-    font-size: 20px;
+    font-size: 30px;
     border: none;
     background-color: transparent;
     padding: 10px 20px 20px 0;
-    cursor: pointer;
+    transition: ease 0.3s;
+
+    :hover{
+        cursor: pointer;
+        transform: scale(1.2);
+    }
 }

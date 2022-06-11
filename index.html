@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio|Luan Silva</title>
-     <!-- Style -->
+    <!-- Style -->
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
@@ -36,8 +36,15 @@
         </nav>
         <!--home-->
         <div class="banner">
-            <img src="assets/imagens/banner.png" alt="banner" class="banner-img">
-            <img src="assets/imagens/Apresentação.png" alt="apresentação" class="img-apresenta">
+
+            <div class="banner-img">
+                <img src="assets/imagens/banner.png" alt="banner">
+            </div>
+
+            <div class="imgApresenta">
+                <img src="assets/imagens/Apresentação.png" alt="apresentação">
+            </div>
+
         </div>
     </header>
     <main>
@@ -55,7 +62,7 @@
                 <div class="sobre-dev">
                     <div class="divText" id="descricao">
                         <div class="textSobre">
-                            <button class="exit" id="exit-sobre">X</button>
+                            <button class="exit" id="exit-sobre"><i class="fa fa-close"></i></button>
                             <h3>Sobre o Dev</h3>
                             <p><span class="saudacao">Olá visitante!</span><br>
                                 <br>
@@ -98,7 +105,7 @@
                 <div class="skillsDev" id="skills">
                     <div class="divSkills">
                         <div class="titulo-skills">
-                            <button class="exit-skills" id="exitSkills">X</button>
+                            <button class="exit-skills" id="exitSkills"><i class="fa fa-close"></i></button>
                             <h3>Minhas Habilidades</h3>
                         </div>
                         <div class="skills">
@@ -141,68 +148,39 @@
             </div>
         </div>
 
-        <div class="projeto-area" id="divProjects">
-            <div class="container">
-                <div class="divProjetos">
-                    <div class="tituloProjects">
-                        <button class="exitProjects" id="exitProjects">X</button>
-                        <h3>Projetos</h3>
-                    </div>
-                    <div class="c-carousel c-carousel--simple">
-                        <div class="c-carousel__slides js-carousel--simple">
-                            <div class="projects  c-carousel__slide">
-                                <img src="assets/imagens/clone.png" alt="Clone da Netflix" class="imgNetflix">
-                                <div class="infoProject">
-                                    <button class="cloneNetflix" id="btnNetflix">
-                                        <h4>Clone Netflix</h4>
-                                        <p>Clique para saber mais !</p>
-                                    </button>
-                                    <div class="saibaMais" id="InfoProjectNetflix">
-                                        <p>aaaaaaaaaaaaaa</p>
-                                        <p>aaaaaaaaaaaaa</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="projects c-carousel__slide">
-                                <img src="assets/imagens/galleria.png" alt="site galeria de imagens">
-                                <div class="infoProject">
-                                    <button class="cloneNetflix">
-                                        <h4>Galleria</h4>
-                                        <p>Clique para saber mais !</p>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="projects c-carousel__slide">
-                                <img src="assets/imagens/projetohoradecoda.png" alt="site e-commerce" >
-                                <div class="infoProject">
-                                    <button class="cloneNetflix" id="btnNetflix">
-                                        <h4>Site E-commerce</h4>
-                                        <p>Clique para saber mais !</p>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="projects build c-carousel__slide">
-                                <h4>Em construção</h4>
-                                <img src="assets/imagens/Loader.png" alt="iconer loader">
-                                <i class="fab fa-loader"></i>
-                            </div>
-                            <div class="projects build c-carousel__slide">
-                                <h4>Em construção</h4>
-                                <img src="assets/imagens/Loader.png" alt="iconer loader">
-                                <i class="fab fa-loader"></i>
-                            </div>
-                            <div class="projects build c-carousel__slide">
-                                <h4>Em construção</h4>
-                                <img src="assets/imagens/Loader.png" alt="iconer loader">
-                                <i class="fab fa-loader"></i>
-                            </div>
-                        </div>
-                        <button class="js-carousel--simple-prev">«</button>
-                        <button class="js-carousel--simple-next">»</button>
-                        <div class="js-carousel--simple-dots"></div>
-                    </div>
-                    
+        <div class="projeto-container" id="divProjects">
+            <div class="divProjetos">
+                <div class="tituloProjects">
+                    <button class="exitProjects" id="exitProjects"><i class="fa fa-close"></i></button>
+                    <h3>Projetos</h3>
                 </div>
+                <div class="projetos-area">
+                    <div class="projects">
+                        <img src="assets/imagens/clone.png" alt="Clone da Netflix">
+                    </div>
+                    <div class="projects ">
+                        <img src="assets/imagens/galleria.png" alt="site galeria de imagens">
+                    </div>
+                    <div class="projects ">
+                        <img src="assets/imagens/projetohoradecoda.png" alt="site e-commerce">
+                    </div>
+                    <div class="projects ">
+                        <img src="assets/imagens/projetohoradecoda.png" alt="site e-commerce">
+                    </div>
+                    <div class="projects ">
+                        <img src="assets/imagens/projetohoradecoda.png" alt="site e-commerce">
+                    </div>
+                    <div class="projects ">
+                        <img src="assets/imagens/projetohoradecoda.png" alt="site e-commerce">
+                    </div>
+                    <div class="projects ">
+                        <img src="assets/imagens/projetohoradecoda.png" alt="site e-commerce">
+                    </div>
+                    <div class="projects ">
+                        <img src="assets/imagens/projetohoradecoda.png" alt="site e-commerce">
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="imgContact">
@@ -217,7 +195,7 @@
             <div class="container">
                 <div class="divContact">
                     <div class="tituloContact">
-                        <button class="exit-contact" id="exitContact">X</button>
+                        <button class="exit-contact" id="exitContact"><i class="fa fa-close"></i></button>
                         <h3>Fale comigo</h3>
                     </div>
                     <div class="contactBox">
@@ -249,49 +227,35 @@
         </div>
     </main>
     <footer>
-        <div class="gameArea">
-            <div class="container">
-                <div class="nave-asteroids">
-                    <canvas id="canvas" width="2000" height="1000">
-                        <h1>Caro usuario o seu Browser não suporta o canvas.</h1>
-                    </canvas>
-                    <div class="imgGame">
-                        <img src="assets/imagens/estrela 1.png" alt="estrela da morte">
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="footer-info">
             <div class="container">
-                <nav>
-                    <ul class="menuFooter">
-                        <li><a class="itensFooter" href="/">Home</a></li>
-                        <li><a class="itensFooter" href="#sobre">Sobre</a></li>
-                        <li><a class="itensFooter" href="#contato-area">Contato</a></li>
-                        <li><a class="itensFooter" href="#projetos-area">Projetos</a></li>
-                    </ul>
-                    <div class="contacts">
-                        <img src="assets/imagens/Telegram App.png" alt="telegram">
-                        <img src="assets/imagens/Email.png" alt="email">
-                        <img src="assets/imagens/WhatsApp.png" alt="WhatsApp">
-                        <img src="assets/imagens/github.png" alt="github">
-                        <img src="assets/imagens/Discord.png" alt="Discord">
-                        <img src="assets/imagens/LinkedIn.png" alt="LinkedIn">
-                    </div>
-                </nav>
+                <div class="infoArea">
+                    <nav>
+                        <ul class="menuFooter">
+                            <li><a class="itensFooter" href="/">Home</a></li>
+                            <li><a class="itensFooter" href="#sobre">Sobre</a></li>
+                            <li><a class="itensFooter" href="#contato-area">Contato</a></li>
+                            <li><a class="itensFooter" href="#projetos-area">Projetos</a></li>
+                        </ul>
+                        <div class="contacts">
+                            <img src="assets/imagens/Telegram App.png" alt="telegram">
+                            <img src="assets/imagens/Email.png" alt="email">
+                            <img src="assets/imagens/WhatsApp.png" alt="WhatsApp">
+                            <img src="assets/imagens/github.png" alt="github">
+                            <img src="assets/imagens/Discord.png" alt="Discord">
+                            <img src="assets/imagens/LinkedIn.png" alt="LinkedIn">
+                        </div>
+                    </nav>
+                </div>
             </div>
-            <p>© 2022 Todos os direitos reservados </p>
+            <p>© 2022 Criado por <a href="">Luan Silva</a></p>
         </div>
 
     </footer>
-    <!--Font-awesome-->
-    <script src="https://kit.fontawesome.com/5d7b6d51a9.js" crossorigin="anonymous"></script>
     <!--script principal-->
     <script src="assets/scripts/script.js"></script>
-    <!--Scripts da nave-->
-    <script src="assets/scripts/nave.js"></script>
-    <script src="assets/scripts/sprite.js"></script>
+    <!--Font-awesome-->
+    <script src="https://kit.fontawesome.com/5d7b6d51a9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
