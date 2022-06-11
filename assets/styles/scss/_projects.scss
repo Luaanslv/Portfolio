@@ -55,9 +55,36 @@ $durationInfo: 0.5;
                     display: flex;
                     img{
                         width: 500px;
+                        height: 300px;
                         border: solid 2px #fff;
                     }
                 }
+        }
+
+        .alerta{
+            font-size: 20px;
+            text-align: center;
+            font-weight: bolder;
+            margin-bottom: 20px;
+        }
+
+        .btnVejaMais{
+            text-align: center;
+            button{
+                background-color: transparent;
+                border: 2px solid  #fff;
+                padding: 10px;
+                border-radius: 10px;
+                width: 100%;
+                font-size: 20px;
+                transition: ease 0.3s;
+            }
+            button:hover{
+                cursor: pointer;
+                color:rgba(255, 255, 255, 0.493) ;
+                border:2px solid rgba(255, 255, 255, 0.493) ;
+            }
+
         }
     }
     @keyframes show {

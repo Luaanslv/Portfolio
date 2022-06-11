@@ -12,6 +12,9 @@ var divInfoProject = document.querySelector('#infoProjetctNetflix');
 var divContact = document.querySelector('#divContact');
 var btnContact = document.querySelector('#showContact');
 var btnExitContact = document.querySelector('#exitContact');
+var btnVeja = document.querySelector('#btnVeja');
+var alerta = document.querySelector('#alert');
+var visibilidade = false;
 
 
 
@@ -24,10 +27,12 @@ backgroundSkills();
 exitSKills();
 showProjects();
 backgroundProjects();
+showMoreOrLess()
 exitProjects();
 showContact();
 backgroundContact();
 exitContact();
+
 
 
 function showAbout() {
@@ -35,15 +40,15 @@ function showAbout() {
         if (divAbout.style.display === "none") {
             divAbout.style.display = "block";
         }
-           divAbout.style.display = "block";
+        divAbout.style.display = "block";
     });
 }
 
 function backgroundAbout() {
     btnAbout.addEventListener('click', function () {
-    divAbout.style.backgroundColor = 'rgba(0, 0, 0, 0.800)'
-    
-})
+        divAbout.style.backgroundColor = 'rgba(0, 0, 0, 0.800)'
+
+    })
 }
 
 
@@ -60,11 +65,11 @@ function showSkills() {
         if (divSKills.style.display === "none") {
             divSKills.style.display = "block";
         }
-            divSKills.style.display = "block";
+        divSKills.style.display = "block";
     })
 }
 
-function backgroundSkills(){
+function backgroundSkills() {
     btnSkills.addEventListener('click', function () {
         divSKills.style.backgroundColor = 'rgba(0, 0, 0, 0.800)';
     })
@@ -73,7 +78,7 @@ function backgroundSkills(){
 
 function exitSKills() {
     btnExitSkills.addEventListener('click', function () {
-        if (divSKills.style.display === "block") divSKills.style.display = "none";   
+        if (divSKills.style.display === "block") divSKills.style.display = "none";
     })
 }
 
@@ -84,12 +89,12 @@ function showProjects() {
         if (divProjects.style.display === "none") {
             divProjects.style.display = "block";
         }
-            divProjects.style.display = "block";
+        divProjects.style.display = "block";
 
     })
 }
 
-function backgroundProjects(){
+function backgroundProjects() {
     btnProjects.addEventListener('click', function () {
         divProjects.style.background = 'rgba(0, 0, 0, 0.800)';
     })
@@ -101,6 +106,24 @@ function exitProjects() {
     })
 }
 
+function showMoreOrLess() {
+    btnVeja.addEventListener('click', function () {
+        if (visibilidade) {
+            alerta.innerHTML = ''
+            btnVeja.innerHTML = 'Veja Mais'
+            visibilidade = false;
+        }
+        else {
+            alerta.innerHTML = ' Espere um pouco estou construindo mais sites!'
+            btnVeja.innerHTML = 'Veja Menos'
+            visibilidade = true;
+        }
+
+       
+    })
+
+}
+
 // function showInfoNetflix() {
 //     btnProjectNetflix.addEventListener('click', function () {
 //         if (divInfoProject.style.display === 'none') {
@@ -108,7 +131,7 @@ function exitProjects() {
 //         } else {
 //             divInfoProject.style.display = 'block';
 //         }
-        
+
 //     })
 // }
 
@@ -118,8 +141,7 @@ function showContact() {
     btnContact.addEventListener('click', function () {
         if (divContact.style.display === 'none') {
             divContact.style.display = 'block';
-        }
-        else {
+        } else {
             divContact.style.display = 'block';
         }
     })
@@ -131,10 +153,8 @@ function backgroundContact() {
     })
 }
 
-function exitContact(){
+function exitContact() {
     btnExitContact.addEventListener('click', function () {
         if (divContact.style.display === 'block') divContact.style.display = 'none';
     })
 }
-
-
