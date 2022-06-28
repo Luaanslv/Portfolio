@@ -11,18 +11,30 @@ $durationInfo: 0.5;
     
     .tituloSkills{
       margin: 10px 10%; 
+        img{
+            animation: zoomTitle ease-in-out infinite 3s;
+        }
+    }
+    .planSkills{
+        img{
+            animation: zoomPlanet ease-in-out infinite 3s;
+        }
+
+        img:hover{
+            cursor: pointer;
+        }
     } 
+    
 }
 
-.imgSkills:hover{
-        cursor: pointer;
-}
+
 
 .conhecimentos-area {
     .skillsDev{
         position: fixed;
-        margin-top: -120%;
+        margin-top: -130%;
         animation: show ($durationInfo + s) linear ($delay-apre + s) forwards;
+        z-index: 999;
         opacity: 0;
         width: 100%;
         height: 135vh;
@@ -37,6 +49,13 @@ $durationInfo: 0.5;
         height: 420px;
         margin: 100px auto;
         border-radius: 10px;
+
+        .exit-skills {
+            @include exitStyles();
+            left: 200px;
+            position: relative;
+            top: -50px;
+        }
     }
 
     .titulo-skills {
@@ -49,27 +68,25 @@ $durationInfo: 0.5;
             margin-bottom: 20%;
             font-family: 'Audiowide', sans-serif;
         }
-        .exit-skills {
-            @include exitStyles();
-            left: 200px;
-            position: relative;
-        }
     }
 
     .skills {
         text-align: center;
         margin: auto;
         align-items: center;
-        margin-top: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
 
         .conhecimentos-box {
-            margin: 20px 10px 50px 0px;
-            padding:10px;
+            margin-bottom: 30px;
             font-size: 30px;
             font-weight: bolder;
             text-align: center;
+
+
+            img{
+                width: 50px;
+            }
         }
     }
     @keyframes show {

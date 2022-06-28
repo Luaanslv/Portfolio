@@ -3,16 +3,23 @@
     $delay-apre: 0.2;
     $durationInfo: 0.5;
     .imgSobre {
-        margin-top: 20%; 
+        margin-top: 30%; 
        
         
         .tituloSobre{
             margin: 10px 15%;
+            
+            img{
+                animation: zoomTitle ease-in-out infinite 3s;
+            }
         }
         .planSobre{ 
             margin-left: 6%; 
             :hover{
                 cursor: pointer;
+            }
+            img{
+                animation: zoomPlanet ease-in-out infinite 3s;
             }
         }
     }
@@ -26,7 +33,8 @@
         .divText {
             display: none;
             position: fixed;
-            margin-top: -90%;
+            z-index: 999;
+            margin-top: -100%;
             width: 100%;
             animation: show ($durationInfo + s) linear ($delay-apre + s) forwards;
             opacity: 0;
@@ -84,6 +92,9 @@
             }
             .exit {
                @include exitStyles();
+               position: relative;
+               top: 50px;
+               right: 20px;
             }
         }
         @keyframes show {

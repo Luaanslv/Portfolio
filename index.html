@@ -22,17 +22,17 @@
             <div class="nav">
                 <ul class="menu-nav">
                     <li><a class="itens" href="/">Home</a></li>
-                    <li><a class="itens" href="#sobre">Sobre</a></li>
-                    <li><a class="itens" href="#contato-area">Contato</a></li>
-                    <li><a class="itens" href="#projetos-area">Projetos</a></li>
-                </ul>
-                <ul class="menu-icons">
-                    <li class="nav-icons"><i class="fa fa-github-alt"></i></li>
-                    <li class="nav-icons"><i class="fab fa-discord"></i></li>
-                    <li class="nav-icons"><i class="fa fa-linkedin"></i></li>
+                    <li><a class="itens" href="#localSobre">Sobre</a></li>
+                    <li><a class="itens" href="#localContato">Contato</a></li>
+                    <li><a class="itens" href="#localProjects">Projetos</a></li>
                 </ul>
             </div>
             <button id="btn-Mobile" class="icone-bars"><i class="fa fa-bars"></i></button>
+
+             <!-- logo -->
+        <div class="logo">
+            <img src="assets/imagens/logo.png" alt="logo" onclick="window.location.href = './'">
+        </div>
         </nav>
         <!--home-->
         <div class="banner">
@@ -49,9 +49,9 @@
     </header>
     <main>
         <!--Sobre eu-->
-        <div class="imgSobre">
-            <div class="tituloSobre">
-                <img src="assets/imagens/SOBRE.png" alt="Titulo, Sobre o dev">
+        <div class="imgSobre" id="localSobre">
+            <div class="tituloSobre" >
+                <img src="assets/imagens/SOBRE.png" alt="Titulo, Sobre o dev" >
             </div>
             <div class="planSobre">
                 <img src="assets/imagens/scarif 1.png" alt="planeta scarif" id="show">
@@ -61,8 +61,9 @@
             <div class="container">
                 <div class="sobre-dev">
                     <div class="divText" id="descricao">
+                        <button class="exit" id="exit-sobre"><i class="fa fa-close"></i></button>
                         <div class="textSobre">
-                            <button class="exit" id="exit-sobre"><i class="fa fa-close"></i></button>
+                            
                             <h3>Sobre o Dev</h3>
                             <p><b>Olá visitante!</b><br>
                                 <br>
@@ -102,42 +103,47 @@
             <div class="container">
                 <div class="skillsDev" id="skills">
                     <div class="divSkills">
+                        <button class="exit-skills" id="exitSkills"><i class="fa fa-close"></i></button>
                         <div class="titulo-skills">
-                            <button class="exit-skills" id="exitSkills"><i class="fa fa-close"></i></button>
+                            
                             <h3>Minhas Habilidades</h3>
                         </div>
                         <div class="skills">
                             <div class="conhecimentos-box">
-                                <i class="fab fa-html5"></i>
+                                <img src="assets/imagens/Html5.png" alt="img Html">
                                 <p>Html</p>
                             </div>
                             <div class="conhecimentos-box">
-                                <i class="fab fa-css3-alt"></i>
+                                <img src="assets/imagens/CSS3.png" alt="img Html">
                                 <p class>Css</p>
                             </div>
                             <div class="conhecimentos-box">
-                                <i class="fab fa-js-square "></i>
+                                <img src="assets/imagens/js.png" alt="img Html">
                                 <p>Javascript</p>
                             </div>
                             <div class="conhecimentos-box">
-                                <i class="fab fa-sass"></i>
+                                <img src="assets/imagens/Sass.png" alt="img Html">
                                 <p>Sass</p>
                             </div>
                             <div class="conhecimentos-box">
-                                <i class="fab fa-react"></i>
+                                <img src="assets/imagens/react.png" alt="img Html">
                                 <p>React</p>
                             </div>
                             <div class="conhecimentos-box">
-                                <i class="fab fa-bootstrap"></i>
+                                <img src="assets/imagens/bootstrap.png" alt="img Html">
                                 <p>Bootstrap</p>
                             </div>
                             <div class="conhecimentos-box">
-                                <i class="fab fa-figma"></i>
+                                <img src="assets/imagens/figma.png" alt="img Html">
                                 <p>Figma</p>
                             </div>
                             <div class="conhecimentos-box">
-                                <i class="fab fa-linux"></i>
+                                <img src="assets/imagens/linux.png" alt="img Html">
                                 <p>Linux</p>
+                            </div>
+                            <div class="conhecimentos-box">
+                                <img src="assets/imagens/git.png" alt="git">
+                                <p>Git</p>
                             </div>
                         </div>
                     </div>
@@ -145,7 +151,7 @@
             </div>
         </div>
         <!--Projetos-->
-        <div class="imgProject">
+        <div class="imgProject" id="localProjects">
             <div class="tituloProject">
                 <img src="assets/imagens/PORTFÓLIO.png" alt="titulo projeto">
             </div>
@@ -156,15 +162,15 @@
 
         <div class="projeto-container" id="divProjects">
             <div class="divProjetos">
+                <button class="exitProjects" id="exitProjects"><i class="fa fa-close"></i></button>
                 <div class="tituloProjects">
-                    <button class="exitProjects" id="exitProjects"><i class="fa fa-close"></i></button>
                     <h3>Projetos</h3>
                 </div>
                 <div class="projetos-area">
                     <div class="projects">
                         <img src="assets/imagens/clone.png" alt="Clone da Netflix">
                         <div class="infoProjects">
-                            <button>
+                            <button id="btnInfo">
                                 <h4>Clone Netflix</h4>
                                 <div class="iconsTechs">
                                     <i class="fab fa-html5"></i>
@@ -256,7 +262,7 @@
                 </div>
             </div>
         </div>
-        <div class="imgContact">
+        <div class="imgContact" id="localContato">
             <div class="tituloContact">
                 <img src="assets/imagens/CONTATO.png" alt="titulo do contatos">
             </div>
@@ -265,36 +271,40 @@
             </div>
         </div>
         <div class="contact-area" id="divContact">
-            <div class="container">
-                <div class="divContact">
+            <div class="container" >
+                <div class="divContact"> 
+                    <button class="exit-contact" id="exitContact"><i class="fa fa-close"></i></button>
                     <div class="tituloContact">
-                        <button class="exit-contact" id="exitContact"><i class="fa fa-close"></i></button>
+                       
                         <h3>Fale comigo</h3>
                     </div>
                     <div class="contactBox">
                         <div class="text">
-                            <p> Me mande uma mensagem ou si preferir me mande um e-mail. Estou disponivel para ajudar
+                            <p> Me mande uma mensagem. Estou disponivel para ajudar
                                 você a
                                 realizar o seu projeto ou trabalhar na sua empresa!</p>
                         </div>
-                        <form>
-                            <div class="inputs">
-                                <div class="inputName">
-                                    <input type="text" name="nome" id="nomeId" placeholder="Nome Completo*">
-                                </div>
-                                <div class="inputTel">
-                                    <input type="tel" name="fone" id="foneId" placeholder="DD + Numero de celular *">
-                                </div>
-                                <div class="inputEmail">
-                                    <input type="email" name="email" id="emailId" placeholder="E-mail*">
-                                </div>
-                                <div class="inputAssunto">
-                                    <input type="text" name="assunto" id="assuntoId" placeholder="Assunto*">
-                                </div>
-                            </div>
-                            <textarea placeholder="Mensagem"></textarea>
+                        <form action="https://formsubmit.co/luaan.silva117@gmail.com" method="POST">
+                                <div class="inputs">
+                                    <div class="inputName">
+                                        <input type="text" name="nome" id="nomeId" placeholder="Nome Completo*" required>
+                                    </div>
+                                    <div class="inputTel">
+                                        <input type="tel" name="fone" id="foneId" placeholder="DD + Numero de celular *" required >
+                                    </div>
+                                    <div class="inputEmail">
+                                        <input type="email" name="email" id="emailId" placeholder="E-mail*" required>
+                                    </div>
+                                    <div class="inputAssunto">
+                                        <input type="text" name="assunto" id="assuntoId" placeholder="Assunto*" required>
+                                    </div>
+                                    <textarea placeholder="Mensagem" name="message" id="mensagem" required></textarea>
+                                </div> 
+                                
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/confirmacaoForm.html">
+                            <div class="btnForm"><button  type="submit">Enviar</button></div>
+                        </form>
                     </div>
-                    <div class="btnForm"><button>Enviar</button></div>
                 </div>
             </div>
         </div>
@@ -304,24 +314,27 @@
             <div class="container">
                 <div class="infoArea">
                     <nav>
-                        <ul class="menuFooter">
-                            <li><a class="itensFooter" href="/">Home</a></li>
-                            <li><a class="itensFooter" href="#sobre">Sobre</a></li>
-                            <li><a class="itensFooter" href="#contato-area">Contato</a></li>
-                            <li><a class="itensFooter" href="#projetos-area">Projetos</a></li>
-                        </ul>
+                        <div class="menu">
+                             <h5>Navegação</h5>
+                            <ul class="menuFooter">
+                                <li><a class="itensFooter" href="/">Home</a></li>
+                                <li><a class="itensFooter" href="#localSobre">Sobre</a></li>
+                                <li><a class="itensFooter" href="#localContato">Contato</a></li>
+                                <li><a class="itensFooter" href="#localProjects">Projetos</a></li>
+                            </ul>
+                        </div>
                         <div class="contacts">
-                            <img src="assets/imagens/Telegram App.png" alt="telegram">
-                            <img src="assets/imagens/Email.png" alt="email">
-                            <img src="assets/imagens/WhatsApp.png" alt="WhatsApp">
-                            <img src="assets/imagens/github.png" alt="github">
-                            <img src="assets/imagens/Discord.png" alt="Discord">
-                            <img src="assets/imagens/LinkedIn.png" alt="LinkedIn">
+                            <h5>Redes Sociais</h5>
+                            <img src="assets/imagens/Telegram App.png" alt="telegram" onclick="window.open('https://t.me/Luaanslv')">
+                            <img src="assets/imagens/Email.png" alt="email" onclick="window.open('mailto:luaan.silva117@gmail.com')">
+                            <img src="assets/imagens/WhatsApp.png" alt="WhatsApp" onclick="window.open('https://wa.me/5511997318719?text=Ol%C3%A1+Luan%2C+encontrei+voc%C3%AA+pelo+seu+portf%C3%B3lio.')">
+                            <img src="assets/imagens/github.png" alt="github" onclick="window.open('https://github.com/Luaanslv')">
+                            <img src="assets/imagens/LinkedIn.png" alt="LinkedIn" onclick="window.open('https://www.linkedin.com/in/luan-da-silva-7b08aa216/')">
                         </div>
                     </nav>
                 </div>
             </div>
-            <p>© 2022 Criado por <a href="">Luan Silva</a></p>
+            <p>© <a href="https://www.linkedin.com/in/luan-da-silva-7b08aa216/">Luan Silva</a> 2022 - Todos os direitos reservados</p>
         </div>
 
     </footer>

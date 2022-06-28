@@ -4,6 +4,7 @@
 @import "./scss/skills";
 @import "./scss/_projects";
 @import "./scss/_contact";
+@import "./scss/ConfirmaEnvio";
 @import "./scss/footer";
 
 $duration-banner: 5;
@@ -15,6 +16,7 @@ $delay-apre: 2.5;
     padding: 0%;
     box-sizing: border-box;
     color: #fff;
+    scroll-behavior: smooth;
     h3 {
         text-align: center;
         font-size: 50px;
@@ -31,7 +33,6 @@ body {
         padding: 30px;
     }
     .banner {
-        width: 100%;
         height: 100%;
         margin: auto;
         text-align: center;
@@ -41,9 +42,8 @@ body {
         color: #fff;
         overflow: hidden;
         .banner-img {
-            width: 100%;
             position: absolute;
-            margin: auto;
+            width: 100%;
 
             img {
                 animation: banner-zoom ($duration-banner + s) ease-in-out ($delay + s) forwards;
@@ -58,7 +58,6 @@ body {
 
                 100% {
                     transform: scale(1);
-                    width: 100%;
                 }
             }
         }
@@ -77,13 +76,36 @@ body {
             }
         }
     }
+}
 
-    #canvas {
-        display: block;
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+// animações
+
+// zoom planetas
+@keyframes zoomPlanet {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50%{
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1.0);
     }
 }
+
+// zoom titulo
+@keyframes zoomTitle {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50%{
+        transform: scale(1.10);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+

@@ -114,7 +114,7 @@ function showMoreOrLess() {
             visibilidade = false;
         }
         else {
-            alerta.innerHTML = ' Espere um pouco estou construindo mais sites!'
+            alerta.innerHTML = ' Espere um pouco, estou construindo mais sites!'
             btnVeja.innerHTML = 'Veja Menos'
             visibilidade = true;
         }
