@@ -8,13 +8,16 @@ var btnProjects = document.querySelector('#btnPlanet');
 var btnExitProjects = document.querySelector('#exitProjects');
 var divProjects = document.querySelector('#divProjects');
 var divInfoProject = document.querySelector('#infoProjetctNetflix');
-// var btnProjectNetflix = document.querySelector('#btnNetflix');
 var divContact = document.querySelector('#divContact');
 var btnContact = document.querySelector('#showContact');
 var btnExitContact = document.querySelector('#exitContact');
 var btnVeja = document.querySelector('#btnVeja');
 var alerta = document.querySelector('#alert');
 var visibilidade = false;
+var btnMobile = document.querySelector('#btnMobile');
+var nav = document.querySelector('#navBar');
+var divNav = document.querySelector('#divNav');
+var btnExitNav = document.querySelector('#exit-Nav');
 
 
 
@@ -32,7 +35,9 @@ exitProjects();
 showContact();
 backgroundContact();
 exitContact();
-
+showNavMobile();
+backgroundNavMobile();
+exitDivNav();
 
 
 function showAbout() {
@@ -118,24 +123,10 @@ function showMoreOrLess() {
             btnVeja.innerHTML = 'Veja Menos'
             visibilidade = true;
         }
-
        
     })
 
 }
-
-// function showInfoNetflix() {
-//     btnProjectNetflix.addEventListener('click', function () {
-//         if (divInfoProject.style.display === 'none') {
-//             divInfoProject.style.display = 'block';
-//         } else {
-//             divInfoProject.style.display = 'block';
-//         }
-
-//     })
-// }
-
-
 
 function showContact() {
     btnContact.addEventListener('click', function () {
@@ -156,5 +147,27 @@ function backgroundContact() {
 function exitContact() {
     btnExitContact.addEventListener('click', function () {
         if (divContact.style.display === 'block') divContact.style.display = 'none';
+    })
+}
+
+function showNavMobile() {
+    btnMobile.addEventListener('click', function () {
+        if (nav.style.display === 'none') {
+            nav.style.display = 'block';
+        } else {
+            nav.style.display = 'block';
+        }
+    })
+}
+
+function backgroundNavMobile() {
+    btnMobile.addEventListener('click', function () {
+        nav.style.backgroundColor = 'rgba(0, 0, 0, 0.800)'
+    })
+}
+
+function exitDivNav() {
+    btnExitNav.addEventListener('click', function () {
+        if (nav.style.display === "block") nav.style.display = "none";
     })
 }

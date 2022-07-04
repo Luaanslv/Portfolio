@@ -1,41 +1,35 @@
-@import '../mixins/exit';
+@import "../mixins/exit";
 $delay: 0.5;
 $delay-apre: 0.2;
 $durationInfo: 0.5;
 
-
-
 .imgContact {
     text-align: right;
     margin-right: 60px;
-    .tituloContact{
+    .tituloContact {
         margin: 10px 9%;
-        img{
+        img {
             animation: zoomTitle ease-in-out infinite 3s;
         }
-        
     }
-    .planContact{
-        margin-right: 6%; 
+    .planContact {
+        margin-right: 6%;
 
-        img{
-        animation: zoomPlanet ease-in-out infinite 3s;
+        img {
+            animation: zoomPlanet ease-in-out infinite 3s;
         }
         img:hover {
-        cursor: pointer;
+            cursor: pointer;
         }
     }
-   
-    
 }
 
-
-.tituloContact {
+.tituloContactInfo {
+    text-align: center;
     h3 {
         color: #fff500;
         margin: 20px 0 50px 0;
     }
-    
 }
 
 .contact-area {
@@ -47,18 +41,17 @@ $durationInfo: 0.5;
     animation: show ($durationInfo + s) linear ($delay-apre + s) forwards;
     opacity: 0;
     z-index: 999;
-    
 
-    .divContact{
+    .divContact {
         width: 90%;
         margin: 10% auto;
         border-radius: 10px;
-        
+
         .exit-contact {
-        @include exitStyles();
-        position: relative;
-        top: -40px;
-        left: 40px;
+            @include exitStyles();
+            position: relative;
+            top: -40px;
+            left: 40px;
         }
     }
 
@@ -68,14 +61,13 @@ $durationInfo: 0.5;
         margin-bottom: 50px;
         margin: auto;
 
-        
         .text {
             text-align: center;
             margin-top: 50px;
             font-weight: bolder;
         }
         form {
-           text-align: center;
+            text-align: center;
             ::placeholder {
                 color: rgba(0, 0, 0, 0.788);
             }
@@ -84,7 +76,7 @@ $durationInfo: 0.5;
             justify-content: center;
             .inputs {
                 align-items: center;
-                margin: 25px  auto;
+                margin: 25px auto;
                 .inputName,
                 .inputTel,
                 .inputEmail,
@@ -109,20 +101,16 @@ $durationInfo: 0.5;
                     padding: 10px;
                 }
             }
-
-            
         }
     }
 
-       
-    .btnForm{
+    .btnForm {
         margin: auto;
-        max-width: 700px; 
-            
-            button { 
-            
+        max-width: 700px;
+
+        button {
             background-color: transparent;
-            font-family: 'Audiowide', sans-serif;
+            font-family: "Audiowide", sans-serif;
             text-align: center;
             width: 70%;
             margin-bottom: 100px;
@@ -132,13 +120,12 @@ $durationInfo: 0.5;
             font-size: 25px;
             transition: ease-in-out 0.3s;
         }
-        button:hover{
+        button:hover {
             cursor: pointer;
             color: rgba(255, 255, 255, 0.555);
             border: 2px solid rgba(255, 255, 255, 0.555);
         }
     }
-       
 
     @keyframes show {
         0% {
@@ -147,6 +134,78 @@ $durationInfo: 0.5;
 
         100% {
             opacity: 1;
+        }
+    }
+}
+
+@media (max-width: 428px) {
+    .imgContact {
+        margin-top: 25%;
+        margin-right: 1px;
+        .tituloContact {
+            margin-right: 15%;
+            img {
+                width: 150px;
+            }
+        }
+        .planContact {
+            img {
+                width: 230px;
+            }
+        }
+    }
+    .tituloContactInfo { 
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 125px 0 20px 0;
+        width: 100%;
+        h3 {
+            font-size: 30px;
+        }
+    }
+    .contact-area {
+        margin-top: -460%;
+
+        .divContact {
+            width: 100%;
+
+            .exit-contact {
+                left: 5px;
+                top: -90px;
+            }
+        }
+
+        .contactBox {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            .text {
+                margin-top: 30px;
+                text-align: center;
+
+                font-size: 15px;
+            }
+            form {
+                .inputs {
+                    .inputName,
+                    .inputTel,
+                    .inputEmail,
+                    .inputAssunto {
+                        input {
+                            width: 400px;
+                        }
+                    }
+                    textarea{
+                        width: 91%;
+                    }
+                }
+            }
+        }
+        .btnForm{
+            button{
+                width: 90%;
+            }
         }
     }
 }

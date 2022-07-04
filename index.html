@@ -18,25 +18,27 @@
 
     <header>
         <!--menu-->
-        <nav>
-            <div class="nav">
-                <ul class="menu-nav">
+
+        <nav > 
+            <div class="icone-bars">
+                <button id="btnMobile"><i class="fa fa-bars"></i></button>
+            </div>
+            <div class="nav" id="navBar">
+                <button class="exit" id="exit-Nav"><i class="fa fa-close"></i></button>
+                <ul class="menu-nav" >
                     <li><a class="itens" href="/">Home</a></li>
                     <li><a class="itens" href="#localSobre">Sobre</a></li>
                     <li><a class="itens" href="#localContato">Contato</a></li>
                     <li><a class="itens" href="#localProjects">Projetos</a></li>
                 </ul>
             </div>
-            <button id="btn-Mobile" class="icone-bars"><i class="fa fa-bars"></i></button>
-
-             <!-- logo -->
-        <div class="logo">
-            <img src="assets/imagens/logo.png" alt="logo" onclick="window.location.href = './'">
-        </div>
+            <!-- logo -->
+            <div class="logo">
+                <img src="assets/imagens/logo.png" alt="logo" onclick="window.location.href = './'">
+            </div>
         </nav>
         <!--home-->
         <div class="banner">
-
             <div class="banner-img">
                 <img src="assets/imagens/banner.png" alt="banner">
             </div>
@@ -50,8 +52,8 @@
     <main>
         <!--Sobre eu-->
         <div class="imgSobre" id="localSobre">
-            <div class="tituloSobre" >
-                <img src="assets/imagens/SOBRE.png" alt="Titulo, Sobre o dev" >
+            <div class="tituloSobre">
+                <img src="assets/imagens/SOBRE.png" alt="Titulo sobre o dev">
             </div>
             <div class="planSobre">
                 <img src="assets/imagens/scarif 1.png" alt="planeta scarif" id="show">
@@ -63,7 +65,7 @@
                     <div class="divText" id="descricao">
                         <button class="exit" id="exit-sobre"><i class="fa fa-close"></i></button>
                         <div class="textSobre">
-                            
+
                             <h3>Sobre o Dev</h3>
                             <p><b>Olá visitante!</b><br>
                                 <br>
@@ -105,8 +107,7 @@
                     <div class="divSkills">
                         <button class="exit-skills" id="exitSkills"><i class="fa fa-close"></i></button>
                         <div class="titulo-skills">
-                            
-                            <h3>Minhas Habilidades</h3>
+                            <h3>Habilidades</h3>
                         </div>
                         <div class="skills">
                             <div class="conhecimentos-box">
@@ -271,11 +272,11 @@
             </div>
         </div>
         <div class="contact-area" id="divContact">
-            <div class="container" >
-                <div class="divContact"> 
+            <div class="container">
+                <div class="divContact">
                     <button class="exit-contact" id="exitContact"><i class="fa fa-close"></i></button>
-                    <div class="tituloContact">
-                       
+                    <div class="tituloContactInfo">
+
                         <h3>Fale comigo</h3>
                     </div>
                     <div class="contactBox">
@@ -285,24 +286,25 @@
                                 realizar o seu projeto ou trabalhar na sua empresa!</p>
                         </div>
                         <form action="https://formsubmit.co/luaan.silva117@gmail.com" method="POST">
-                                <div class="inputs">
-                                    <div class="inputName">
-                                        <input type="text" name="nome" id="nomeId" placeholder="Nome Completo*" required>
-                                    </div>
-                                    <div class="inputTel">
-                                        <input type="tel" name="fone" id="foneId" placeholder="DD + Numero de celular *" required >
-                                    </div>
-                                    <div class="inputEmail">
-                                        <input type="email" name="email" id="emailId" placeholder="E-mail*" required>
-                                    </div>
-                                    <div class="inputAssunto">
-                                        <input type="text" name="assunto" id="assuntoId" placeholder="Assunto*" required>
-                                    </div>
-                                    <textarea placeholder="Mensagem" name="message" id="mensagem" required></textarea>
-                                </div> 
-                                
-                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/confirmacaoForm.html">
-                            <div class="btnForm"><button  type="submit">Enviar</button></div>
+                            <div class="inputs">
+                                <div class="inputName">
+                                    <input type="text" name="nome" id="nomeId" placeholder="Nome Completo*" required>
+                                </div>
+                                <div class="inputTel">
+                                    <input type="tel" name="fone" id="foneId" placeholder="DD + Numero de celular *"
+                                        required>
+                                </div>
+                                <div class="inputEmail">
+                                    <input type="email" name="email" id="emailId" placeholder="E-mail*" required>
+                                </div>
+                                <div class="inputAssunto">
+                                    <input type="text" name="assunto" id="assuntoId" placeholder="Assunto*" required>
+                                </div>
+                                <textarea placeholder="Mensagem" name="message" id="mensagem" required></textarea>
+                            </div>
+
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/confirmacaoForm.html">
+                            <div class="btnForm"><button type="submit">Enviar</button></div>
                         </form>
                     </div>
                 </div>
@@ -315,7 +317,7 @@
                 <div class="infoArea">
                     <nav>
                         <div class="menu">
-                             <h5>Navegação</h5>
+                            <h5>Navegação</h5>
                             <ul class="menuFooter">
                                 <li><a class="itensFooter" href="/">Home</a></li>
                                 <li><a class="itensFooter" href="#localSobre">Sobre</a></li>
@@ -325,16 +327,24 @@
                         </div>
                         <div class="contacts">
                             <h5>Redes Sociais</h5>
-                            <img src="assets/imagens/Telegram App.png" alt="telegram" onclick="window.open('https://t.me/Luaanslv')">
-                            <img src="assets/imagens/Email.png" alt="email" onclick="window.open('mailto:luaan.silva117@gmail.com')">
-                            <img src="assets/imagens/WhatsApp.png" alt="WhatsApp" onclick="window.open('https://wa.me/5511997318719?text=Ol%C3%A1+Luan%2C+encontrei+voc%C3%AA+pelo+seu+portf%C3%B3lio.')">
-                            <img src="assets/imagens/github.png" alt="github" onclick="window.open('https://github.com/Luaanslv')">
-                            <img src="assets/imagens/LinkedIn.png" alt="LinkedIn" onclick="window.open('https://www.linkedin.com/in/luan-da-silva-7b08aa216/')">
+                            <div class="contactsIcon">
+                                <img src="assets/imagens/Telegram App.png" alt="telegram"
+                                    onclick="window.open('https://t.me/Luaanslv')">
+                                <img src="assets/imagens/Email.png" alt="email"
+                                    onclick="window.open('mailto:luaan.silva117@gmail.com')">
+                                <img src="assets/imagens/WhatsApp.png" alt="WhatsApp"
+                                    onclick="window.open('https://wa.me/5511997318719?text=Ol%C3%A1+Luan%2C+encontrei+voc%C3%AA+pelo+seu+portf%C3%B3lio.')">
+                                <img src="assets/imagens/github.png" alt="github"
+                                    onclick="window.open('https://github.com/Luaanslv')">
+                                <img src="assets/imagens/LinkedIn.png" alt="LinkedIn"
+                                    onclick="window.open('https://www.linkedin.com/in/luan-da-silva-7b08aa216/')">
+                            </div>
                         </div>
                     </nav>
                 </div>
             </div>
-            <p>© <a href="https://www.linkedin.com/in/luan-da-silva-7b08aa216/">Luan Silva</a> 2022 - Todos os direitos reservados</p>
+            <p>© <a href="https://www.linkedin.com/in/luan-da-silva-7b08aa216/">Luan Silva</a> 2022 - Todos os direitos
+                reservados</p>
         </div>
 
     </footer>

@@ -1,4 +1,4 @@
-.footer-info{
+.footer-info {
     margin-top: 100px;
     padding: 30px;
     background: #000;
@@ -6,63 +6,81 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    
-    .info-area{
+
+    .info-area {
         margin: auto;
-        
     }
-    nav{
+    nav {
         display: flex;
     }
-    .menu{
-        h5{
+    .menu {
+        h5 {
             font-size: 20px;
-            margin-bottom:20px;
+            margin-bottom: 20px;
             text-align: center;
         }
     }
-   .menuFooter{
-       display: flex;
-       list-style: none;
-       .itensFooter{
-           outline: none;
-           text-decoration: none;
-           font-size: 18px;
-           margin-right: 30px;
-           color: rgb(136, 135, 135);
-           transition: ease 0.3s;
-       }
-       .itensFooter:hover{
-           cursor: pointer;
-           color: #fff;
-       }
-   }
-   .contacts{
-    h5{
-        font-size: 20px;
-        margin-bottom:20px;
-        text-align: center;
+    .menuFooter {
+        display: flex;
+        list-style: none;
+        .itensFooter {
+            outline: none;
+            text-decoration: none;
+            font-size: 18px;
+            margin-right: 30px;
+            color: rgb(136, 135, 135);
+            transition: ease 0.3s;
+        }
+        .itensFooter:hover {
+            cursor: pointer;
+            color: #fff;
+        }
     }
-      img{
-          width:30px;
-          margin-left: 30px;
-          transition: ease 0.3s;
-      }
-      img:hover{
-        cursor: pointer;
-        transform: scale(1.2);
+    .contacts {
+        h5 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        img {
+            width: 30px;
+            margin-left: 30px;
+            transition: ease 0.3s;
+        }
+        img:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+        }
     }
-   }
-   p{
-    color: rgb(136, 135, 135); 
-    margin-top: 50px;
-        a{
-            color: rgb(136, 135, 135); 
+    p {
+        color: rgb(136, 135, 135);
+        margin-top: 50px;
+        a {
+            color: rgb(136, 135, 135);
             outline: none;
             text-decoration: none;
         }
-        :hover{
+        :hover {
             color: #fff;
         }
-   }
+    }
+}
+
+@media (max-width: 428px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        
+        h5 {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .contacts {
+        margin-top: 10%;
+        .contactsIcon {
+            display: flex;
+        }
+    }
 }

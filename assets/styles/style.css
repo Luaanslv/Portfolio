@@ -21,6 +21,10 @@
   transition: ease 0.5s;
 }
 
+.nav button {
+  display: none;
+}
+
 .logo {
   justify-content: center;
   align-items: center;
@@ -46,6 +50,80 @@
   border-radius: 5px;
 }
 
+@media (max-width: 428px) {
+  .nav {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: -1px;
+    left: -0.1px;
+    position: absolute;
+    -webkit-animation: show 0.5s linear 0.2s forwards;
+            animation: show 0.5s linear 0.2s forwards;
+    opacity: 0;
+    position: fixed;
+  }
+  .nav button {
+    display: block;
+    float: right;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    margin-top: 34px;
+    margin-right: 25px;
+    position: relative;
+  }
+
+  .menu-nav {
+    display: block;
+    -webkit-animation: none;
+            animation: none;
+    opacity: 1;
+    text-align: center;
+    width: 55%;
+  }
+  .menu-nav li {
+    margin-bottom: 100px;
+    position: relative;
+    top: 80px;
+  }
+  .menu-nav .itens {
+    text-align: center;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .icone-bars {
+    display: block;
+    align-items: center;
+    float: right;
+    justify-content: center;
+  }
+  .icone-bars button {
+    position: absolute;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    opacity: 0;
+    -webkit-animation: show 7s linear 0.5s forwards;
+            animation: show 7s linear 0.5s forwards;
+  }
+
+  .logo {
+    position: absolute;
+    margin-top: -4px;
+  }
+  .logo img {
+    width: 120px;
+    margin-left: -10px;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .imgSobre {
   margin-top: 30%;
 }
@@ -90,7 +168,7 @@
   font-size: 20px;
 }
 .sobre-area .divText h3 {
-  color: #FFF500;
+  color: #fff500;
   text-align: center;
   font-size: 30px;
   margin-bottom: 50px;
@@ -116,8 +194,8 @@
   background: transparent;
   padding: 15px;
   font-size: 16px;
-  color: #FFF500;
-  border: 3px solid #FFF;
+  color: #fff500;
+  border: 3px solid #fff;
   border-radius: 10px;
 }
 .sobre-area .divText .btnCv button a {
@@ -158,6 +236,42 @@
   }
 }
 
+@media (max-width: 428px) {
+  .imgSobre {
+    margin-top: 45%;
+    margin-right: 100%;
+  }
+  .imgSobre .tituloSobre img {
+    width: 150px;
+    margin-left: 50px;
+  }
+  .imgSobre .planSobre img {
+    width: 250px;
+  }
+
+  .sobre-area .divText {
+    margin-top: -215%;
+    height: 110vh;
+  }
+  .sobre-area .divText p {
+    font-size: 18px;
+  }
+  .sobre-area .divText h3 {
+    margin-top: 100px;
+    font-size: 25px;
+  }
+  .sobre-area .divText .textSobre {
+    width: 100%;
+  }
+  .sobre-area .divText .btnCv {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .sobre-area .divText .exit {
+    top: 30px;
+    left: 5px;
+  }
+}
 .imgSkills {
   margin: 10% 9% 0 0;
   text-align: right;
@@ -248,6 +362,47 @@
   }
 }
 
+@media (max-width: 428px) {
+  .imgSkills {
+    margin-top: 25%;
+    margin-left: 35%;
+  }
+  .imgSkills .tituloSkills img {
+    max-width: 150px;
+  }
+  .imgSkills .planSkills img {
+    width: 250px;
+  }
+
+  .conhecimentos-area .skillsDev {
+    margin-top: -300%;
+  }
+  .conhecimentos-area .divSkills .exit-skills {
+    left: 70px;
+    top: -5px;
+  }
+  .conhecimentos-area .titulo-skills {
+    text-align: center;
+    margin: 50% auto 0px;
+  }
+  .conhecimentos-area .titulo-skills h3 {
+    font-size: 30px;
+  }
+  .conhecimentos-area .skills {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    justify-content: center;
+  }
+  .conhecimentos-area .skills .conhecimentos-box {
+    margin: 20px;
+  }
+  .conhecimentos-area .skills .conhecimentos-box p {
+    font-size: 25px;
+  }
+  .conhecimentos-area .skills .conhecimentos-box img {
+    width: 40px;
+  }
+}
 .imgProject .tituloProject {
   margin: 10px 9%;
 }
@@ -415,6 +570,60 @@
   cursor: pointer;
 }
 
+@media (max-width: 428px) {
+  .imgProject {
+    margin-right: 50%;
+    margin-top: 25%;
+  }
+  .imgProject .tituloProject {
+    margin-left: 25%;
+  }
+  .imgProject .tituloProject img {
+    width: 150px;
+  }
+  .imgProject .planProject img {
+    width: 250px;
+  }
+
+  .projeto-container {
+    margin-top: -415%;
+    height: 150vh;
+    width: 100%;
+  }
+  .projeto-container .tituloProjects h3 {
+    font-size: 30px;
+  }
+  .projeto-container .divProjetos .projetos-area {
+    grid-template-columns: 2fr;
+    margin: auto;
+    width: 100%;
+  }
+  .projeto-container .divProjetos .projetos-area .projects {
+    margin: 20px auto;
+  }
+  .projeto-container .divProjetos .projetos-area .projects img {
+    width: 350px;
+    height: 200px;
+  }
+  .projeto-container .divProjetos .exitProjects {
+    left: 80px;
+    top: -50px;
+  }
+  .projeto-container .divProjetos .infoProjects {
+    width: 100%;
+  }
+  .projeto-container .divProjetos .infoProjects button {
+    width: 350px;
+    height: 200px;
+  }
+  .projeto-container .divProjetos .infoProjects button h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .projeto-container .divProjetos .alerta {
+    font-size: 18px;
+  }
+}
 .imgContact {
   text-align: right;
   margin-right: 60px;
@@ -437,7 +646,10 @@
   cursor: pointer;
 }
 
-.tituloContact h3 {
+.tituloContactInfo {
+  text-align: center;
+}
+.tituloContactInfo h3 {
   color: #fff500;
   margin: 20px 0 50px 0;
 }
@@ -561,6 +773,65 @@
   }
 }
 
+@media (max-width: 428px) {
+  .imgContact {
+    margin-top: 25%;
+    margin-right: 1px;
+  }
+  .imgContact .tituloContact {
+    margin-right: 15%;
+  }
+  .imgContact .tituloContact img {
+    width: 150px;
+  }
+  .imgContact .planContact img {
+    width: 230px;
+  }
+
+  .tituloContactInfo {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 125px 0 20px 0;
+    width: 100%;
+  }
+  .tituloContactInfo h3 {
+    font-size: 30px;
+  }
+
+  .contact-area {
+    margin-top: -460%;
+  }
+  .contact-area .divContact {
+    width: 100%;
+  }
+  .contact-area .divContact .exit-contact {
+    left: 5px;
+    top: -90px;
+  }
+  .contact-area .contactBox {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-area .contactBox .text {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 15px;
+  }
+  .contact-area .contactBox form .inputs .inputName input,
+.contact-area .contactBox form .inputs .inputTel input,
+.contact-area .contactBox form .inputs .inputEmail input,
+.contact-area .contactBox form .inputs .inputAssunto input {
+    width: 400px;
+  }
+  .contact-area .contactBox form .inputs textarea {
+    width: 91%;
+  }
+  .contact-area .btnForm button {
+    width: 90%;
+  }
+}
 .confirmaEnvio {
   text-align: left;
   margin: 5%;
@@ -652,6 +923,24 @@
   color: #fff;
 }
 
+@media (max-width: 428px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  nav h5 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacts {
+    margin-top: 10%;
+  }
+  .contacts .contactsIcon {
+    display: flex;
+  }
+}
 * {
   margin: auto;
   padding: 0%;
@@ -714,6 +1003,7 @@ body .banner .imgApresenta {
   height: 200px;
   position: relative;
   top: 110px;
+  left: 30px;
 }
 body .banner .imgApresenta img {
   width: 550px;
@@ -765,5 +1055,23 @@ body .banner .imgApresenta img {
   }
   100% {
     transform: scale(1);
+  }
+}
+@media (max-width: 428px) {
+  .banner .banner-img,
+.banner .imgApresenta {
+    position: absolute;
+  }
+  .banner .banner-img {
+    right: 2px;
+  }
+  .banner .banner-img img {
+    width: 400px;
+  }
+  .banner .imgApresenta img {
+    top: -65px;
+    position: relative;
+    max-width: 350px;
+    right: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

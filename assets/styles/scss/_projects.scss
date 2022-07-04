@@ -7,22 +7,21 @@ $durationInfo: 0.5;
     .tituloProject {
         margin: 10px 9%;
 
-        img{
+        img {
             animation: zoomTitle ease-in-out infinite 3s;
         }
     }
 
     .planProject {
         margin-left: 6%;
-        
-        img{
+
+        img {
             animation: zoomPlanet ease-in-out infinite 3s;
         }
         img:hover {
             cursor: pointer;
         }
     }
-    
 }
 
 .projeto-container {
@@ -40,9 +39,7 @@ $durationInfo: 0.5;
             color: #fff500;
             font-family: "Audiowide", sans-serif;
         }
-        
     }
-    
 
     .divProjetos {
         animation: show ($durationInfo + s) linear ($delay-apre + s) forwards;
@@ -50,12 +47,12 @@ $durationInfo: 0.5;
         padding: 10px;
         margin: 260px auto;
         width: 70%;
-        
+
         @keyframes show {
             0% {
                 opacity: 0;
             }
-    
+
             100% {
                 opacity: 1;
             }
@@ -69,101 +66,161 @@ $durationInfo: 0.5;
 
         .projetos-area {
             display: grid;
-            grid-template-columns:1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             align-items: center;
             justify-content: center;
-            padding: 0.5em; 
-                .projects {
-                    margin: 1.5em;
-                    display: flex;
-                    img{
-                        width: 500px;
-                        height: 300px;
-                        border: solid 2px #fff;
-                    }
+            padding: 0.5em;
+            .projects {
+                margin: 1.5em;
+                display: flex;
+                img {
+                    width: 500px;
+                    height: 300px;
+                    border: solid 2px #fff;
                 }
+            }
         }
 
-        .alerta{
+        .alerta {
             font-size: 20px;
             text-align: center;
             font-weight: bolder;
             margin-bottom: 20px;
         }
 
-        .btnVejaMais{
+        .btnVejaMais {
             text-align: center;
-            button{
+            button {
                 position: relative;
                 background-color: transparent;
-                border: 2px solid  #fff;
+                border: 2px solid #fff;
                 padding: 10px;
                 border-radius: 10px;
                 width: 100%;
                 font-size: 20px;
                 transition: ease 0.3s;
             }
-            button:hover{
+            button:hover {
                 cursor: pointer;
-                color:rgba(255, 255, 255, 0.493) ;
-                border:2px solid rgba(255, 255, 255, 0.493) ;
+                color: rgba(255, 255, 255, 0.493);
+                border: 2px solid rgba(255, 255, 255, 0.493);
             }
-
         }
     }
 
-    .infoProjects{
+    .infoProjects {
         width: 100%;
         position: absolute;
-        button{
+        button {
             width: 500px;
             height: 300px;
             background-color: rgba(0, 0, 0, 0.87);
             opacity: 0;
-            transition: ease-in-out .3s;
+            transition: ease-in-out 0.3s;
             border: none;
             position: relative;
 
-            h4{
+            h4 {
                 margin-top: 10%;
                 font-size: 30px;
                 margin-bottom: 20px;
-                
             }
 
-            .iconsTechs{
+            .iconsTechs {
                 margin-top: 5%;
-                
 
-                i{
+                i {
                     margin: 5%;
                     font-size: 25px;
                 }
             }
-            p{
+            p {
                 margin-top: 10%;
                 font-weight: bolder;
                 animation: pisca-pisca 1.5s linear infinite;
                 opacity: 1;
             }
-            @keyframes pisca-pisca{
-                0%{
-                  opacity: 0;
+            @keyframes pisca-pisca {
+                0% {
+                    opacity: 0;
                 }
-                50%{
-                  opacity: 0.7;
+                50% {
+                    opacity: 0.7;
                 }
-                100%{
-                  opacity: 0;
+                100% {
+                    opacity: 0;
                 }
-              }
-
+            }
         }
-        button:hover{
+        button:hover {
             opacity: 1;
             cursor: pointer;
         }
     }
-    
-   
+}
+
+@media (max-width: 428px) {
+    .imgProject {
+        margin-right: 50%;
+        margin-top: 25%;
+        .tituloProject {
+            margin-left: 25%;
+            img {
+                width: 150px;
+            }
+        }
+        .planProject {
+            img {
+                width: 250px;
+            }
+        }
+    }
+    .projeto-container {
+        margin-top: -415%;
+        height: 150vh;
+        width: 100%;
+
+        .tituloProjects {
+            h3 {
+                font-size: 30px;
+            }
+        }
+
+        .divProjetos {
+            .projetos-area {
+                grid-template-columns: 2fr;
+                margin: auto;
+                width: 100%;
+                .projects {
+                    margin: 20px auto;
+
+                    img {
+                        width: 350px;
+                        height: 200px;
+                    }
+                }
+            }
+            
+            .exitProjects{
+                left: 80px;
+                top: -50px;
+            }
+            .infoProjects{
+                width: 100%;
+
+                button{
+                    width: 350px;
+                    height: 200px;
+
+                    h4{
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .alerta{
+                font-size:18px;
+            }
+        }
+    }
 }

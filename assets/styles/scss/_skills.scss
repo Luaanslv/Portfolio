@@ -99,3 +99,56 @@ $durationInfo: 0.5;
         }
     }
 }
+
+@media(max-width: 428px){
+    .imgSkills{
+        margin-top: 25%;
+        margin-left: 35%;
+        .tituloSkills{
+            img{
+                max-width: 150px;
+            }
+        }
+        .planSkills{
+            img{
+                width: 250px;
+            }
+        }
+    }
+    .conhecimentos-area{
+        .skillsDev{
+            margin-top: -300%;
+        }
+
+        .divSkills{
+            .exit-skills{
+                left: 70px;
+                top: -5px;
+            }
+        }
+
+        .titulo-skills{
+            text-align: center;
+            margin: 50% auto 0px;
+            h3{
+                font-size: 30px;
+                
+            }
+        }
+        .skills{
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            justify-content: center; 
+            .conhecimentos-box{
+                margin: 20px;
+                p{
+                    font-size: 25px;
+                }
+
+                img{
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
