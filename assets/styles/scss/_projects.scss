@@ -200,26 +200,51 @@ $durationInfo: 0.5;
                     }
                 }
             }
-            
-            .exitProjects{
+
+            .exitProjects {
                 left: 80px;
                 top: -50px;
             }
-            .infoProjects{
+            .infoProjects {
                 width: 100%;
 
-                button{
+                button {
                     width: 350px;
                     height: 200px;
 
-                    h4{
+                    h4 {
                         font-size: 20px;
                         margin-bottom: 10px;
                     }
                 }
             }
-            .alerta{
-                font-size:18px;
+            .alerta {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .imgProject {
+        .planProject {
+            margin-left: 10%;
+            img {
+                width: 200px;
+            }
+        }
+    }
+    .projeto-container {
+        margin-top: -475%;
+        .tituloProjects {
+            text-align: center;
+            width: 100%;
+            margin-top: 50%;
+        }
+        .divProjetos {
+            .exitProjects {
+                left: 70px;
+                top: 10px;
             }
         }
     }

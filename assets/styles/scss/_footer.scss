@@ -70,9 +70,8 @@
     nav {
         display: flex;
         flex-direction: column;
-        
+        text-align: center;
         h5 {
-            text-align: center;
             justify-content: center;
             align-items: center;
         }
@@ -81,6 +80,28 @@
         margin-top: 10%;
         .contactsIcon {
             display: flex;
+        }
+    }
+}
+@media (max-width: 360px) {
+    .menu {
+        h5 {
+            text-align: center;
+            margin-right: 20px;
+        }
+    }
+    .contacts {
+        .contactsIcon {
+            margin: auto;
+            img {
+                margin: 10px;
+            }
+        }
+    }
+    .footer-info {
+        p {
+            margin-top: 20px;
+            font-size: 15px;
         }
     }
 }

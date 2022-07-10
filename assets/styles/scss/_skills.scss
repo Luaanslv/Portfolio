@@ -1,36 +1,31 @@
-@import '../mixins/exit';
+@import "../mixins/exit";
 $delay: 0.5;
 $delay-apre: 0.2;
 $durationInfo: 0.5;
-
 
 .imgSkills {
     margin: 10% 9% 0 0;
     text-align: right;
 
-    
-    .tituloSkills{
-      margin: 10px 10%; 
-        img{
+    .tituloSkills {
+        margin: 10px 10%;
+        img {
             animation: zoomTitle ease-in-out infinite 3s;
         }
     }
-    .planSkills{
-        img{
+    .planSkills {
+        img {
             animation: zoomPlanet ease-in-out infinite 3s;
         }
 
-        img:hover{
+        img:hover {
             cursor: pointer;
         }
-    } 
-    
+    }
 }
 
-
-
 .conhecimentos-area {
-    .skillsDev{
+    .skillsDev {
         position: fixed;
         margin-top: -130%;
         animation: show ($durationInfo + s) linear ($delay-apre + s) forwards;
@@ -39,10 +34,9 @@ $durationInfo: 0.5;
         width: 100%;
         height: 135vh;
         display: none;
-
     }
 
-    .divSkills{
+    .divSkills {
         text-align: center;
         width: 70%;
         padding: 10px;
@@ -63,10 +57,10 @@ $durationInfo: 0.5;
         margin: auto 200px;
 
         h3 {
-            color: #FFF500;
+            color: #fff500;
             margin-top: 10%;
             margin-bottom: 20%;
-            font-family: 'Audiowide', sans-serif;
+            font-family: "Audiowide", sans-serif;
         }
     }
 
@@ -83,8 +77,7 @@ $durationInfo: 0.5;
             font-weight: bolder;
             text-align: center;
 
-
-            img{
+            img {
                 width: 50px;
             }
         }
@@ -100,54 +93,73 @@ $durationInfo: 0.5;
     }
 }
 
-@media(max-width: 428px){
-    .imgSkills{
+@media (max-width: 428px) {
+    .imgSkills {
         margin-top: 25%;
         margin-left: 35%;
-        .tituloSkills{
-            img{
+        .tituloSkills {
+            img {
                 max-width: 150px;
             }
         }
-        .planSkills{
-            img{
+        .planSkills {
+            img {
                 width: 250px;
             }
         }
     }
-    .conhecimentos-area{
-        .skillsDev{
+    .conhecimentos-area {
+        .skillsDev {
             margin-top: -300%;
         }
 
-        .divSkills{
-            .exit-skills{
+        .divSkills {
+            .exit-skills {
                 left: 70px;
                 top: -5px;
             }
         }
 
-        .titulo-skills{
+        .titulo-skills {
             text-align: center;
             margin: 50% auto 0px;
-            h3{
+            h3 {
                 font-size: 30px;
-                
             }
         }
-        .skills{
+        .skills {
             display: grid;
             grid-template-columns: 2fr 2fr 2fr;
-            justify-content: center; 
-            .conhecimentos-box{
+            justify-content: center;
+            .conhecimentos-box {
                 margin: 20px;
-                p{
+                p {
                     font-size: 25px;
                 }
 
-                img{
+                img {
                     width: 40px;
                 }
+            }
+        }
+    }
+}
+@media (max-width: 360px) {
+    .imgSkills {
+        .planSkills {
+            img {
+                width: 200px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .conhecimentos-area {
+        .skillsDev {
+            margin-top: -345%;
+        }
+        .divSkills {
+            .exit-skills {
+                top: 10px;
             }
         }
     }

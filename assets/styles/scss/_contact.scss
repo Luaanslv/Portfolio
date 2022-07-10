@@ -154,7 +154,7 @@ $durationInfo: 0.5;
             }
         }
     }
-    .tituloContactInfo { 
+    .tituloContactInfo {
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -196,15 +196,64 @@ $durationInfo: 0.5;
                             width: 400px;
                         }
                     }
-                    textarea{
+                    textarea {
                         width: 91%;
                     }
                 }
             }
         }
-        .btnForm{
-            button{
+        .btnForm {
+            button {
                 width: 90%;
+            }
+        }
+    }
+}
+@media (max-width: 360px) {
+    .imgContact {
+        .planContact {
+            margin-right: 9%;
+
+            img {
+                width: 200px;
+            }
+        }
+    }
+    .tituloContactInfo {
+        text-align: center;
+
+        h3 {
+            margin-bottom: 20px;
+        }
+    }
+    .contact-area {
+        margin-top: -500%;
+        .divContact {
+            position: relative;
+            .exit-contact {
+                position: absolute;
+                left: 320px;
+            }
+            .contactBox {
+                .text {
+                    margin-top: 10px;
+                    font-size: 14px;
+                }
+                form {
+                    .inputs {
+                        .inputName,
+                        .inputTel,
+                        .inputEmail,
+                        .inputAssunto {
+                            input {
+                                width: 330px;
+                            }
+                        }
+                        textarea {
+                            width: 90%;
+                        }
+                    }
+                }
             }
         }
     }
