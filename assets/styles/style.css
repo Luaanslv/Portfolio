@@ -1078,17 +1078,17 @@
   font-size: 50px;
 }
 
-body {
+html, body {
   overflow-x: hidden;
   background-image: url("../imagens/banner-fundo.webp");
   background-attachment: fixed;
   background-position: center;
   position: relative;
 }
-body header {
+html header, body header {
   padding: 30px;
 }
-body .banner {
+html .banner, body .banner {
   height: 100%;
   margin: auto;
   text-align: center;
@@ -1096,13 +1096,12 @@ body .banner {
   margin-top: 200px;
   font-family: "Permanent Marker", cursive;
   color: #fff;
-  overflow: hidden;
 }
-body .banner .banner-img {
+html .banner .banner-img, body .banner .banner-img {
   position: absolute;
   width: 100%;
 }
-body .banner .banner-img img {
+html .banner .banner-img img, body .banner .banner-img img {
   -webkit-animation: banner-zoom 5s ease-in-out 0.5s forwards;
           animation: banner-zoom 5s ease-in-out 0.5s forwards;
   transform: scale(3.5);
@@ -1123,14 +1122,14 @@ body .banner .banner-img img {
     transform: scale(1);
   }
 }
-body .banner .imgApresenta {
+html .banner .imgApresenta, body .banner .imgApresenta {
   margin: auto;
   height: 200px;
   position: relative;
   top: 110px;
   left: 30px;
 }
-body .banner .imgApresenta img {
+html .banner .imgApresenta img, body .banner .imgApresenta img {
   width: 550px;
   -webkit-animation: show 7s linear 2.5s forwards;
           animation: show 7s linear 2.5s forwards;

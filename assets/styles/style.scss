@@ -23,7 +23,7 @@ $delay-apre: 2.5;
     }
 }
 
-body {
+html,body {
     overflow-x: hidden;
     background-image: url("../imagens/banner-fundo.webp");
     background-attachment: fixed;
@@ -40,15 +40,15 @@ body {
         margin-top: 200px;
         font-family: "Permanent Marker", cursive;
         color: #fff;
-        overflow: hidden;
+        
         .banner-img {
             position: absolute;
             width: 100%;
-
             img {
                 animation: banner-zoom ($duration-banner + s) ease-in-out ($delay + s) forwards;
                 $delay: $duration-banner + $delay;
                 transform: scale(3.5);
+                
             }
 
             @keyframes banner-zoom {
