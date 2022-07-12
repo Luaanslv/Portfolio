@@ -146,3 +146,20 @@ html,body {
         }
     }
 }
+
+@media(max-width:320px){
+    .banner{
+        .banner-img{
+            margin-top: -50px;
+            img{
+                width: 300px;
+            }
+        }
+        .imgApresenta{
+            img{
+                top: -132px;
+                max-width: 250px;
+            }
+        }
+    }
+}

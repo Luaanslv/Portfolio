@@ -128,3 +128,25 @@ $durationInfo: 0.5;
         }
     }
 }
+@media(max-width:320px){
+    
+    .menu-nav{
+        li{
+            margin-bottom: 60px;
+        }
+        .itens{
+            font-size: 25px;
+        }
+    }
+    .logo{
+        img{
+            width: 100px;
+        }
+    }
+    .icone-bars{
+        margin-top: -1px;
+        button{
+            font-size: 25px;
+        }
+    }
+}

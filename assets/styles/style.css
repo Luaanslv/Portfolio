@@ -74,7 +74,6 @@
     margin-right: 25px;
     position: relative;
   }
-
   .menu-nav {
     display: block;
     -webkit-animation: none;
@@ -95,7 +94,6 @@
     align-items: center;
     position: relative;
   }
-
   .icone-bars {
     display: block;
     align-items: center;
@@ -112,7 +110,6 @@
     -webkit-animation: show 7s linear 0.5s forwards;
             animation: show 7s linear 0.5s forwards;
   }
-
   .logo {
     position: absolute;
     margin-top: -4px;
@@ -122,6 +119,23 @@
     margin-left: -10px;
     align-items: center;
     justify-content: center;
+  }
+}
+@media (max-width: 320px) {
+  .menu-nav li {
+    margin-bottom: 60px;
+  }
+  .menu-nav .itens {
+    font-size: 25px;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .icone-bars {
+    margin-top: -1px;
+  }
+  .icone-bars button {
+    font-size: 25px;
   }
 }
 .imgSobre {
@@ -248,7 +262,6 @@
   .imgSobre .planSobre img {
     width: 250px;
   }
-
   .sobre-area .divText {
     margin-top: -215%;
     height: 110vh;
@@ -278,6 +291,44 @@
   }
   .sobre-area .divText .textSobre {
     width: 90%;
+  }
+}
+@media (max-width: 320px) {
+  .imgSobre {
+    margin-top: 15%;
+  }
+  .imgSobre .tituloSobre img {
+    width: 130px;
+  }
+  .imgSobre .planSobre {
+    margin-left: 35px;
+  }
+  .imgSobre .planSobre img {
+    width: 150px;
+  }
+  .sobre-area .divText {
+    margin-top: -220%;
+  }
+  .sobre-area .divText .textSobre {
+    width: 100%;
+  }
+  .sobre-area .divText h3 {
+    font-size: 20px;
+    margin-top: 60px;
+  }
+  .sobre-area .divText p {
+    font-size: 14px;
+  }
+  .sobre-area .divText h4 {
+    font-size: 15px;
+  }
+  .sobre-area .divText .btnCv {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .sobre-area .divText .btnCv button {
+    padding: 10px;
+    font-size: 14px;
   }
 }
 .imgSkills {
@@ -381,7 +432,6 @@
   .imgSkills .planSkills img {
     width: 250px;
   }
-
   .conhecimentos-area .skillsDev {
     margin-top: -300%;
   }
@@ -416,12 +466,34 @@
     width: 200px;
     margin-left: 10px;
   }
-
   .conhecimentos-area .skillsDev {
     margin-top: -345%;
   }
   .conhecimentos-area .divSkills .exit-skills {
     top: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .imgSkills .tituloSkills {
+    margin-left: 20%;
+  }
+  .imgSkills .tituloSkills img {
+    width: 130px;
+  }
+  .imgSkills .planSkills img {
+    width: 150px;
+  }
+  .conhecimentos-area .skillsDev {
+    margin-top: -310%;
+  }
+  .conhecimentos-area .titulo-skills h3 {
+    font-size: 20px;
+  }
+  .conhecimentos-area .skills .conhecimentos-box p {
+    font-size: 20px;
+  }
+  .conhecimentos-area .divSkills .exit-skills {
+    left: 60px;
   }
 }
 .imgProject .tituloProject {
@@ -605,7 +677,6 @@
   .imgProject .planProject img {
     width: 250px;
   }
-
   .projeto-container {
     margin-top: -415%;
     height: 150vh;
@@ -652,7 +723,6 @@
   .imgProject .planProject img {
     width: 200px;
   }
-
   .projeto-container {
     margin-top: -475%;
   }
@@ -664,6 +734,48 @@
   .projeto-container .divProjetos .exitProjects {
     left: 70px;
     top: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .imgProject .tituloProject img {
+    width: 130px;
+  }
+  .imgProject .planProject {
+    margin-left: 20%;
+  }
+  .imgProject .planProject img {
+    width: 150px;
+  }
+  .projeto-container {
+    margin-top: -400%;
+  }
+  .projeto-container .divProjetos {
+    margin: 130px auto;
+  }
+  .projeto-container .divProjetos .projetos-area .projects {
+    margin: auto 0 2rem;
+  }
+  .projeto-container .divProjetos .projetos-area .projects img {
+    width: 300px;
+    height: 150px;
+  }
+  .projeto-container .divProjetos .btnVejaMais button {
+    width: 100%;
+    font-size: 15px;
+  }
+  .projeto-container .divProjetos .alerta {
+    font-size: 14px;
+  }
+  .projeto-container .infoProjects button {
+    max-width: 300px;
+    max-height: 150px;
+    text-align: center;
+  }
+  .projeto-container .infoProjects button h4 {
+    margin-top: 8%;
+  }
+  .projeto-container .infoProjects button p {
+    margin-top: 3%;
   }
 }
 .imgContact {
@@ -829,7 +941,6 @@
   .imgContact .planContact img {
     width: 230px;
   }
-
   .tituloContactInfo {
     text-align: center;
     justify-content: center;
@@ -840,7 +951,6 @@
   .tituloContactInfo h3 {
     font-size: 30px;
   }
-
   .contact-area {
     margin-top: -460%;
   }
@@ -881,14 +991,12 @@
   .imgContact .planContact img {
     width: 200px;
   }
-
   .tituloContactInfo {
     text-align: center;
   }
   .tituloContactInfo h3 {
     margin-bottom: 20px;
   }
-
   .contact-area {
     margin-top: -500%;
   }
@@ -911,6 +1019,60 @@
   }
   .contact-area .divContact .contactBox form .inputs textarea {
     width: 90%;
+  }
+}
+@media (max-width: 320px) {
+  .imgContact .planContact {
+    margin-right: 16%;
+  }
+  .imgContact .planContact img {
+    width: 130px;
+  }
+  .imgContact .planContact img {
+    width: 150px;
+  }
+  .tituloContactInfo {
+    margin-top: 30%;
+  }
+  .tituloContactInfo h3 {
+    font-size: 20px;
+  }
+  .contact-area {
+    margin-top: -460%;
+  }
+  .contact-area .divContact {
+    margin: 0% auto;
+  }
+  .contact-area .divContact .exit-contact {
+    left: 85%;
+    top: -50px;
+  }
+  .contact-area .contactBox {
+    margin: auto;
+  }
+  .contact-area .contactBox .text p {
+    text-align: left;
+    font-size: 14px;
+    display: none;
+  }
+  .contact-area .contactBox form .inputs {
+    margin: auto;
+  }
+  .contact-area .contactBox form .inputs .inputName input,
+.contact-area .contactBox form .inputs .inputTel input,
+.contact-area .contactBox form .inputs .inputEmail input,
+.contact-area .contactBox form .inputs .inputAssunto input {
+    max-width: 290px;
+    padding: 5px;
+  }
+  .contact-area .contactBox form .inputs textarea {
+    padding: 5px;
+    margin: 10px 0% 3% 0%;
+  }
+  .contact-area .btnForm button {
+    padding: 5px;
+    font-size: 16px;
+    width: 80%;
   }
 }
 .confirmaEnvio {
@@ -1040,7 +1202,6 @@
     justify-content: center;
     align-items: center;
   }
-
   .contacts {
     margin-top: 10%;
   }
@@ -1053,17 +1214,27 @@
     text-align: center;
     margin-right: 20px;
   }
-
   .contacts .contactsIcon {
     margin: auto;
   }
   .contacts .contactsIcon img {
     margin: 10px;
   }
-
   .footer-info p {
     margin-top: 20px;
     font-size: 15px;
+  }
+}
+@media (max-width: 320px) {
+  .menu {
+    margin: 0;
+  }
+  .menu h5 {
+    text-align: center;
+    margin: 0;
+  }
+  .menu .menuFooter .itensFooter {
+    margin: 10px;
   }
 }
 * {
@@ -1206,5 +1377,17 @@ html .banner .imgApresenta img, body .banner .imgApresenta img {
   .banner .imgApresenta img {
     top: -75px;
     max-width: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .banner .banner-img {
+    margin-top: -50px;
+  }
+  .banner .banner-img img {
+    width: 300px;
+  }
+  .banner .imgApresenta img {
+    top: -132px;
+    max-width: 250px;
   }
 }/*# sourceMappingURL=style.css.map */

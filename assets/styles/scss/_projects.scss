@@ -249,3 +249,58 @@ $durationInfo: 0.5;
         }
     }
 }
+@media(max-width:320px){
+    .imgProject{
+        .tituloProject{
+            img{
+                width: 130px;
+            }
+        }
+        .planProject{
+            margin-left: 20%;
+            img{
+                width: 150px;
+            }
+        }
+    }
+    .projeto-container{
+        margin-top: -400%;
+        
+        .divProjetos{
+            margin: 130px auto;
+
+            .projetos-area{
+                .projects{
+                    margin: auto 0 2rem;
+                    img{
+                        width: 300px;
+                        height: 150px;
+                    }
+                }
+            }
+            .btnVejaMais{
+                button{
+                    width: 100%;
+                    font-size: 15px;
+                }
+            }
+            .alerta{
+                font-size: 14px;
+            }
+        }
+        .infoProjects{
+            button{
+                max-width: 300px;
+                max-height: 150px;
+                text-align: center;
+                
+                h4{
+                    margin-top: 8%;
+                }
+                p{
+                    margin-top: 3%;
+                }
+            }
+        }
+    }
+}

@@ -183,7 +183,6 @@ $durationInfo: 0.5;
             .text {
                 margin-top: 30px;
                 text-align: center;
-
                 font-size: 15px;
             }
             form {
@@ -254,6 +253,74 @@ $durationInfo: 0.5;
                         }
                     }
                 }
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .imgContact {
+        .planContact {
+            margin-right: 16%;
+            img {
+                width: 130px;
+            }
+        }
+        .planContact {
+            img {
+                width: 150px;
+            }
+        }
+    }
+    .tituloContactInfo{
+        margin-top: 30%;
+        h3{
+            font-size: 20px;
+            
+        }
+    }
+    .contact-area {
+        margin-top: -460%;
+
+        .divContact {
+            margin: 0% auto;
+            .exit-contact {
+                left: 85%;
+                top: -50px;
+            }
+        }
+        .contactBox {
+            margin: auto;
+            .text {
+                p {
+                    text-align: left;
+                    font-size: 14px;
+                    display: none;
+                }
+            }
+            form {
+                .inputs {
+                    margin: auto;
+                    .inputName,
+                    .inputTel,
+                    .inputEmail,
+                    .inputAssunto {
+                        input {
+                            max-width: 290px;
+                            padding: 5px;
+                        }
+                    }
+                    textarea {
+                        padding: 5px;
+                        margin: 10px 0% 3% 0%;
+                    }
+                }
+            }
+        }
+        .btnForm{
+            button{
+                padding: 5px;
+                font-size: 16px;
+                width: 80%;
             }
         }
     }
