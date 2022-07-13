@@ -93,7 +93,7 @@ $durationInfo: 0.5;
     }
 }
 
-@media (max-width: 428px) {
+@media only screen and (max-device-width: 428px) {
     .imgSkills {
         margin-top: 25%;
         margin-left: 35%;
@@ -144,7 +144,7 @@ $durationInfo: 0.5;
         }
     }
 }
-@media (max-width: 360px) {
+@media only screen and (max-device-width: 360px) {
     .imgSkills {
         .planSkills {
             img {
@@ -164,7 +164,7 @@ $durationInfo: 0.5;
         }
     }
 }
-@media (max-width: 320px) {
+@media only screen and (max-device-width: 320px) {
     .imgSkills {
         .tituloSkills {
             margin-left: 20%;

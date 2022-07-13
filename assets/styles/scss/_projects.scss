@@ -159,7 +159,7 @@ $durationInfo: 0.5;
     }
 }
 
-@media (max-width: 428px) {
+@media only screen and (max-device-width: 428px) {
     .imgProject {
         margin-right: 50%;
         margin-top: 25%;
@@ -225,7 +225,7 @@ $durationInfo: 0.5;
     }
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-device-width: 360px) {
     .imgProject {
         .planProject {
             margin-left: 10%;
@@ -249,7 +249,7 @@ $durationInfo: 0.5;
         }
     }
 }
-@media(max-width:320px){
+@media only screen and (max-device-width:320px){
     .imgProject{
         .tituloProject{
             img{

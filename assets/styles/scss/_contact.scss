@@ -138,7 +138,7 @@ $durationInfo: 0.5;
     }
 }
 
-@media (max-width: 428px) {
+@media only screen and (max-device-width: 428px) {
     .imgContact {
         margin-top: 25%;
         margin-right: 1px;
@@ -208,7 +208,7 @@ $durationInfo: 0.5;
         }
     }
 }
-@media (max-width: 360px) {
+@media only screen and (max-device-width: 360px) {
     .imgContact {
         .planContact {
             margin-right: 9%;
@@ -232,6 +232,7 @@ $durationInfo: 0.5;
             .exit-contact {
                 position: absolute;
                 left: 320px;
+                top: -110px;
             }
             .contactBox {
                 .text {
@@ -240,6 +241,7 @@ $durationInfo: 0.5;
                 }
                 form {
                     .inputs {
+                        margin: auto;
                         .inputName,
                         .inputTel,
                         .inputEmail,
@@ -248,16 +250,27 @@ $durationInfo: 0.5;
                                 width: 330px;
                             }
                         }
+                        .inputAssunto{
+                            margin-bottom: 10px;
+                        }
                         textarea {
+                            margin: auto;
                             width: 90%;
                         }
                     }
                 }
             }
         }
+        .btnForm{
+            button{
+                margin-top: 10px;
+                padding: 10px;
+                font-size: 18px;
+            }
+        }
     }
 }
-@media (max-width: 320px) {
+@media only screen and (max-device-width: 320px) {
     .imgContact {
         .planContact {
             margin-right: 16%;
@@ -271,11 +284,10 @@ $durationInfo: 0.5;
             }
         }
     }
-    .tituloContactInfo{
+    .tituloContactInfo {
         margin-top: 30%;
-        h3{
+        h3 {
             font-size: 20px;
-            
         }
     }
     .contact-area {
@@ -287,37 +299,38 @@ $durationInfo: 0.5;
                 left: 85%;
                 top: -50px;
             }
-        }
-        .contactBox {
-            margin: auto;
-            .text {
-                p {
-                    text-align: left;
-                    font-size: 14px;
-                    display: none;
+
+            .contactBox {
+                margin: auto;
+                .text {
+                    p {
+                        text-align: left;
+                        font-size: 14px;
+                        display: none;
+                    }
                 }
-            }
-            form {
-                .inputs {
-                    margin: auto;
-                    .inputName,
-                    .inputTel,
-                    .inputEmail,
-                    .inputAssunto {
-                        input {
-                            max-width: 290px;
+                form {
+                    .inputs {
+                        margin: auto;
+                        .inputName,
+                        .inputTel,
+                        .inputEmail,
+                        .inputAssunto {
+                            input {
+                                max-width: 290px;
+                                padding: 5px;
+                            }
+                        }
+                        textarea {
                             padding: 5px;
+                            margin: 10px 0% 3% 0%;
                         }
                     }
-                    textarea {
-                        padding: 5px;
-                        margin: 10px 0% 3% 0%;
-                    }
                 }
             }
         }
-        .btnForm{
-            button{
+        .btnForm {
+            button {
                 padding: 5px;
                 font-size: 16px;
                 width: 80%;
