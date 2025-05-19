@@ -1,0 +1,170 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    overflow-x: hidden;
+    font-family: "arvo", serif;
+    font-style: normal;
+}
+
+header{
+    overflow: hidden;
+}
+
+.cabecalho{
+    background-image: url(img/background.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+nav{
+    margin-top: 40px;
+}
+.barra-nav{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.barra-nav li a{
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.barra-nav li a:hover{
+    color: #a2a0a0;
+    transition: color 1,5s;
+}
+
+.introducao{
+    margin-top: 200px;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+}
+
+.introducao h1{
+    font-size: 60px;
+}
+
+.introducao h2{
+    font-size: 30px;
+}
+
+.introducao .setas{
+    display: flex;
+    flex-direction: column;
+    margin: 20% 0 5% 0;
+    font-size: 30px;
+}
+
+.introducao .setas a{
+    text-decoration: none;
+    color: #fff;
+}
+@keyframes fa-blink{
+    0%{opacity: 1;}
+    50%{opacity: 0.5;}
+    100%{opacity: 0;}
+}
+
+.fa-blink{
+    -webkit-animation: fa-blink .85s linear infinite;
+    -moz-animation: fa-blink .85s linear infinite;
+    -ms-animation: fa-blink .85s linear infinite;
+    -o-animation: fa-blink .85s linear infinite;
+    animation: fa-blink .85s linear infinite;
+}
+
+/*Sobre*/
+
+.box-sobre{
+    background-color: #c2bfbfd4;
+}
+
+.titulo-sobre{
+    margin-bottom:80px;
+    padding-top: 200px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.sobre{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 120px;
+}
+
+.descricao p{
+    width: 500px;
+    font-size: 19px;
+    text-align: left;
+}
+
+.descricao .icons{
+    font-size: 30px;
+    display: flex;
+    justify-content: left;
+}
+.descricao .icons i{
+    cursor: pointer; 
+    margin: 25px 0 0 15px;
+}
+
+.foto img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+/*projetos*/
+
+.projetos{
+    background-color: #c2bfbf;
+}
+.projetos h3{
+    text-align: center;
+    margin: 50px 0 80px 0;
+    font-size: 25px;
+    color: #fff;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projeto{
+    border: 5px solid #ffff;
+    border-radius: 50px;
+}
+
+.projeto img{
+    width: 400px;
+}
