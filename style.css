@@ -40,11 +40,11 @@ p{
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 700px;
     width: 100%;
     height: 100%;
     z-index: -1;
     overflow: hidden;
+    padding-bottom: 100px;
 }
 nav{
     margin-top: 40px;
@@ -110,11 +110,11 @@ nav{
 /*Sobre*/
 
 .box-sobre{
-    background-color: #c2bfbfd4;
+    background-color: #ffff;
 }
 
 .titulo-sobre{
-    margin-bottom:80px;
+    margin-bottom:250px;
     padding-top: 200px;
     font-size: 25px;
     text-align: center;
@@ -132,31 +132,52 @@ nav{
 .descricao p{
     width: 500px;
     text-align: left;
-}
-
-.descricao .icons{
-    font-size: 30px;
-    display: flex;
-    justify-content: left;
-}
-.descricao .icons i{
-    cursor: pointer; 
-    margin: 25px 0 0 15px;
+    font-style: normal;
+    font-weight: normal;
 }
 
 .foto img{
-    width: 300px;
+    width: 280px;
     border-radius: 10px;
 }
+.foto .icons{
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+}
+
+.foto .icons a img{
+    width: 35px;
+    text-decoration: none;
+}
+
+.foto .icons .buttonCv a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000; 
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'arvo',sans-serif;
+    cursor: pointer;
+}
+
+.icons .buttonCv a:hover{
+    cursor: pointer;
+}
+
 
 /*Serviços*/
 .servicos{
     padding: 200px 0 120px 0;
+    background: #fff;
 }
 
 .servicos h3{
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 250px;
 }
 
 .cards{
@@ -182,6 +203,7 @@ nav{
 .card p{
     width: 500px;
     line-height: initial;
+    font-size: 16px;
 }
 .card img{
     margin: 40px 0 40px 0;
@@ -192,14 +214,14 @@ nav{
 /*projetos*/
 
 .projetos{
-    background-color: #c2bfbf;
+    background-color: #fff;
     padding: 120px 0 200px 0 ;
 }
 .projetos h3{
     text-align: center;
-    margin: 50px 0 80px 0;
+    margin: 50px 0 250px 0;
     font-size: 25px;
-    color: #fff;
+    color: #000;
 }
 
 .box{
@@ -210,10 +232,47 @@ nav{
 }
 
 .projeto{
-    border: 5px solid #dddada;
+    border: 5px solid #6d6c6c59;
     border-radius: 50px;
 }
 
 .projeto img{
-    width: 400px;
+    width: 500px;
+}
+
+/*conhecimentos*/
+
+.habilidades{
+    padding-bottom: 250px;
+}
+
+.habilidades h3{
+    text-align: center;
+    margin: 50px;
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 600px;
+    margin: auto;
+    gap: 70px;
+}
+
+.card-skills{
+    text-align: center;
+    align-items: center;
+}
+
+.card-skills p{
+    margin-bottom: 10px;
+}
+
+/*footer*/
+
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
