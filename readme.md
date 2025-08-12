@@ -19,8 +19,6 @@
 
 <ul>
     <li>HOME</li>
-    <li>SOBRE</li>
-    <li>SERVIÇOS</li>
     <li>PROJETOS</li>
     <li>CONHECIMENTOS</li>
 </ul>
@@ -29,6 +27,5 @@
 <ul>
     <li>HTML</li>
     <li>CSS</li>
-    <li>JAVASCRIPT</li>
     <li>FIGMA</li>
 </ul>
