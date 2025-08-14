@@ -65,6 +65,9 @@ nav{
     transition: color 1,5s;
 }
 
+.menu-bar{
+    display: none;
+}
 
 /*Sobre*/
 
@@ -196,3 +199,72 @@ footer{
     padding: 20px;
 }
 
+
+@media(max-width: 360px){
+    h3{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    nav {
+        height: 100%;
+    }
+
+    .barra-nav{
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .barra-nav.active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        gap: 20px;
+        height: 100%;
+        padding-top: 30px;
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s ease;
+
+    }
+
+    .barra-nav li{
+        margin-left: 30px;
+    }
+
+    .menu-bar{
+        display: block;
+        position: fixed;
+        margin-left: 6%;
+    }
+
+    .menu-bar i{
+        font-size: 20px;
+    }
+
+    .menu-bar .fa-xmark{
+        margin-left: 140px;
+    }
+
+    /*sobre*/
+
+    .box-sobre{
+        margin-top: 25%;
+        
+    }
+
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .titulo-sobre{
+        font-size: 25px;
+    }
+}
