@@ -313,4 +313,48 @@ footer{
         order: 2;
     }
 
+    /*projetos*/
+
+    .projetos{
+        padding: 0 0 10vh 0;
+    }
+
+    .projetos h3{
+        margin: 0 0 15vh 0;
+    }
+
+    .box{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .projeto img{
+        width: 40vh;
+    }
+
+    /*conhecimentos*/
+
+    .habilidades{
+        padding-bottom: 130px;
+    }
+    .skills{
+        display: grid !important;          
+        grid-template-columns: 1fr 1fr;     
+        width: 100%;                        
+        gap: 15px;                          
+        padding: 0 15px;                    
+        margin: auto;
+    }
+
+    .card-skills img{
+        width: 13vh;
+    }
+
+    /*footer*/
+
+    footer p{
+        font-size: 10px;
+    }
+
 }
