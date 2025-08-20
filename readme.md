@@ -15,8 +15,7 @@
 
 <h1>🚀 Portfólio do Desenvolvedor Front-End</h1>
 
-<a  href="https://luaanslv.github.io/Portfolio/" target="_blank" title="Descrição do link" rel="noopener noreferrer">👉 Clique aqui para conhecer meu portfólio!</a>
-
+<a  href="https://luaanslv.github.io/Portfolio/" target="_blank" title="Meu portfolio" rel="noopener noreferrer">👉 Clique aqui para conhecer meu portfólio!</a>
 <h2>🧠 Sobre o Projeto</h2>
 <p>Criei este site com o objetivo de exibir meus projetos de front-end, servindo também como um espaço onde posso colocar em prática e refinar o que aprendi no trabalho e nos meus estudos. A forma como o projeto está organizado dá prioridade a aspectos cruciais do desenvolvimento front-end, como a divisão em módulos, a adaptação a diferentes telas e aprimorar a experiência de quem usa. Além disso, adotei métodos eficazes para controle de versão, testes automáticos e melhoria do desempenho, assegurando que as soluções sejam eficazes, possam crescer e sejam fáceis de manter.
 
