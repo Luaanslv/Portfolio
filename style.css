@@ -627,6 +627,7 @@ footer{
         padding-bottom: 130px;
     }
     .skills{
+        align-items: center;
         display: grid !important;          
         grid-template-columns: 1fr 1fr;     
         width: 100%;                               
